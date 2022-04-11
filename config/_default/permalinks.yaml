@@ -1,0 +1,2 @@
+posts:          /what-we-do/:year/:month/:day/:slug/
+categories:     /what-we-do/:slug/
