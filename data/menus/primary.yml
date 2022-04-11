@@ -1,0 +1,22 @@
+---
+- title: Enjeux
+  target: "/enjeux/"
+  kind: page
+  children:
+  - title: Communication & Consommation
+    target: "/enjeux/communication-consommation/"
+    kind: page
+    children: []
+- title: Plaidoyers
+  target: "/plaidoyers/"
+  kind: page
+  children: []
+- title: Actualités
+  target: "/actualites/"
+  kind: page
+  children: []
+- title: L’association
+  target: "/l-association/"
+  kind: page
+  children: []
+
