@@ -1,0 +1,25 @@
+<header class="hero">
+  <div class="container">
+    <div class="row">
+      <div class="hero__image">
+        {{- if .image }}
+          {{ partial "commons/image.html"
+              (dict
+                "image"    .image
+                "alt"      .title
+                "mobile"   "351x168"
+                "tablet"   "456x219"
+                "desktop"  "856x410"
+                "lazy"     false
+              ) }}
+        {{ end -}}
+      </div>
+      <div class="hero__title">
+        <h1>{{ safeHTML (partial "CorrectPunctuation" .title) }}</h1>
+        {{ readFile "static/assets/images/logotype.svg" | safeHTML }}
+      </div>
+    </div>
+    {{ partial "header/breadcrumbs.html" .context }}
+  </div>
+
+</header>
