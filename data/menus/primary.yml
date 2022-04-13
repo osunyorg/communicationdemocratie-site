@@ -10,11 +10,11 @@
 - title: Plaidoyers
   target: "/plaidoyers/"
   kind: page
-  children: []
-- title: Campagne pour une Loi Evin du Climat européenne
-  target: "/plaidoyers/campagne-pour-une-loi-evin-du-climat-europeenne/"
-  kind: page
-  children: []
+  children:
+  - title: Campagne pour une Loi Evin du Climat européenne
+    target: "/plaidoyers/campagne-pour-une-loi-evin-du-climat-europeenne/"
+    kind: page
+    children: []
 - title: Actualités
   target: "/actualites/"
   kind: page
