@@ -19,4 +19,8 @@
   target: "/l-association/"
   kind: page
   children: []
+- title: Agir et soutenir
+  target: "/agir-et-soutenir/"
+  kind: page
+  children: []
 
