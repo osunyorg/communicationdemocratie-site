@@ -1,0 +1,30 @@
+{{- $title := safeHTML (partial "CorrectPunctuation" .Title) -}}
+{{- $description := or .Params.description .Content -}}
+<article class="post">
+  <div>
+    <h3 class="title"><a href="{{ .Permalink }}">{{ $title }}</a></h3>
+    <time datetime="{{ .Date.Format "2006-01-02T15:04" }}">{{ .Date | time.Format ":date_long" }}</time>
+    {{ if .Params.Categories }}
+      <ul>
+        {{- range $index, $s := .GetTerms "categories" -}}
+          <li>
+            {{- safeHTML .Title -}}
+          </li>
+        {{- end }}
+      </ul>
+    {{ end }}
+    <p>{{ partial "GetTruncateContent" $description }}</p>
+  </div>
+  {{- if .Params.image -}}
+    <div class="media">
+      {{- partial "commons/image.html"
+            (dict
+              "image"    .Params.image
+              "alt"      .Title
+              "mobile"   "351x291"
+              "tablet"   "334x167"
+              "desktop"  "634x317"
+            ) -}}
+    </div>
+  {{- end -}}
+</article>
