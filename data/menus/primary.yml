@@ -23,4 +23,8 @@
   target: "/agir-et-soutenir/"
   kind: page
   children: []
+- title: Campagne pour une Loi Evin du Climat européenne
+  target: "/plaidoyers/campagne-pour-une-loi-evin-du-climat-europeenne/"
+  kind: page
+  children: []
 
