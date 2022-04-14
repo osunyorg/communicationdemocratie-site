@@ -27,4 +27,8 @@
   target: "/agir-et-soutenir/"
   kind: page
   children: []
+- title: Communication et RSE
+  target: "/enjeux/communication-et-rse/"
+  kind: page
+  children: []
 
