@@ -3,6 +3,10 @@
   target: "/enjeux/"
   kind: page
   children:
+  - title: Communication et RSE
+    target: "/enjeux/communication-et-rse/"
+    kind: page
+    children: []
   - title: Communication & Consommation
     target: "/enjeux/communication-consommation/"
     kind: page
@@ -25,10 +29,6 @@
   children: []
 - title: Agir et soutenir
   target: "/agir-et-soutenir/"
-  kind: page
-  children: []
-- title: Communication et RSE
-  target: "/enjeux/communication-et-rse/"
   kind: page
   children: []
 
