@@ -1,0 +1,49 @@
+{{ define "main" }}
+  {{ partial "posts/hero-single.html" . }}
+
+  <article itemscope itemtype="https://schema.org/NewsArticle">
+    <meta itemprop="headline" content="{{ .Title }}">
+    <meta itemprop="url" content="{{ .Permalink }}">
+    {{ if .Date }}<meta itemprop="datePublished" content="{{ .Date.Format "2006-01-02T15:04" }}">{{ end }}
+    {{ if .Summary }}<meta itemprop="description" content="{{ .Summary }}">{{ end }}
+
+    <section class="page-detail">
+      <div class="container">
+        <div class="row">
+          <aside class="col-md-4">
+            {{ partial "commons/share.html" . }}
+            <div>Publié le <time datetime="{{ .Date.Format "2006-01-02T15:04" }}">{{ .Date | time.Format ":date_long" }}</time></div>
+            {{ partial "posts/categories.html" . }}
+          </aside>
+          <div class="col-md-8 lead">
+            {{ partial "PrepareHTML" .Params.description_short }}
+            {{ range .GetTerms "authors" }}
+              <div class="author" itemscope itemtype="https://schema.org/Person" itemprop="author">
+                <a href="{{ .Permalink }}" itemprop="url">
+                  <span itemprop="name">{{ safeHTML .Params.person }}</span>
+                </a>
+              </div>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container">
+      <div class="content">
+        {{ partial "pages/aside.html" 
+            (dict
+            "context" .
+        ) }}
+
+        <div>
+          <div itemprop="articleBody">
+            {{ partial "PrepareHTML" .Content }}
+            {{ partial "PrepareHTML" .Params.text }}
+          </div>
+          {{ partial "posts/prevnext.html" . }}
+        </div>
+      </div>
+    </section>
+
+  </article>
+{{ end }}

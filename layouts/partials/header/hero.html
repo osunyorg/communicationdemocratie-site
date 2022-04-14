@@ -1,8 +1,8 @@
 <header class="hero">
   <div class="container">
-    <div class="row">
-      <div class="hero__image">
-        {{- if .image }}
+    <div class="row {{- if .image }} with-image {{ end }}">
+      {{- if .image }}
+        <div class="hero__image">
           {{ partial "commons/image.html"
               (dict
                 "image"    .image
@@ -12,14 +12,18 @@
                 "desktop"  "856x410"
                 "lazy"     false
               ) }}
-        {{ end -}}
-      </div>
+        </div>
+      {{ end -}}
       <div class="hero__title">
+        {{ if .suptitle }}
+        <p class="h3">{{ safeHTML (partial "CorrectPunctuation" .suptitle) }}</p>
+        {{ end }}
         <h1>{{ safeHTML (partial "CorrectPunctuation" .title) }}</h1>
         {{ readFile "static/assets/images/logotype.svg" | safeHTML }}
       </div>
     </div>
-    {{ partial "header/breadcrumbs.html" .context }}
   </div>
-
 </header>
+{{ if ne .context.Kind "home" }}
+  {{ partial "header/breadcrumb-container.html" .context }}
+{{ end }}

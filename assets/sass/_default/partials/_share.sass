@@ -1,0 +1,54 @@
+.share
+    @extend .small
+    margin-bottom: 0
+    overflow: hidden
+    position: relative
+    &-title
+        margin-bottom: 9px
+    a
+        text-decoration: none
+        &::after
+            display: none
+        .icon
+            background: black
+            color: white
+            font-size: 15px
+            height: 30px
+            line-height: 30px
+            margin-right: 5px
+            text-align: center
+            width: 30px
+        .icon, span
+            display: inline-block
+            vertical-align: middle
+        @include media-breakpoint-up(md)
+            display: block
+            margin-bottom: 10px
+        @include media-breakpoint-down(md)
+            span
+                display: none
+            .icon
+                font-size: 20px
+                height: 45px
+                line-height: 45px
+                margin-right: 10px
+                width: 45px
+
+
+    &::after
+        background:
+            image: url('../images/leaf.png')
+            repeat: no-repeat
+            size: cover
+        content: ''
+        display: block
+        height: 180px
+        position: absolute
+        right: 0
+        top: 10px
+        width: 130px
+        @include media-breakpoint-down(md)
+            height: 160px
+            top: -20px
+            transform: rotate(-75deg)
+            width: 100px
