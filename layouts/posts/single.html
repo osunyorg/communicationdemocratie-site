@@ -51,15 +51,8 @@
         ) }}
 
         <div>
-          <div itemprop="articleBody">
-            {{
-              partial "PrepareHTML" (
-                partial "H2AddId" .Content
-              )
-            }}
-            {{ partial "PrepareHTML" .Params.text }}
-          </div>
-          {{ partial "posts/prevnext.html" . }}
+          {{ partial "posts/body.html" . }}
+          <p><a href="#">{{ i18n "commons.backtotop" }}</a></p>
         </div>
       </div>
     </section>
