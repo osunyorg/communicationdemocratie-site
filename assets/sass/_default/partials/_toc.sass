@@ -6,3 +6,14 @@
             > a
                 font-size: px2rem(18)
                 line-height: px2rem(24)
+
+                &.active
+                    position: relative
+                    &::before
+                        background-color: black
+                        bottom: 5px
+                        content: ''
+                        left: 0
+                        position: absolute
+                        top: 5px
+                        width: 4px

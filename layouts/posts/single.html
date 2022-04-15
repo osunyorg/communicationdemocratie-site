@@ -52,7 +52,11 @@
 
         <div>
           <div itemprop="articleBody">
-            {{ partial "PrepareHTML" .Content }}
+            {{
+              partial "PrepareHTML" (
+                partial "H2AddId" .Content
+              )
+            }}
             {{ partial "PrepareHTML" .Params.text }}
           </div>
           {{ partial "posts/prevnext.html" . }}

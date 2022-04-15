@@ -2,3 +2,10 @@
 .posts__page
     .breadcrumb-container
         background: $actualite
+    .toc
+        ol
+            > li
+                > a
+                    &.active
+                        &::before
+                            background-color: $actualite
