@@ -12,8 +12,19 @@
         <div class="content">
           <aside>
             {{ partial "commons/share.html" . }}
+            <div>
+              <p>
+                {{- if gt (len .Params.Categories) 1 -}}
+                  {{ i18n "posts.categories" }}
+                {{- else -}}
+                  {{ i18n "posts.category" }}
+                {{- end -}}
+              </p>
+              <div itemprop="articleSection">
+                {{ partial "posts/categories.html" . }}
+              </div>
+            </div>
             <div>Publié le <time datetime="{{ .Date.Format "2006-01-02T15:04" }}">{{ .Date | time.Format ":date_long" }}</time></div>
-            {{ partial "posts/categories.html" . }}
           </aside>
           <div>
             <p class="lead">{{ partial "PrepareHTML" .Params.description_short }}</p>

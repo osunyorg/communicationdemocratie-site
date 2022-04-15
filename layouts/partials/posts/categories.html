@@ -1,16 +1,11 @@
-<div class="post-categories">
-  <p>
-    {{- if gt (len .Params.Categories) 1 -}}
-      {{ i18n "posts.categories" }}
-    {{- else -}}
-      {{ i18n "posts.category" }}
-    {{- end -}}
-  </p>
-  <div itemprop="articleSection">
-    {{- range $index, $s := .GetTerms "categories" -}}
-      <a href="{{ .Permalink }}" class="category-link">
+{{ if .Params.Categories }}
+<ul class="post-categories">
+  {{- range $index, $s := .GetTerms "categories" -}}
+    <li>
+      <a href="{{ .Permalink }}">
         {{- safeHTML .Title -}}
       </a>
-    {{- end }}
-  </div>
-</div>
+    </li>
+  {{- end }}
+</ul>
+{{ end }}
