@@ -5,50 +5,36 @@
     position: relative
     &-title
         margin-bottom: 9px
+    ul
+        list-style: none
+        margin: 0
+        padding: 0
+        @include media-breakpoint-down(md)
+            display: flex
+    li:not(:last-child)
+        @include media-breakpoint-up(md)
+            margin-bottom: 10px
     a
         text-decoration: none
-        &::after
-            display: none
-        .icon
+        vertical-align: middle
+        &:hover
+            opacity: .7
+        &::before
             background: black
             color: white
-            font-size: 15px
-            height: 30px
-            line-height: 30px
-            margin-right: 5px
+            font-size: 20px
+            height: 45px
+            line-height: 45px
+            margin-right: 10px
             text-align: center
-            width: 30px
-        .icon, span
-            display: inline-block
-            vertical-align: middle
-        @include media-breakpoint-up(md)
-            display: block
-            margin-bottom: 10px
-        @include media-breakpoint-down(md)
-            span
-                display: none
-            .icon
-                font-size: 20px
-                height: 45px
-                line-height: 45px
-                margin-right: 10px
-                width: 45px
+            width: 45px
+            @include media-breakpoint-up(md)
+                font-size: 15px
+                height: 30px
+                line-height: 30px
+                margin-right: 5px
+                width: 30px
 
-
-    &::after
-        background:
-            image: url('../images/leaf.png')
-            repeat: no-repeat
-            size: cover
-        content: ''
-        display: block
-        height: 180px
-        position: absolute
-        right: 0
-        top: 10px
-        width: 130px
+    span
         @include media-breakpoint-down(md)
-            height: 160px
-            top: -20px
-            transform: rotate(-75deg)
-            width: 100px
+            display: none
