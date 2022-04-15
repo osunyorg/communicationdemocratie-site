@@ -1,5 +1,7 @@
 <aside>
   {{ partial "commons/share.html" . }}
-  <div>Publié le <time datetime="{{ .Date.Format "2006-01-02T15:04" }}">{{ .Date | time.Format ":date_long" }}</time></div>
+  <div>
+    <p>Publié le <time datetime="{{ .Date.Format "2006-01-02T15:04" }}">{{ .Date | time.Format ":date_long" }}</time></p>
+  </div>
   {{ partial "posts/categories.html" . }}
 </aside>
