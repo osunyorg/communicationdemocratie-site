@@ -1,3 +1,39 @@
+.post
+    time,
+    .post-categories
+        display: inline
+    .post-categories
+        margin-left: px2rem(20)
+    .title
+        font-size: px2rem(22)
+        line-height: px2rem(26)
+    time
+        text-transform: uppercase
+    p
+        margin-top: .5rem
+
+.posts
+    --bs-gutter-y: 3.75rem
+    > *
+        @extend .col-lg-6
+        &:first-child
+            @extend .col-lg-12
+            @include media-breakpoint-up(md)
+                .post
+                    flex-direction: row
+                    > div
+                        padding-top: 0
+                        width: calc(50% - #{$grid-gutter-width} / 2)
+                    .media
+                        margin-right: $grid-gutter-width
+                    .title
+                        font-size: px2rem(30)
+                        line-height: px2rem(36)
+        &:not(:first-child)
+            .media
+                width: 80px
+
+
 .post-categories
     li
         font-weight: 700

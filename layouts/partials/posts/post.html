@@ -1,5 +1,5 @@
 {{- $title := safeHTML (partial "CorrectPunctuation" .Title) -}}
-{{- $description := or .Params.description .Content -}}
+{{- $description := or .Params.description .Params.description_short .Content -}}
 <article class="post">
   <div>
     <h3 class="title"><a href="{{ .Permalink }}">{{ $title }}</a></h3>
