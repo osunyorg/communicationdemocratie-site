@@ -1,40 +1,28 @@
 .share
-    @extend .small
-    margin-bottom: 0
-    overflow: hidden
-    position: relative
-    &-title
-        margin-bottom: 9px
-    ul
-        list-style: none
-        margin: 0
-        padding: 0
-        @include media-breakpoint-down(md)
-            display: flex
-    li:not(:last-child)
-        @include media-breakpoint-up(md)
+    @include media-breakpoint-up(md)
+        display: block
+        li:not(:last-child)
             margin-bottom: 10px
+        span
+            display: inline
+            font-size: px2rem(14)
+
+    li:not(:last-child)
+        margin-right: 10px
+        @include media-breakpoint-up(md)
+            margin-right: 5px
+
     a
-        text-decoration: none
-        vertical-align: middle
-        &:hover
-            opacity: .7
         &::before
             background: black
             color: white
-            font-size: 20px
+            font-size: px2rem(20)
             height: 45px
             line-height: 45px
-            margin-right: 10px
             text-align: center
             width: 45px
             @include media-breakpoint-up(md)
-                font-size: 15px
+                font-size: px2rem(15)
                 height: 30px
                 line-height: 30px
-                margin-right: 5px
                 width: 30px
-
-    span
-        @include media-breakpoint-down(md)
-            display: none
