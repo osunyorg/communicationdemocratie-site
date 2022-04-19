@@ -50,3 +50,17 @@ cookie_banner:
   blank: true
   page: https://gdpr.eu/cookies/
 ```
+
+
+### Bloc pages
+
+-> utiliser les bodyclass
+-> choisir une page principale
+-> short_description en option 
+-> ajouter une page (si vide, toutes les pages enfants)
+  -> image affichée ?
+  -> short_description affichée ?
+
+### Bloc actu
+
+-> Affiche les derniers posts si rien rempli dans le bloc actu
