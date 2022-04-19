@@ -14,13 +14,17 @@
               ) }}
         </div>
       {{ end -}}
+      {{ with .context }}
       <div class="hero__title">
-        {{ if .suptitle }}
-        <p class="h3">{{ safeHTML (partial "CorrectPunctuation" .suptitle) }}</p>
+        {{ if partial "GetTextFromHTML" .Params.header_text }}
+          <p>{{ partial "PrepareHTML" .Title }}</p>
+          <h1>{{ partial "PrepareHTML" .Params.header_text | plainify }}</h1>
+        {{ else }}
+          <h1>{{ partial "PrepareHTML" .Title }}</h1>
         {{ end }}
-        <h1>{{ safeHTML (partial "CorrectPunctuation" .title) }}</h1>
         {{ readFile "static/assets/images/logotype.svg" | safeHTML }}
       </div>
+      {{ end }}
     </div>
   </div>
 </header>

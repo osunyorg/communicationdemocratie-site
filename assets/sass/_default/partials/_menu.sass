@@ -1,0 +1,13 @@
+.menu
+    @extend .menu-expand
+    .nav-level-1
+        > .has-children
+            li
+                position: relative
+                a
+                    @extend .h2
+                    @extend .stretched-link
+                    @include link
+                    font-weight: $headings-font-weight
+                p
+                    @extend .small
