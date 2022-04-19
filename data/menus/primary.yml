@@ -31,4 +31,8 @@
   target: "/agir-et-soutenir/"
   kind: page
   children: []
+- title: Notre mission
+  target: "/l-association/notre-mission/"
+  kind: page
+  children: []
 
