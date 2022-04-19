@@ -27,21 +27,46 @@
                 {{ partial "posts/categories.html" . }}
               </div>
             </div>
-            <div>Publié le <time datetime="{{ .Date.Format "2006-01-02T15:04" }}">{{ .Date | time.Format ":date_long" }}</time></div>
+            <div>
+              <p>{{ i18n "commons.date" }}</p>
+              <time datetime="{{ .Date.Format "2006-01-02T15:04" }}">{{ .Date | time.Format ":date_long" }}</time>
+            </div>
           </aside>
           <div>
-            <p class="lead">{{ partial "PrepareHTML" .Params.description_short }}</p>
+            <p class="lead">{{ partial "PrepareHTML" (replace .Params.description_short "\n" "<br/>") }}</p>
             {{ range .GetTerms "authors" }}
-              <div class="author" itemscope itemtype="https://schema.org/Person" itemprop="author">
-                <a href="{{ .Permalink }}" itemprop="url">
-                  <span itemprop="name">{{ safeHTML .Params.person }}</span>
-                </a>
-              </div>
+              {{ $person := site.GetPage (printf "/persons/%s" .Slug) }}
+              {{ with $person }}
+                <div class="author" itemscope itemtype="https://schema.org/Person" itemprop="author">
+                  {{ if .Params.image }}
+                    {{ partial "commons/image.html"
+                          (dict
+                            "image"    .Params.image
+                            "mobile"   "76x76"
+                            "tablet"   "76x76"
+                            "desktop"  "76x76"
+                            "itemprop" true
+                          )}}
+                  {{ end }}
+                  <div>
+                    <p itemprop="name">{{ safeHTML .Title }}</p>
+                    {{ if .Params.description_short }}
+                      <p itemprop="description">{{ .Params.description_short }}</p>
+                    {{ end }}
+                  </div>
+                </div>
+              {{ end }}
             {{ end }}
           </div>
         </div>
       </div>
     </section>
+
+    {{ if .Params.description_short }}
+      <section class="disclaimer">
+        <p>Sur les pages « Point de vue », le Comité éditorial de Communication et démocratie publie les analyses et opinions de leurs auteurs. Ces contenus alimentent en permanence la réflexion interne de l’association, et l’association considère qu’ils contribuent utilement au débat public sur les enjeux de communication. Ces « point de vue » reflètent les opinions de leurs auteurs et n’engagent pas l’association politiquement.</p>
+      </section>
+    {{ end }}
 
     <section class="container">
       <div class="content">

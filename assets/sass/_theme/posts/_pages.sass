@@ -2,22 +2,26 @@
 .posts__page
     .logotype
         path
-            fill: $actualite
+            fill: $news
     .breadcrumb-container
-        background: $actualite
+        background: $news
     .toc
         ol
             > li
                 > a
                     &.active
                         &::before
-                            background-color: $actualite
-
+                            background-color: $news
+    .page-detail
+        background: $news
 
 .posts__page
     .post-categories
         a::before
             background-color: white
+    .disclaimer
+        @extend .container
+        text-align: center
 
 .posts__section
     .breadcrumb-container
