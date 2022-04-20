@@ -22,6 +22,26 @@
             &::after
                 content: ''
 
+    &-pleas
+        text-align: center
+        .media
+            --bs-aspect-ratio: 100%
+            background-color: transparent
+            margin-bottom: 1rem
+            overflow: visible
+            &::after
+                content: ''
+                background: url("/assets/images/logotype.svg") no-repeat
+                bottom: 0
+                filter: brightness(0) invert(1)
+                height: 52px
+                left: 50%
+                position: absolute
+                transform: translate(-50%, 50%)
+                width: 52px
+            picture
+                border-radius: 50%
+                overflow: hidden
 .pages
     --bs-gutter-y: 1rem
     @extend .row

@@ -1,8 +1,13 @@
 {{ $page := . }}
+{{ $class := "page" }}
 {{ $show_description := true }}
 {{ $show_image := false }}
+{{ if eq $page.Params.bodyclass "pleas" }}
+  {{ $show_image = true }}
+  {{ $class = printf "%s page-pleas" $class }}
+{{ end }}
 {{ with $page }}
-<div class="page">
+<div class="{{ $class }}">
   <div>
     <p class="title">
       <a href="{{ .Permalink }}">
@@ -22,7 +27,7 @@
                 "alt"      .Title
                 "mobile"   "351x291"
                 "tablet"   "334x167"
-                "desktop"  "634x317"
+                "desktop"  "416x416"
               ) -}}
       {{- else -}}
         {{- partial "commons/image-default.html" -}}
