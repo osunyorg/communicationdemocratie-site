@@ -56,7 +56,11 @@ var devPlugins = {},
                     /__home/,
                     /__page/,
                     /__section/,
-                    /__term/
+                    /__term/,
+                    /association/,
+                    /pleas/,
+                    /news/,
+                    /challenges/
                 ]
             }
         }
