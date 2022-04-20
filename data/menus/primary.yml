@@ -34,5 +34,9 @@
 - title: Agir et soutenir
   target: "/agir-et-soutenir/"
   kind: page
-  children: []
+  children:
+  - title: Offrir ses compétences
+    target: "/agir-et-soutenir/offrir-ses-competences/"
+    kind: page
+    children: []
 
