@@ -1,0 +1,29 @@
+.page
+    @extend .card
+    background-color: transparent
+    border: 0
+
+    > div:first-of-type
+        @extend .card-body
+        padding-left: 0
+        padding-right: 0
+
+    .media
+        @extend .card-media
+
+    .title
+        @extend .card-title
+        font-weight: $font-weight-bold
+        margin-bottom: .5rem
+        a
+            @extend .stretched-link
+            font-size: px2rem(22)
+            line-height: px2rem(26)
+            &::after
+                content: ''
+
+.pages
+    --bs-gutter-y: 1rem
+    @extend .row
+    > *
+        @extend .col-md-4
