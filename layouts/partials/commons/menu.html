@@ -32,7 +32,7 @@
         {{- if $hasDropdown }}
           {{/* dropdown-menu class is required for bootstrap js */}}
           {{- $page := partial "GetPageByUrl" .target -}}
-          <div class="dropdown-menu dropdown-{{ $page.Params.bodyclass }}" aria-labelledby="dropdown-{{ $slug }}">
+          <div class="dropdown-menu{{ if $page }} dropdown-{{ $page.Params.bodyclass }}{{ end }}" aria-labelledby="dropdown-{{ $slug }}">
         {{- end -}}
         {{- if gt (len .children) 0 -}}
           {{- $nextLevel := add $level 1 -}}

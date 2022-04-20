@@ -11,6 +11,13 @@
                     font-weight: $headings-font-weight
                 p
                     @extend .small
+
+        @include media-breakpoint-up(lg)
+            & > li
+                & > a,
+                & > span
+                    font-size: px2rem(14)
+                    line-height: px2rem(17)
     > ul
         .dropdown-menu
             border-bottom: 5px solid $primary
@@ -24,3 +31,12 @@
                 border-bottom-color: $news
             &-pleas
                 border-bottom-color: $pleas
+
+        @include media-breakpoint-down(lg)
+            padding-left: calc(#{$grid-gutter-width} / 2)
+            padding-right: calc(#{$grid-gutter-width} / 2)
+            li
+                a,
+                span
+                    padding-left: 0
+                    padding-right: 0
