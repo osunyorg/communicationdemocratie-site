@@ -20,7 +20,7 @@
     kind: page
     children: []
 - title: Publications
-  target: "/actualites/"
+  target: "/publications/"
   kind: page
   children: []
 - title: L’association
