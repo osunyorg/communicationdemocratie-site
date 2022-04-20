@@ -1,0 +1,11 @@
+{{ if . }}
+  <section>
+    <div class="pages">
+      {{ range sort . ".Params.position"  }}
+        <div>
+          {{ partial "pages/page.html" . }}
+        </div>
+      {{ end }}
+    </div>
+  </section>
+{{ end }}
