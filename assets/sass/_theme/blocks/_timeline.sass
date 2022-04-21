@@ -13,14 +13,16 @@
             background: none
             border: none
             cursor: pointer
+            font-size: 20px
             padding: $grid-gutter-width * 0.5
             &:first-child
                 @extend .icon
-                @extend .icon-arrow-left
                 margin-right: $grid-gutter-width * 0.5
+                &::after
+                    @include icon-code( "code-arrow-left")
             &:last-child
-                @extend .icon
-                @extend .icon-arrow-right
+                &::after
+                    @include icon-code( "code-arrow-right")
     .events
         margin-left: -$grid-gutter-width/2
         margin-right: -$grid-gutter-width/2
@@ -52,7 +54,6 @@
                 width: 9px
         &.is-passed
             opacity: 0.15
-
     .pleas &
         background: $pleas
         padding: 40px 0
