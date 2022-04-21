@@ -2,7 +2,11 @@ theme: osuny-hugo-theme
 
 ## LANGUAGE
 defaultContentLanguage: fr
+defaultContentLanguageInSubdir: true
 languageCode: fr
+languages:
+  fr:
+    weight: 1
 
 ## ADVANCED
 paginate: 18
