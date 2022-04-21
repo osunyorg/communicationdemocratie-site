@@ -42,7 +42,15 @@
 - title: Publications
   target: "/fr/publications/"
   kind: page
-  children: []
+  children:
+  - title: Point de vue
+    target: "/fr/publications//supports/point-de-vue/"
+    kind: news_category
+    children:
+    - title: Editorial
+      target: "/fr/publications//supports/point-de-vue/editorial/"
+      kind: news_category
+      children: []
 - title: L’association
   target: "/fr/l-association/"
   kind: page
