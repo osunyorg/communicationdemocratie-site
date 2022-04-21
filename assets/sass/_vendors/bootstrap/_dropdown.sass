@@ -1,4 +1,6 @@
 .dropdown
     &-toggle
-        &:after
-            font-family: 'Icon-site'
+        &::after
+            content: map-get($icons, "code-caret")
+            font-family: $font-icons-code
+            font-size: px2rem(5)
