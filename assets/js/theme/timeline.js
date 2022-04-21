@@ -40,6 +40,14 @@ class BlockTimeline {
     update () {
         this.list.style.marginLeft = `${-this.index * this.itemWidth}px`;
 
+        this.items.forEach((item, index) => {
+            if (index < this.index) {
+                item.classList.add('is-passed');
+            } else {
+                item.classList.remove('is-passed');
+            }
+        });
+
         if (this.previous && this.next) {
             this.previous.disabled = this.index === 0;
             this.next.disabled = this.index === this.items.length - 1;
