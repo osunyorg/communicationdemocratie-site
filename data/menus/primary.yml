@@ -47,6 +47,10 @@
     target: "/fr/l-association/notre-mission/"
     kind: page
     children: []
+  - title: Vision politique
+    target: "/fr/fr/l-association/notre-vision/"
+    kind: page
+    children: []
 - title: Agir et soutenir
   target: "/agir-et-soutenir/"
   kind: page
