@@ -4,3 +4,15 @@
     letter-spacing: 0.1em
     line-height: px2rem(26)
     text-transform: uppercase
+
+@mixin full-width-background-color($color)
+    position: relative
+    &::before
+        background-color: $color
+        bottom: calc(var(--bs-gutter-y)*-1)
+        content: ''
+        left: 50%
+        position: absolute
+        top: calc(var(--bs-gutter-y)*-1)
+        transform: translateX(-50%)
+        width: 100vw

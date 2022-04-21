@@ -52,13 +52,4 @@
         background: $pleas
 
     &.block-pages
-        position: relative
-        &::before
-            background-color: $pleas
-            bottom: calc(var(--bs-gutter-y)*-1)
-            content: ''
-            left: 50%
-            position: absolute
-            top: calc(var(--bs-gutter-y)*-1)
-            transform: translateX(-50%)
-            width: 100vw
+        @include full-width-background-color($pleas)
