@@ -2,9 +2,5 @@
     > .page
         .title
             &::after
-                @include icon
-                content: map-get($icons, "code-caret")
-                font-family: $font-icons-code
-                font-size: 6px
+                @include icon-code("code-arrow-right")
                 margin-left: px2rem(10)
-                transform: rotate(-90deg)
