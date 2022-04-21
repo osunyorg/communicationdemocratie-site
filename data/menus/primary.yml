@@ -43,14 +43,14 @@
   target: "/fr/publications/"
   kind: page
   children:
+  - title: Editorial
+    target: "/fr/publications//supports/point-de-vue/editorial/"
+    kind: news_category
+    children: []
   - title: Point de vue
     target: "/"
     kind: blank
     children:
-    - title: Editorial
-      target: "/fr/publications//supports/point-de-vue/editorial/"
-      kind: news_category
-      children: []
     - title: Analyse
       target: "/fr/publications//supports/point-de-vue/analyse/"
       kind: news_category
