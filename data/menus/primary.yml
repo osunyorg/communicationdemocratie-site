@@ -40,11 +40,11 @@
   kind: page
   children: []
 - title: L’association
-  target: "/l-association/"
+  target: "/fr/l-association/"
   kind: page
   children:
   - title: Notre mission
-    target: "/l-association/notre-mission/"
+    target: "/fr/l-association/notre-mission/"
     kind: page
     children: []
 - title: Agir et soutenir
