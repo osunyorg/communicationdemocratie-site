@@ -45,8 +45,8 @@
           {{- if and (eq $level 2) -}}
             {{- $page := partial "GetPageByUrl" .target -}}
             {{ if $page }}
-              {{- if $page.Params.description_short }}
-                <p>{{ partial "GetTruncateContent" $page.Params.description_short}}</p>
+              {{- if $page.Params.description }}
+                <p>{{ partial "PrepareHTML" $page.Params.description}}</p>
               {{ end -}}
             {{ end }}
           {{- end -}}
