@@ -55,10 +55,6 @@
     target: "/fr/publications//supports/point-de-vue/eclairage/"
     kind: news_category
     children: []
-  - title: Point de vue
-    target: "/"
-    kind: blank
-    children: []
 - title: L’association
   target: "/fr/l-association/"
   kind: page
