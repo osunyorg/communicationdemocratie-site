@@ -4,7 +4,7 @@ class BlockTimeline {
     constructor (block) {
         this.block = block;
         this.content = this.block.querySelector('.timeline');
-        this.list = this.block.querySelector('.events');
+        this.list = this.block.querySelector('.events ul');
         this.items = this.list.querySelectorAll('.event');
         this.previous = this.block.querySelector('.previous');
         this.next = this.block.querySelector('.next');
@@ -21,12 +21,15 @@ class BlockTimeline {
         this.items.forEach((item, i) => {
             item.addEventListener('click', this.goTo.bind(this, i));
         });
-        this.previous.addEventListener('click', () => {
-            this.goTo(this.index-1);
-        });
-        this.next.addEventListener('click', () => {
-            this.goTo(this.index+1);
-        });
+
+        if (this.previous && this.next) {
+            this.previous.addEventListener('click', () => {
+                this.goTo(this.index-1);
+            });
+            this.next.addEventListener('click', () => {
+                this.goTo(this.index+1);
+            });
+        }
     }
 
     goTo (_index) {
@@ -37,8 +40,10 @@ class BlockTimeline {
     update () {
         this.list.style.marginLeft = `${-this.index * this.itemWidth}px`;
 
-        this.previous.disabled = this.index === 0;
-        this.next.disabled = this.index === this.items.length - 1;
+        if (this.previous && this.next) {
+            this.previous.disabled = this.index === 0;
+            this.next.disabled = this.index === this.items.length - 1;
+        }
     }
 
     resize () {
@@ -47,17 +52,21 @@ class BlockTimeline {
         let contentWidth = 0;
 
         this.block.style = '';
-        contentWidth = this.content.offsetWidth;
+        this.content.style = '';
 
+        contentWidth = this.content.offsetWidth;
         this.itemWidth = this.items[0].offsetWidth;
 
-        this.content.style.width = `${contentWidth}px`;
-        this.content.style.maxWidth = `${contentWidth}px`;
-        this.content.style.marginLeft = `${offset.left}px`;
+        this.setStyle(this.content, contentWidth, offset.left);
+        this.setStyle(this.block, width, -offset.left);
 
-        this.block.style.width = `${width}px`;
-        this.block.style.maxWidth = `${width}px`;
-        this.block.style.marginLeft = `${-offset.left}px`;
+        this.update();
+    }
+
+    setStyle (element, width, marginLeft) {
+        element.style.width = `${width}px`;
+        element.style.maxWidth = `${width}px`;
+        element.style.marginLeft = `${marginLeft}px`;
     }
 
     getAbsoluteOffset (_element) {
