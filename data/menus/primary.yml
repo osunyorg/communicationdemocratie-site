@@ -3,7 +3,7 @@
   target: "/enjeux/"
   kind: page
   children:
-  - title: Communication & Consommation
+  - title: Communication commerciale
     target: "/enjeux/communication-consommation/"
     kind: page
     children: []
