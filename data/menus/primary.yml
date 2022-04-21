@@ -43,6 +43,10 @@
   target: "/fr/publications/"
   kind: page
   children:
+  - title: Toutes les actualités
+    target: "/fr/publications/"
+    kind: news
+    children: []
   - title: Editorial
     target: "/fr/publications//supports/point-de-vue/editorial/"
     kind: news_category
@@ -83,8 +87,4 @@
     target: "/fr/agir-et-soutenir/offrir-ses-competences/"
     kind: page
     children: []
-- title: Toutes les actualités
-  target: "/fr/publications/"
-  kind: news
-  children: []
 
