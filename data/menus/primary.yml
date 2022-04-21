@@ -55,6 +55,10 @@
     target: "/fr/fr/l-association/organes-et-fonctionnement/"
     kind: page
     children: []
+  - title: A l'origine de l'association
+    target: "/fr/fr/l-association/a-lorigine-de-lassociation/"
+    kind: page
+    children: []
 - title: Agir et soutenir
   target: "/agir-et-soutenir/"
   kind: page
