@@ -75,4 +75,8 @@
     target: "/fr/agir-et-soutenir/offrir-ses-competences/"
     kind: page
     children: []
+- title: Point de vue
+  target: "/fr/publications//supports/point-de-vue/"
+  kind: news_category
+  children: []
 
