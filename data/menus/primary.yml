@@ -47,4 +47,8 @@
     target: "/agir-et-soutenir/offrir-ses-competences/"
     kind: page
     children: []
+- title: Pub&Numérique
+  target: "/enjeux/pubnumerique/"
+  kind: page
+  children: []
 
