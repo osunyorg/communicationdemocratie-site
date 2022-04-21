@@ -39,4 +39,8 @@
     target: "/agir-et-soutenir/offrir-ses-competences/"
     kind: page
     children: []
+- title: Influence politique
+  target: "/influence-politique/"
+  kind: page
+  children: []
 
