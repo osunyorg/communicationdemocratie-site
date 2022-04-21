@@ -19,6 +19,14 @@
     target: "/enjeux/mediasannonceurs/"
     kind: page
     children: []
+  - title: Pub&Numérique
+    target: "/enjeux/pubnumerique/"
+    kind: page
+    children: []
+- title: DiscoursONG
+  target: "/enjeux/discours-des-ong/"
+  kind: page
+  children: []
 - title: Plaidoyers
   target: "/plaidoyers/"
   kind: page
@@ -47,12 +55,4 @@
     target: "/agir-et-soutenir/offrir-ses-competences/"
     kind: page
     children: []
-- title: Pub&Numérique
-  target: "/enjeux/pubnumerique/"
-  kind: page
-  children: []
-- title: DiscoursONG
-  target: "/enjeux/discours-des-ong/"
-  kind: page
-  children: []
 
