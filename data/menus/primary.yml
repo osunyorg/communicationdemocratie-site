@@ -3,12 +3,20 @@
   target: "/enjeux/"
   kind: page
   children:
-  - title: Communication & Consommation
+  - title: Communication commerciale
     target: "/enjeux/communication-consommation/"
     kind: page
     children: []
   - title: Communication et RSE
     target: "/enjeux/communication-et-rse/"
+    kind: page
+    children: []
+  - title: Influence politique
+    target: "/enjeux/influence-politique/"
+    kind: page
+    children: []
+  - title: Médias&Annonceurs
+    target: "/enjeux/mediasannonceurs/"
     kind: page
     children: []
 - title: Plaidoyers
@@ -39,4 +47,12 @@
     target: "/agir-et-soutenir/offrir-ses-competences/"
     kind: page
     children: []
+- title: Pub&Numérique
+  target: "/enjeux/pubnumerique/"
+  kind: page
+  children: []
+- title: DiscoursONG
+  target: "/enjeux/discours-des-ong/"
+  kind: page
+  children: []
 
