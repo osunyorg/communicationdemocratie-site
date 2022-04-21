@@ -9,19 +9,21 @@
         <h3>{{ partial "PrepareHTML" .description }}</h3>
       {{ end }}
       <div class="events">
-        {{ range .events }}
-          <div class="event">
-            <p><strong>{{- partial "PrepareHTML" .title -}}</strong></p>
-            <hr>
-            <p>{{- partial "PrepareHTML" .text -}}</p>
+        <ul>
+          {{ range .events }}
+            <li class="event">
+              <p><strong>{{- partial "PrepareHTML" .title -}}</strong></p>
+              <hr>
+              <p>{{- partial "PrepareHTML" .text -}}</p>
+            </li>
+          {{ end }}
+        </ul>
+        {{ if  (gt (len .events) 0) }}
+          <div class="timeline-arrows">
+            <button class="previous" disabled aria-label="Aller à l'événement précédent"></button>
+            <button class="next" aria-label="Aller à l'événement suivant"></button>
           </div>
         {{ end }}
-      </div>
-    {{ end }}
-    {{ if  (gt (len .data.events) 0) }}
-      <div class="timeline-arrows">
-        <button class="previous" disabled aria-label="Aller à l'événement précédent"></button>
-        <button class="next" aria-label="Aller à l'événement suivant"></button>
       </div>
     {{ end }}
   </div>
