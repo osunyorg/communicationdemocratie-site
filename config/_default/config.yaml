@@ -9,8 +9,6 @@ languages:
     weight: 2
   fr:
     weight: 1
-disableLanguages:
-- en
 
 ## ADVANCED
 paginate: 18
