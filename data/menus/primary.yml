@@ -83,4 +83,8 @@
     target: "/fr/agir-et-soutenir/offrir-ses-competences/"
     kind: page
     children: []
+- title: Toutes les actualités
+  target: "/fr/publications/"
+  kind: news
+  children: []
 
