@@ -5,6 +5,8 @@ defaultContentLanguage: fr
 defaultContentLanguageInSubdir: true
 languageCode: fr
 languages:
+  en:
+    weight: 2
   fr:
     weight: 1
 
