@@ -1,0 +1,13 @@
+.block-posts
+    .posts
+        > div
+            &:not(:first-child)
+                @include media-breakpoint-up(md)
+                    .post
+                        flex-direction: row-reverse
+                        > div:first-of-type
+                            padding-top: 0
+                        .media
+                            align-self: flex-start
+                            flex-shrink: 0
+                            width: 80px
