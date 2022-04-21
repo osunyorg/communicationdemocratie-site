@@ -51,6 +51,10 @@
     target: "/fr/fr/l-association/notre-vision/"
     kind: page
     children: []
+  - title: Organes et fonctionnement
+    target: "/fr/fr/l-association/organes-et-fonctionnement/"
+    kind: page
+    children: []
 - title: Agir et soutenir
   target: "/agir-et-soutenir/"
   kind: page
