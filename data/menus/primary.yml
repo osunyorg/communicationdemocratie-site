@@ -11,6 +11,10 @@
     target: "/enjeux/communication-et-rse/"
     kind: page
     children: []
+- title: Influence politique
+  target: "/enjeux/influence-politique/"
+  kind: page
+  children: []
 - title: Plaidoyers
   target: "/plaidoyers/"
   kind: page
@@ -39,8 +43,4 @@
     target: "/agir-et-soutenir/offrir-ses-competences/"
     kind: page
     children: []
-- title: Influence politique
-  target: "/enjeux/influence-politique/"
-  kind: page
-  children: []
 
