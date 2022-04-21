@@ -23,10 +23,10 @@
     target: "/enjeux/pubnumerique/"
     kind: page
     children: []
-- title: DiscoursONG
-  target: "/enjeux/discours-des-ong/"
-  kind: page
-  children: []
+  - title: DiscoursONG
+    target: "/enjeux/discours-des-ong/"
+    kind: page
+    children: []
 - title: Plaidoyers
   target: "/plaidoyers/"
   kind: page
