@@ -14,8 +14,8 @@
         {{ partial "PrepareHTML" .Title }}
       </a>
     </p>
-    {{ if and .Params.description_short $show_description }}
-      <p>{{- partial "GetTruncateContent" .Params.description_short -}}</p>
+    {{ if and .Params.description $show_description }}
+      <p>{{- partial "PrepareHTML" .Params.description -}}</p>
     {{ end }}
   </div>
   {{ if $show_image }}
