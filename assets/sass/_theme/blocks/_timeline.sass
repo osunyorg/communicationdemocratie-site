@@ -25,6 +25,22 @@
                 position: relative
                 top: -4px
                 width: 9px
+    .timeline-arrows
+        display: flex
+        > button
+            -webkit-appearance: button
+            background: none
+            border: none
+            cursor: pointer
+            padding: 20px
+            &:first-child
+                @extend .icon
+                @extend .icon-arrow-left
+                margin-left: -20px
+                margin-right: 10px
+            &:last-child
+                @extend .icon
+                @extend .icon-arrow-right
     .pleas &
         background: $pleas
         padding: 40px 0
