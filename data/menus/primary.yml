@@ -15,6 +15,10 @@
     target: "/enjeux/influence-politique/"
     kind: page
     children: []
+  - title: Médias&Annonceurs
+    target: "/enjeux/mediasannonceurs/"
+    kind: page
+    children: []
 - title: Plaidoyers
   target: "/plaidoyers/"
   kind: page
@@ -43,8 +47,4 @@
     target: "/agir-et-soutenir/offrir-ses-competences/"
     kind: page
     children: []
-- title: Médias&Annonceurs
-  target: "/enjeux/mediasannonceurs/"
-  kind: page
-  children: []
 
