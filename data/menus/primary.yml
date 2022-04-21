@@ -43,4 +43,8 @@
     target: "/agir-et-soutenir/offrir-ses-competences/"
     kind: page
     children: []
+- title: Médias&Annonceurs
+  target: "/enjeux/mediasannonceurs/"
+  kind: page
+  children: []
 
