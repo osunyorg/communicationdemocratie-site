@@ -42,7 +42,11 @@
 - title: Publications
   target: "/fr/publications/"
   kind: page
-  children: []
+  children:
+  - title: Editorial
+    target: "/fr/publications//supports/point-de-vue/editorial/"
+    kind: news_category
+    children: []
 - title: L’association
   target: "/fr/l-association/"
   kind: page
@@ -71,4 +75,8 @@
     target: "/fr/agir-et-soutenir/offrir-ses-competences/"
     kind: page
     children: []
+- title: Editorial
+  target: "/fr/publications//supports/point-de-vue/editorial/"
+  kind: news_category
+  children: []
 
