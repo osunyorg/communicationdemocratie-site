@@ -1,0 +1,21 @@
+.block-call_to_action
+    .call_to_action
+        margin-bottom: calc(#{$btn-padding-y} * 2)
+        padding-bottom: calc(#{$btn-padding-y} * 4)
+        position: relative
+        div + div,
+        & > a
+            bottom: 0
+            left: 50%
+            position: absolute
+            transform: translate(-50%, 50%)
+
+        .pleas &
+            border-color: $pleas
+            div + div,
+            & >
+                a
+                    &:first-of-type
+                        @extend .btn-pleas
+                    &:nth-of-type(2)
+                        @extend .btn-outline-pleas
