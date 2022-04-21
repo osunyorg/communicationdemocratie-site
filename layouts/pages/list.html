@@ -9,7 +9,7 @@
     <div class="container">
 
     {{ $getLevel := .Params.url | strings.Count "/" }}
-    {{ if gt $getLevel 2 }}
+    {{ if gt $getLevel 3 }}
       <div class="content">
         {{ partial "pages/aside.html"
             (dict
