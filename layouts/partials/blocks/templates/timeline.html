@@ -18,5 +18,11 @@
         {{ end }}
       </div>
     {{ end }}
+    {{ if  (gt (len .data.events) 0) }}
+      <div class="timeline-arrows">
+        <button class="previous" disabled aria-label="Aller à l'événement précédent"></button>
+        <button class="next" aria-label="Aller à l'événement suivant"></button>
+      </div>
+    {{ end }}
   </div>
 </section>

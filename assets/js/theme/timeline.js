@@ -6,20 +6,39 @@ class BlockTimeline {
         this.content = this.block.querySelector('.timeline');
         this.list = this.block.querySelector('.events');
         this.items = this.list.querySelectorAll('.event');
+        this.previous = this.block.querySelector('.previous');
+        this.next = this.block.querySelector('.next');
+
+        this.index = 0;
+
         this.listen();
         this.resize();
-        this.moveTo(0);
+        this.goTo(0);
     }
 
     listen () {
         window.addEventListener('resize', this.resize.bind(this));
         this.items.forEach((item, i) => {
-            item.addEventListener('click', this.moveTo.bind(this, i));
+            item.addEventListener('click', this.goTo.bind(this, i));
+        });
+        this.previous.addEventListener('click', () => {
+            this.goTo(this.index-1);
+        });
+        this.next.addEventListener('click', () => {
+            this.goTo(this.index+1);
         });
     }
 
-    moveTo (index) {
-        this.list.style.marginLeft = `${-index * this.itemWidth}px`;
+    goTo (_index) {
+        this.index = Math.min(Math.max(_index, 0), this.items.length-1);
+        this.update();
+    }
+
+    update () {
+        this.list.style.marginLeft = `${-this.index * this.itemWidth}px`;
+
+        this.previous.disabled = this.index === 0;
+        this.next.disabled = this.index === this.items.length - 1;
     }
 
     resize () {
