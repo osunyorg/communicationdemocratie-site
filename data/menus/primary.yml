@@ -44,8 +44,8 @@
   kind: page
   children:
   - title: Point de vue
-    target: "/fr/publications//supports/point-de-vue/"
-    kind: news_category
+    target: "/"
+    kind: blank
     children:
     - title: Editorial
       target: "/fr/publications//supports/point-de-vue/editorial/"
