@@ -79,4 +79,8 @@
     target: "/fr/agir-et-soutenir/offrir-ses-competences/"
     kind: page
     children: []
+- title: Analyse
+  target: "/fr/publications//supports/point-de-vue/analyse/"
+  kind: news_category
+  children: []
 
