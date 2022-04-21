@@ -1,42 +1,42 @@
 ---
 - title: Enjeux
-  target: "/enjeux/"
+  target: "/fr/enjeux/"
   kind: page
   children:
   - title: Communication commerciale
-    target: "/enjeux/communication-consommation/"
+    target: "/fr/enjeux/communication-consommation/"
     kind: page
     children: []
   - title: Communication et RSE
-    target: "/enjeux/communication-et-rse/"
+    target: "/fr/enjeux/communication-et-rse/"
     kind: page
     children: []
   - title: Influence politique
-    target: "/enjeux/influence-politique/"
+    target: "/fr/enjeux/influence-politique/"
     kind: page
     children: []
   - title: Médias&Annonceurs
-    target: "/enjeux/mediasannonceurs/"
+    target: "/fr/enjeux/mediasannonceurs/"
     kind: page
     children: []
   - title: Pub&Numérique
-    target: "/enjeux/pubnumerique/"
+    target: "/fr/enjeux/pubnumerique/"
     kind: page
     children: []
   - title: DiscoursONG
-    target: "/enjeux/discours-des-ong/"
+    target: "/fr/enjeux/discours-des-ong/"
     kind: page
     children: []
 - title: Plaidoyers
-  target: "/plaidoyers/"
+  target: "/fr/plaidoyers/"
   kind: page
   children:
   - title: Campagne pour une Loi Evin du Climat européenne
-    target: "/plaidoyers/campagne-pour-une-loi-evin-du-climat-europeenne/"
+    target: "/fr/plaidoyers/campagne-pour-une-loi-evin-du-climat-europeenne/"
     kind: page
     children: []
 - title: Publications
-  target: "/publications/"
+  target: "/fr/publications/"
   kind: page
   children: []
 - title: L’association
@@ -48,23 +48,23 @@
     kind: page
     children: []
   - title: Vision politique
-    target: "/fr/fr/l-association/notre-vision/"
+    target: "/fr/l-association/notre-vision/"
     kind: page
     children: []
   - title: Organes et fonctionnement
-    target: "/fr/fr/l-association/organes-et-fonctionnement/"
+    target: "/fr/l-association/organes-et-fonctionnement/"
     kind: page
     children: []
   - title: A l'origine de l'association
-    target: "/fr/fr/l-association/a-lorigine-de-lassociation/"
+    target: "/fr/l-association/a-lorigine-de-lassociation/"
     kind: page
     children: []
 - title: Agir et soutenir
-  target: "/agir-et-soutenir/"
+  target: "/fr/agir-et-soutenir/"
   kind: page
   children:
   - title: Offrir ses compétences
-    target: "/agir-et-soutenir/offrir-ses-competences/"
+    target: "/fr/agir-et-soutenir/offrir-ses-competences/"
     kind: page
     children: []
 
