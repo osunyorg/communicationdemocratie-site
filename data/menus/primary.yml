@@ -51,10 +51,6 @@
     target: "/fr/publications/supports/point-de-vue/"
     kind: news_category
     children: []
-  - title: Analyse
-    target: "/fr/publications/supports/point-de-vue/analyse/"
-    kind: news_category
-    children: []
   - title: Éclairage
     target: "/fr/publications/supports/point-de-vue/eclairage/"
     kind: news_category
