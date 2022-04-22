@@ -14,6 +14,7 @@
     .author
         display: flex
         margin-top: map-get($spacers, 4)
+        position: relative
         picture
             flex-shrink: 0
             margin-right: $spacer
@@ -23,5 +24,7 @@
         [itemprop="name"]
             font-weight: $font-weight-bold
             margin-bottom: 0
+        a
+            @extend .stretched-link
         p + p
             @extend .small
