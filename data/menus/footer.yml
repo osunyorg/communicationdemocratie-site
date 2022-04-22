@@ -1,2 +1,6 @@
---- []
+---
+- title: Enjeux
+  target: "/fr/enjeux/"
+  kind: page
+  children: []
 
