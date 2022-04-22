@@ -4,3 +4,17 @@ header[role=banner]
             height: 26px
             @include media-breakpoint-up(md)
                 height: 44px
+
+    nav[role="navigation"]
+        button[type="button"]
+            span:last-of-type
+                height: auto
+                &::before
+                    @include icon-code("code-logo")
+                    color: $pleas
+                    font-size: 26px !important
+
+            &[aria-expanded="true"]
+                span:last-of-type
+                    &::before
+                        @include icon-code("code-close")
