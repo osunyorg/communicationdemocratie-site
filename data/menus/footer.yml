@@ -51,4 +51,8 @@
   target: "/fr/plaidoyers/"
   kind: page
   children: []
+- title: Agir et soutenir
+  target: "/fr/agir-et-soutenir/"
+  kind: page
+  children: []
 
