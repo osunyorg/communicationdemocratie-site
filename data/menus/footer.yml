@@ -35,4 +35,8 @@
     target: "/fr/l-association/notre-vision/"
     kind: page
     children: []
+  - title: Notre mission
+    target: "/fr/l-association/notre-mission/"
+    kind: page
+    children: []
 
