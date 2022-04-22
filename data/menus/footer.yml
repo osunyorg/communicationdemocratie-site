@@ -11,4 +11,8 @@
     target: "/fr/enjeux/communication-et-rse/"
     kind: page
     children: []
+  - title: Influence politique
+    target: "/fr/enjeux/influence-politique/"
+    kind: page
+    children: []
 
