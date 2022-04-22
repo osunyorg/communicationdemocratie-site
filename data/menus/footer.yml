@@ -2,5 +2,9 @@
 - title: Enjeux
   target: "/fr/enjeux/"
   kind: page
-  children: []
+  children:
+  - title: Communication commerciale
+    target: "/fr/enjeux/communication-consommation/"
+    kind: page
+    children: []
 
