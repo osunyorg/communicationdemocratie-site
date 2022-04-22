@@ -15,4 +15,8 @@
     target: "/fr/enjeux/influence-politique/"
     kind: page
     children: []
+  - title: Médias&Annonceurs
+    target: "/fr/enjeux/mediasannonceurs/"
+    kind: page
+    children: []
 
