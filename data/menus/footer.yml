@@ -27,4 +27,8 @@
     target: "/fr/enjeux/discours-des-ong/"
     kind: page
     children: []
+- title: L’association
+  target: "/fr/l-association/"
+  kind: page
+  children: []
 
