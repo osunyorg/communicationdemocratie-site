@@ -47,8 +47,8 @@
     target: "/fr/publications/"
     kind: news
     children: []
-  - title: Editorial
-    target: "/fr/publications/supports/point-de-vue/editorial/"
+  - title: Point de vue
+    target: "/fr/publications/supports/point-de-vue/"
     kind: news_category
     children: []
   - title: Analyse
