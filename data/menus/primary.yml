@@ -40,15 +40,15 @@
     kind: page
     children: []
 - title: Publications
-  target: "/fr/publications/supports/actualites/"
+  target: "/fr/publications/actualites/"
   kind: news_category
   children:
   - title: Toutes les actualités
-    target: "/fr/publications/supports/actualites/"
+    target: "/fr/publications/actualites/"
     kind: news_category
     children: []
   - title: Point de vue
-    target: "/fr/publications/supports/point-de-vue/"
+    target: "/fr/publications/point-de-vue/"
     kind: news_category
     children: []
 - title: L’association
