@@ -22,3 +22,15 @@
     content: map-get($icons-code, $icon)
     font-family: $font-icons-code
     font-size: 12px
+
+@mixin code-menu-color($color)
+    @include media-breakpoint-down(lg)
+        border-bottom-color: $color !important
+    a
+        text-decoration-color: $color
+        &::after
+            color: $color
+    .dropdown-menu
+        border-bottom-color: $color
+    .nav-level-2 > li > a
+        text-decoration-color: rgba($color, 1) !important
