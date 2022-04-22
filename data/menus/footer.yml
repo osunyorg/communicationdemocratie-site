@@ -55,4 +55,8 @@
   target: "/fr/agir-et-soutenir/"
   kind: page
   children: []
+- title: Publications
+  target: "/fr/publications/"
+  kind: page
+  children: []
 
