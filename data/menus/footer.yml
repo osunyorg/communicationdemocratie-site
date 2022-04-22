@@ -47,4 +47,8 @@
     target: "/fr/l-association/a-lorigine-de-lassociation/"
     kind: page
     children: []
+- title: Plaidoyers
+  target: "/fr/plaidoyers/"
+  kind: page
+  children: []
 
