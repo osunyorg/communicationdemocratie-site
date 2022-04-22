@@ -25,7 +25,8 @@
     {{- $page := partial "GetPageByUrl" .target -}}
     {{- if $page -}}
       {{- if $page.Params.bodyclass -}}
-        {{- $itemClass = printf "%s item-%s" $itemClass $page.Params.bodyclass -}}
+        {{- $pageClass := partial "GetBodyclass" $page.Params.bodyclass }}
+        {{- $itemClass = printf "%s item-%s" $itemClass $pageClass -}}
       {{- end -}}
     {{- end -}}
     <li{{ if ne $itemClass ""}} class="{{ $itemClass }}"{{ end }}>
@@ -37,8 +38,7 @@
       {{- if ne $stop $level -}}
         {{- if $hasDropdown }}
           {{/* dropdown-menu class is required for bootstrap js */}}
-          {{- $page := partial "GetPageByUrl" .target -}}
-          <div class="dropdown-menu{{ if $page }} dropdown-{{ $page.Params.bodyclass }}{{ end }}" aria-labelledby="dropdown-{{ $slug }}">
+          <div class="dropdown-menu" aria-labelledby="dropdown-{{ $slug }}">
         {{- end -}}
         {{- if gt (len .children) 0 -}}
           {{- $nextLevel := add $level 1 -}}
