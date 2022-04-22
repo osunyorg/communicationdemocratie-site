@@ -1,21 +1,20 @@
 <div class="content">
   <div>
-    {{ partial "footer/logo.html" }}
-  </div>
-  <div>
-    {{ partial "footer/site.html" }}
-  </div>
-  <div>
     {{ if site.Data.menus.primary }}
       <nav role="navigation" aria-label="{{ i18n "commons.menu.main" }}">
         {{ partial "commons/menu.html"
               (dict
-                "items"       site.Data.menus.primary
+                "items"       site.Data.menus.footer
                 "level"       1
-                "stop"        1
+                "stop"        2
+                "hideDescription" true
               )}}
       </nav>
     {{ end }}
+  </div>
+  <div>
+    {{ partial "footer/logo.html" }}
+    {{ partial "footer/site.html" }}
   </div>
 </div>
 

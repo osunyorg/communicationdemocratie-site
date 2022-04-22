@@ -1,15 +1,43 @@
 footer[role="contentinfo"]
     background: $primary
     color: white
+    .content
+        justify-content: space-between
+        > div
+            @include media-breakpoint-up(md)
+                &:first-child
+                    @include make-col(6)
+                &:nth-child(2)
+                    @include make-col(4)
     a
         color: white
         text-decoration-color: rgba(white, 0.3)
         &:hover
             text-decoration-color: rgba(white, 1)
-    .nav-level-1
-        a, span
-            color: white
-            text-decoration-color: rgba(white, 0.3)
-            &:hover
+    nav[role="navigation"]
+        .nav-level-1
+            display: flex
+            flex-direction: row
+            > li
+                padding-bottom: 20px
+                padding-left: 1rem
+                width: 50%
+                &:nth-child(odd)
+                    order: 1
+                &:nth-child(even)
+                    order: 2
+                > a, > span
+                    border-top: 1px solid $white
+                    display: block
+                    font-size: px2rem(18)
+                    padding-top: 20px
+            a, span
                 color: white
-                text-decoration-color: rgba(white, 1)
+                padding-left: 0
+                text-decoration-color: rgba(white, 0)
+                &:hover
+                    color: white
+                    text-decoration-color: rgba(white, 1)
+        .nav-level-2
+            p
+                display: none
