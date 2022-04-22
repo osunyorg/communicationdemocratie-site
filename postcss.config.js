@@ -59,7 +59,7 @@ var devPlugins = {},
                     /__term/,
                     /association/,
                     /pleas/,
-                    /news/,
+                    /posts/,
                     /challenges/
                 ]
             }

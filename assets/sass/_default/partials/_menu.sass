@@ -27,16 +27,41 @@
                 border-bottom-color: $association
             &-challenges
                 border-bottom-color: $challenges
-            &-news
-                border-bottom-color: $news
+            &-posts
+                border-bottom-color: $posts
             &-pleas
                 border-bottom-color: $pleas
 
         @include media-breakpoint-down(lg)
             padding-left: calc(#{$grid-gutter-width} / 2)
             padding-right: calc(#{$grid-gutter-width} / 2)
+            .dropdown-menu
+                border-left-width: 0
+                border-right-width: 0
+                border-top-width: 0
+            // Shame : a lot of important to avoid enormous queries to target elements...
             li
-                a,
-                span
-                    padding-left: 0
-                    padding-right: 0
+                a, span
+                    padding: 15px 0 !important
+                    text-decoration: none !important
+                > p
+                    display: none
+            > li
+                border-bottom: 1px solid $primary
+                position: relative
+                a, span
+                    font-size: px2rem(22) !important
+                &.item
+                    &-association
+                        border-bottom-color: $association !important
+                    &-challenges
+                        border-bottom-color: $challenges !important
+                    &-posts
+                        border-bottom-color: $posts !important
+                    &-pleas
+                        border-bottom-color: $pleas !important
+                
+            .nav-level-2
+                li
+                    a, span
+                        font-size: px2rem(18) !important

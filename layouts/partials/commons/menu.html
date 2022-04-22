@@ -22,6 +22,12 @@
     {{- if and (hasPrefix .target "http") (eq .kind "url") -}}
       {{- $attr = " target=\"_blank\" rel=\"noreferrer\"" -}}
     {{- end -}}
+    {{- $page := partial "GetPageByUrl" .target -}}
+    {{- if $page -}}
+      {{- if $page.Params.bodyclass -}}
+        {{- $itemClass = printf "%s item-%s" $itemClass $page.Params.bodyclass -}}
+      {{- end -}}
+    {{- end -}}
     <li{{ if ne $itemClass ""}} class="{{ $itemClass }}"{{ end }}>
       {{- if ne .kind "blank" -}}
         <a href="{{ .target }}"{{ if ne $linkClass ""}} class="{{ $linkClass }}"{{ end }} {{ safeHTMLAttr $attr }}>{{ .title }}</a>
