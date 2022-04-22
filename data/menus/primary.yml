@@ -44,8 +44,8 @@
   kind: news_category
   children:
   - title: Toutes les actualités
-    target: "/fr/publications/"
-    kind: news
+    target: "/fr/publications/supports/actualites/"
+    kind: news_category
     children: []
   - title: Point de vue
     target: "/fr/publications/supports/point-de-vue/"
