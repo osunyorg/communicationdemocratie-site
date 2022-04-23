@@ -14,16 +14,21 @@ description_short: >
 header_text: >
   <p>Encadrer les communication des grandes entreprises, soutenir celle des ONG<br></p>
 blocks:
-  - template: posts
+  - template: pages
     title: >
-      Actualités
+      Plaidoyers
     position: 1
     data:
-      category: actualites
-      posts:
-        - decret-neutralite-carbone-de-la-transparence-mais-pas-de-regulation-contre-le-greenwashing
-        - dans-la-rue-le-12-mars-pour-un-sursaut-ecologique-et-social
-        - contre-le-greenwashing-la-commission-europeenne-propose-detendre-les-cas-de-pratiques-commerciales-trompeuse
+      page: /fr/plaidoyers/
+      show_description: false
+      show_image: false
+      pages:
+        - slug: /fr/plaidoyers/campagne-pour-une-loi-evin-du-climat-europeenne/
+          show_description: true
+          show_image: true
+        - slug: /fr/plaidoyers/lutte-contre-le-greenwashing-au-niveau-europeen/
+          show_description: true
+          show_image: true
   - template: pages
     title: >
       L’association
@@ -45,10 +50,20 @@ blocks:
         - slug: /fr/l-association/a-lorigine-de-lassociation/
           show_description: true
           show_image: false
+  - template: posts
+    title: >
+      Actualités
+    position: 3
+    data:
+      category: actualites
+      posts:
+        - decret-neutralite-carbone-de-la-transparence-mais-pas-de-regulation-contre-le-greenwashing
+        - dans-la-rue-le-12-mars-pour-un-sursaut-ecologique-et-social
+        - contre-le-greenwashing-la-commission-europeenne-propose-detendre-les-cas-de-pratiques-commerciales-trompeuse
   - template: pages
     title: >
       Enjeux
-    position: 3
+    position: 4
     data:
       page: /fr/enjeux/
       show_description: false
@@ -75,36 +90,12 @@ blocks:
   - template: posts
     title: >
       Points de vue
-    position: 4
+    position: 5
     data:
       category: point-de-vue
       posts:
         - dans-la-rue-le-12-mars-pour-un-sursaut-ecologique-et-social
         - outlook-for-consumption-environment-in-europe
-  - template: pages
-    title: >
-      Agir et soutenir
-    position: 5
-    data:
-      page: /fr/agir-et-soutenir/
-      show_description: false
-      show_image: false
-      pages:
-  - template: pages
-    title: >
-      Plaidoyers
-    position: 6
-    data:
-      page: /fr/plaidoyers/
-      show_description: false
-      show_image: false
-      pages:
-        - slug: /fr/plaidoyers/campagne-pour-une-loi-evin-du-climat-europeenne/
-          show_description: true
-          show_image: true
-        - slug: /fr/plaidoyers/lutte-contre-le-greenwashing-au-niveau-europeen/
-          show_description: true
-          show_image: true
 
 
 ---
