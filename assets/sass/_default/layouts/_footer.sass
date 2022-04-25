@@ -14,21 +14,30 @@ footer[role="contentinfo"]
         text-decoration-color: rgba(white, 0.3)
         &:hover
             text-decoration-color: rgba(white, 1)
+    span
+        color: white
     .logo
-        text-align: right
+        @include media-breakpoint-up(md)
+            text-align: right
+    .nav-level-1
+        a, span
+            color: white
     nav[role="navigation"]
         .nav-level-1
-            display: flex
-            flex-direction: row
-            > li
-                padding-bottom: 20px
-                padding-left: 1rem
-                width: 50%
-                > a, > span
-                    border-top: 1px solid $white
-                    display: block
-                    font-size: px2rem(18)
-                    padding-top: 20px
+            margin-left: auto
+            @include media-breakpoint-up(lg)
+                @include make-row()
+                flex-direction: row
+                > li
+                    @include make-col-ready()
+                    @include make-col(6)
+                    padding-bottom: 20px
+                    > a, > span
+                        border-top: 1px solid $white
+                        padding-top: 20px
+            > li > a, > span
+                display: block
+                font-size: px2rem(18)
             a, span
                 color: white
                 padding-left: 0
@@ -36,6 +45,13 @@ footer[role="contentinfo"]
                 &:hover
                     color: white
                     text-decoration-color: rgba(white, 1)
+
         .nav-level-2
+            @include media-breakpoint-down(lg)
+                display: none
             p
                 display: none
+
+    .complementary
+        display: block
+        text-align: right
