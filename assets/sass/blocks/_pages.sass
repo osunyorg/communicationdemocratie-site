@@ -1,14 +1,16 @@
 .block-pages
-    .page
-        > .title
-            text-align: left
-        .title
-            &::after
-                @include icon-code("code-arrow-right")
-                margin-left: px2rem(10)
+    .main-page .title 
+        text-align: left
+        a
+            @include suptitle
+    .title
+        &::after
+            @include icon-code("code-arrow-right")
+            margin-left: px2rem(10)
 
     &.page-pleas
         @include full-width-background-color($pleas)
+
     &.page-association
         .page
             .title
@@ -30,3 +32,44 @@
                     text-decoration-color: rgba($publications, 1) !important
                 &::after
                     color: $publications
+
+// Specific to block-page for pleas inside single page
+body.pages__section
+    .block-pages.page-pleas
+        background: $pleas
+        padding: var(--bs-gutter-y) 0
+        &::before
+            display: none
+        > div
+            @extend .container
+            // Shame : container have strange padding behavior
+            padding-left: calc(var(--bs-gutter-x) * .5)
+            padding-right: calc(var(--bs-gutter-x) * .5)
+            > div
+                @include make-row()
+                > * 
+                    @include make-col-ready()
+        .top, .main-page
+            @include make-col-offset(4)
+            @include make-col(8)
+        .pages
+            @include make-col(12)
+            display: block
+            margin: 0
+            > *
+                margin-bottom: calc(var(--bs-gutter-y) * 3)
+                padding: 0
+                width: 100%
+            .page
+                @include make-row()
+                align-items: center
+                flex-direction: row
+                text-align: left
+                > div
+                    @include make-col-ready()
+                    &:first-child
+                        @include make-col(8)
+                    &.page__image
+                        @include make-col(3)
+                        @include make-col-offset(1)
+
