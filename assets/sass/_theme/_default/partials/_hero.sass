@@ -11,9 +11,10 @@
         @include media-breakpoint-down(md)
             .logotype
                 display: none
-
     &__image
         margin-bottom: px2rem(30)
+        picture
+            aspect-ratio: 1
         img
             height: 100%
             object-fit: contain
@@ -47,8 +48,6 @@
         &__image
             @include make-col(4)
             margin-bottom: px2rem(68)
-            img
-                min-height: 375px
         &__title
             @include make-col(10)
         .hero__image + .hero__title

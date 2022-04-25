@@ -1,3 +1,10 @@
 [class^="bloc"]
     .top h2
         @include suptitle
+
+body.pages__section
+    .blocks
+        .block-pages.page-pleas
+            @include full-width-background-color($pleas)
+            &::before
+                display: none
