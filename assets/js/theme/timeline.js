@@ -30,6 +30,8 @@ class BlockTimeline {
                 this.goTo(this.index+1);
             });
         }
+
+        this.handleSwip();
     }
 
     goTo (_index) {
@@ -89,6 +91,30 @@ class BlockTimeline {
         } while (element);
 
         return { top: top, left: left };
+    }
+
+    handleSwip () {
+        let startX,
+            endX,
+            threshold = 30;
+
+        // this.block.style.touchAction = 'pan-y';
+
+        this.block.addEventListener('touchstart', (event) => {
+            startX = event.changedTouches[0].screenX;
+        });
+
+        this.block.addEventListener('touchend', (event) => {
+            endX = event.changedTouches[0].screenX;
+
+            if (startX > endX + threshold) {
+                // Swipe left
+                this.goTo(this.index+1);
+            } else if (startX < endX - threshold) {
+                // Swipe right
+                this.goTo(this.index-1);
+            }
+        });
     }
 }
 
