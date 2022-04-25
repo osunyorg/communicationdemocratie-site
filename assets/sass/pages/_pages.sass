@@ -1,55 +1,56 @@
-.page-association
-    .logotype
-        path
-            fill: $association
-    .breadcrumb-container
-        background: $association
-    .toc
-        ol
-            > li
-                > a
-                    &.active
-                        &::before
-                            background-color: $association
-    .page-detail
-        background: $association
+body
+    &.page-association
+        .logotype
+            path
+                fill: $association
+        .breadcrumb-container
+            background: $association
+        .toc
+            ol
+                > li
+                    > a
+                        &.active
+                            &::before
+                                background-color: $association
+        .page-detail
+            background: $association
 
-.page-challenges
-    .logotype
-        path
-            fill: $challenges
-    .breadcrumb-container
-        background: $challenges
-    .toc
-        ol
-            > li
-                > a
-                    &.active
-                        &::before
-                            background-color: $challenges
-    .page-detail
-        background: $challenges
+    &.page-challenges
+        .logotype
+            path
+                fill: $challenges
+        .breadcrumb-container
+            background: $challenges
+        .toc
+            ol
+                > li
+                    > a
+                        &.active
+                            &::before
+                                background-color: $challenges
+        .page-detail
+            background: $challenges
 
-.page-pleas
-    .logotype
-        path
-            fill: $pleas
-    .breadcrumb-container
-        background: $pleas
-    .hero__image
-        picture
-            border-radius: 50%
-            display: block
-            overflow: hidden
-    .toc
-        ol
-            > li
-                > a
-                    &.active
-                        &::before
-                            background-color: $pleas
-    .page-detail
-        background: $pleas
+    &.page-pleas
+        .logotype
+            path
+                fill: $pleas
+        .breadcrumb-container
+            background: $pleas
+        .hero__image
+            picture
+                border-radius: 50%
+                display: block
+                overflow: hidden
+        .toc
+            ol
+                > li
+                    > a
+                        &.active
+                            &::before
+                                background-color: $pleas
+        .page-detail
+            background: $pleas
 
-    &.block-pages
-        @include full-width-background-color($pleas)
+        &.block-pages
+            @include full-width-background-color($pleas)

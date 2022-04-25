@@ -22,7 +22,7 @@
             &::after
                 content: ''
 
-    &-pleas
+    &.page-pleas
         text-align: center
         .title
             margin-bottom: px2rem(10)
@@ -35,15 +35,13 @@
             margin-bottom: 1rem
             overflow: visible
             &::after
-                content: ''
-                background: url("/assets/images/logotype.svg") no-repeat
+                @include icon-code("code-logo")
                 bottom: 0
-                filter: brightness(0) invert(1)
-                height: 52px
+                filter: invert(1)
+                font-size: px2rem(52)
                 left: 50%
                 position: absolute
                 transform: translate(-50%, 50%)
-                width: 52px
             picture
                 border-radius: 50%
                 overflow: hidden
