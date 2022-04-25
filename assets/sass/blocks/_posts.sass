@@ -23,3 +23,11 @@
                         align-self: flex-start
                         flex-shrink: 0
                         width: 195px
+    .top
+        h2
+            &::after
+                @include icon-code("code-arrow-right")
+                color: $publications
+                margin-left: px2rem(10)
+        a
+            text-decoration-color: rgba($publications, 1) !important

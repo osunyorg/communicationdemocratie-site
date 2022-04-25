@@ -1,10 +1,33 @@
 .block-pages
-    > .page
-        .title
+    .page
+        > .title
             text-align: left
+        .title
             &::after
                 @include icon-code("code-arrow-right")
                 margin-left: px2rem(10)
 
     &.page-pleas
         @include full-width-background-color($pleas)
+
+    &.page-association
+        .page
+            .title
+                a
+                    text-decoration-color: rgba($association, 1) !important
+                &::after
+                    color: $association
+    &.page-challenges
+        .page
+            .title
+                a
+                    text-decoration-color: rgba($challenges, 1) !important
+                &::after
+                    color: $challenges
+    &.page-publications
+        .page
+            .title
+                a
+                    text-decoration-color: rgba($publications, 1) !important
+                &::after
+                    color: $publications

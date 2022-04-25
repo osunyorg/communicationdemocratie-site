@@ -28,5 +28,11 @@
                     grid-column: 8/13
                     grid-row: 2
 
-    .page-association.block-pages:nth-child(even)
+    .page-association.block-pages:nth-child(odd)
         @include full-width-background-color($association)
+        .page
+            .title
+                a
+                    text-decoration-color: rgba(white, 1) !important
+                &::after
+                    color: white
