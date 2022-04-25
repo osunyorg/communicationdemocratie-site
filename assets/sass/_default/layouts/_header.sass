@@ -2,8 +2,18 @@ header[role=banner]
     .logo
         img
             height: 26px
+            // Handle different logo image
+            &:nth-child(1)
+                display: none
+            &:nth-child(2)
+                display: block
             @include media-breakpoint-up(md)
                 height: 44px
+                // Handle different logo image
+                &:nth-child(1)
+                    display: block
+                &:nth-child(2)
+                    display: none
 
     nav[role="navigation"]
         button[type="button"]
