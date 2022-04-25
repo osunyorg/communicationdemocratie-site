@@ -4,9 +4,11 @@
         a
             @include suptitle
     .title
-        &::after
-            @include icon-code("code-arrow-right")
-            margin-left: px2rem(10)
+        a
+            &::after
+                @include icon-code("code-arrow-right")
+                margin-left: px2rem(10)
+                text-decoration: none
 
     &.page-pleas
         @include full-width-background-color($pleas)
