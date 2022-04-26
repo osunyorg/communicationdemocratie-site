@@ -39,6 +39,10 @@
     target: "/fr/plaidoyers/campagne-pour-une-loi-evin-du-climat-europeenne/"
     kind: page
     children: []
+  - title: Pour une loi Sapin III
+    target: "/fr/plaidoyers/pour-une-loi-sapin-iii/"
+    kind: page
+    children: []
 - title: Publications
   target: "/fr/publications/actualites/"
   kind: news_category
@@ -73,10 +77,6 @@
     children: []
 - title: Agir et soutenir
   target: "/fr/agir-et-soutenir/"
-  kind: page
-  children: []
-- title: Pour une loi Sapin III
-  target: "/fr/plaidoyers/pour-une-loi-sapin-iii/"
   kind: page
   children: []
 
