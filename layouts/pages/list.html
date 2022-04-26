@@ -25,6 +25,7 @@
       </div>
     {{ else }}
       {{ partial "pages/children.html" .Pages }}
+      {{ partial "blocks/list.html" .Params.blocks }}
     {{ end }}
 
     </div>
