@@ -23,7 +23,7 @@
     target: "/fr/enjeux/pubnumerique/"
     kind: page
     children: []
-  - title: DiscoursONG
+  - title: Communication des ONG
     target: "/fr/enjeux/discours-des-ong/"
     kind: page
     children: []
