@@ -16,3 +16,19 @@
                             background-color: $publications
     .page-detail
         background: $publications
+    &.term-point-de-vue
+        .logotype
+            path
+                fill: $viewpoint
+        .breadcrumb-container
+            background: $viewpoint
+        .page-detail
+            background: $viewpoint
+        .toc
+            ol
+                > li
+                    > a
+                        &.active
+                            &::before
+                                background-color: $viewpoint
+
