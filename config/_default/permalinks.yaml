@@ -1,4 +1,4 @@
-posts:          /publications/:year/:month/:day/:slug/
-categories:     /publications/:slug/
-persons:        /equipe/:slug/
-authors:        /equipe/:slug/publications/
+posts:          /publications//:year/:month/:day/:slug/
+categories:     /publications//:slug/
+persons:        /equipe//:slug/
+authors:        /equipe//:slug/publications/
