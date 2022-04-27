@@ -31,7 +31,7 @@
   target: "/fr/plaidoyers/"
   kind: page
   children:
-  - title: Lutte contre le greenwashing à l'UE
+  - title: Lutter contre le greenwashing à l'UE
     target: "/fr/plaidoyers/lutte-contre-le-greenwashing-au-niveau-europeen/"
     kind: page
     children: []
