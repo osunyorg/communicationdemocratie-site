@@ -27,6 +27,8 @@
       {{- if $page.Params.bodyclass -}}
         {{- $pageClass := partial "GetBodyclass" $page.Params.bodyclass }}
         {{- $itemClass = printf "%s item-%s" $itemClass $pageClass -}}
+      {{- else -}}
+        {{- $itemClass = printf "%s %s" $itemClass (replace $page.Slug "/" "") -}}
       {{- end -}}
     {{- end -}}
     <li{{ if ne $itemClass ""}} class="{{ $itemClass }}"{{ end }}>
