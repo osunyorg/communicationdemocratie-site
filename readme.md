@@ -64,3 +64,9 @@ cookie_banner:
 ### Bloc actu
 
 -> Affiche les derniers posts si rien rempli dans le bloc actu
+
+### Actualités : 
+
+2 catégories principales :
+  - Point de vue : vert
+  - Actualités : rouge (plaidoyer)
