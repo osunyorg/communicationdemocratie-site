@@ -10,7 +10,7 @@
 {{ with $page }}
   {{ $page_primary_title = .Title }}
   {{ if .Params.bodyclass }}
-    {{ $page_class = partial "GetBodyclass" .Params.bodyclass }}
+    {{ $page_class = partial "GetBodyclass" . }}
     {{ $block_class = $page_class }}
   {{ end }}
 {{ end }}
