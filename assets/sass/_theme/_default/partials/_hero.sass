@@ -15,27 +15,16 @@
         margin-bottom: px2rem(30)
         picture
             aspect-ratio: 1
+            display: block
+            .persons__page &
+                border-radius: 50%
+                display: block
+                overflow: hidden
+                position: relative
         img
             height: 100%
             object-fit: contain
             width: 100%
-    .title-avatar
-        @include make-row()
-        align-items: flex-end
-        @include media-breakpoint-up(md)
-            margin-bottom: 1.5rem
-        > *
-            @include make-col-ready()
-        h1
-            @include media-breakpoint-up(md)
-                @include make-col(10)
-                margin-bottom: 0
-        > div
-            @include make-col(4)
-            @include media-breakpoint-down(md)
-                margin-bottom: map-get($spacers, 4)
-            @include media-breakpoint-up(md)
-                @include make-col(2)
     .with-image
         flex-direction: column-reverse
         .title
