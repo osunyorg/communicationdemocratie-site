@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row {{- if .image }} with-image {{ end }}">
       {{- if .image }}
-        <div class="hero__image">
+        <div class="media">
           {{ partial "commons/image.html"
               (dict
                 "image"    .image
@@ -15,7 +15,7 @@
         </div>
       {{ end -}}
       {{ with .context }}
-      <div class="hero__title">
+      <div class="title">
         {{ if partial "GetTextFromHTML" .Params.header_text }}
           <p>{{ partial "PrepareHTML" .Title }}</p>
           <h1>{{ partial "PrepareHTML" .Params.header_text | plainify }}</h1>

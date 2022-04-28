@@ -3,7 +3,7 @@
     color: $primary
     padding-bottom: 60px
     padding-top: 60px
-    &__title
+    .title
         h1
             margin-bottom: 0
         > p
@@ -11,7 +11,7 @@
         @include media-breakpoint-down(md)
             .logotype
                 display: none
-    &__image
+    .media
         margin-bottom: px2rem(30)
         picture
             aspect-ratio: 1
@@ -45,12 +45,12 @@
             align-items: center
             &.with-image
                 flex-direction: row-reverse
-        &__image
+        .media
             @include make-col(4)
             margin-bottom: px2rem(68)
-        &__title
+        .title
             @include make-col(10)
-        .hero__image + .hero__title
+        .media + .title
             @include make-col(8)
     .logotype
         margin-top: px2rem(25)
