@@ -25,9 +25,10 @@
               (dict
                 "image"    .Params.image
                 "alt"      .Title
-                "mobile"   "351x291"
-                "tablet"   "334x167"
+                "mobile"   "351x351"
+                "tablet"   "216x216"
                 "desktop"  "416x416"
+                "crop"     true
               ) -}}
       {{- else -}}
         {{- partial "commons/image-default.html" -}}

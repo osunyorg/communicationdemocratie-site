@@ -1,8 +1,12 @@
 .block-pages
-    .main-page .title 
-        text-align: left
-        a
-            @include suptitle
+    .main-page
+        .title
+            text-align: left
+            a
+                @include suptitle
+        @include media-breakpoint-up(md)
+            .media
+                max-width: calc(100% / 3)
     .title
         a
             &::after
@@ -51,7 +55,7 @@ body.pages__section
                 padding-right: calc(var(--bs-gutter-x) * .5)
                 > div
                     @include make-row()
-                    > * 
+                    > *
                         @include make-col-ready()
             .top, .main-page
                 @include make-col-offset(4)
@@ -76,4 +80,3 @@ body.pages__section
                         &.page__image
                             @include make-col(3)
                             @include make-col-offset(1)
-
