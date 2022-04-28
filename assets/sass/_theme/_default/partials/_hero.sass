@@ -36,7 +36,10 @@
                 margin-bottom: map-get($spacers, 4)
             @include media-breakpoint-up(md)
                 @include make-col(2)
-
+    .with-image
+        flex-direction: column-reverse
+        .title
+            @include make-col(8)
 
     @include media-breakpoint-up(md)
         padding-bottom: 150px
@@ -44,13 +47,11 @@
         .row
             align-items: center
             &.with-image
-                flex-direction: row-reverse
+                flex-direction: row
         .media
             @include make-col(4)
             margin-bottom: px2rem(68)
         .title
             @include make-col(10)
-        .media + .title
-            @include make-col(8)
     .logotype
         margin-top: px2rem(25)

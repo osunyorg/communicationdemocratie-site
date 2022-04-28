@@ -1,6 +1,17 @@
 <header class="hero">
   <div class="container">
     <div class="row {{- if .image }} with-image {{ end }}">
+      {{ with .context }}
+      <div class="title">
+        {{ if partial "GetTextFromHTML" .Params.header_text }}
+          <p>{{ partial "PrepareHTML" .Title }}</p>
+          <h1>{{ partial "PrepareHTML" .Params.header_text | plainify }}</h1>
+        {{ else }}
+          <h1>{{ partial "PrepareHTML" .Title }}</h1>
+        {{ end }}
+        {{ readFile "static/assets/images/logotype.svg" | safeHTML }}
+      </div>
+      {{ end }}
       {{- if .image }}
         <div class="media">
           {{ partial "commons/image.html"
@@ -14,17 +25,6 @@
               ) }}
         </div>
       {{ end -}}
-      {{ with .context }}
-      <div class="title">
-        {{ if partial "GetTextFromHTML" .Params.header_text }}
-          <p>{{ partial "PrepareHTML" .Title }}</p>
-          <h1>{{ partial "PrepareHTML" .Params.header_text | plainify }}</h1>
-        {{ else }}
-          <h1>{{ partial "PrepareHTML" .Title }}</h1>
-        {{ end }}
-        {{ readFile "static/assets/images/logotype.svg" | safeHTML }}
-      </div>
-      {{ end }}
     </div>
   </div>
 </header>
