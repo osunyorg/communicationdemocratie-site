@@ -1,0 +1,17 @@
+{{ $body_class := "" }}
+
+{{ if .Params.bodyclass }}
+  {{ $body_class = printf "page-%s" .Params.bodyclass }}
+{{ end }}
+
+{{ if eq .Kind "term" }}
+  {{ $body_class = printf "%s %s" $body_class (printf "term-%s" (replace .Slug "/" "")) }}
+{{ end }}
+
+{{ range .GetTerms "categories" }}
+  {{ $body_class = printf "%s %s" $body_class (printf "term-%s" (replace .Slug "/" "")) }}
+{{ end }}
+
+{{ if $body_class }}
+  {{ return $body_class }}
+{{ end }}

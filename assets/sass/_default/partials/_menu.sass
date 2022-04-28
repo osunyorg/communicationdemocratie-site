@@ -29,8 +29,6 @@
                     @include code-menu-color($publications)
                 &-pleas
                     @include code-menu-color($pleas)
-            &.actualites
-                @include code-menu-color($publications)
         .dropdown-menu
             border-bottom: 5px solid $primary
             border-radius: 0
@@ -39,6 +37,11 @@
                     @include icon-code("code-arrow-right")
                     font-size: 10px
                     padding-left: 0.75rem
+        .nav-level-2
+            li.actualites
+                @include code-menu-color($publications)
+            li.point-de-vue
+                @include code-menu-color($viewpoint)
 
         @include media-breakpoint-down(lg)
             padding-left: calc(#{$grid-gutter-width} / 2)
