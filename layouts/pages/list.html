@@ -8,8 +8,8 @@
 
     <div class="container">
 
-    {{ $getLevel := .Params.url | strings.Count "/" }}
-    {{ if gt $getLevel 3 }}
+    {{- $getLevel := .Params.url | strings.Count "/" -}}
+    {{- if gt $getLevel 3 }}
       <div class="content">
         {{ partial "pages/aside.html"
             (dict
@@ -21,12 +21,13 @@
           {{ partial "pages/body.html" . }}
           {{ partial "blocks/list.html" .Params.blocks }}
           {{ partial "posts/related.html" $category }}
+          {{ partial "commons/backtotop.html" }}
         </div>
       </div>
     {{ else }}
       {{ partial "pages/children.html" .Pages }}
       {{ partial "blocks/list.html" .Params.blocks }}
-    {{ end }}
+    {{ end -}}
 
     </div>
   </article>
