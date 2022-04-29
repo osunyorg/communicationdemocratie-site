@@ -9,7 +9,11 @@
 {{ end }}
 
 {{ range .GetTerms "categories" }}
-  {{ $body_class = printf "%s %s" $body_class (printf "term-%s" (replace .Slug "/" "")) }}
+  {{ if .Params.parent }}
+    {{ $body_class = printf "%s %s" $body_class (printf "term-%s" (replace .Params.parent "/" "")) }}
+  {{ else }}
+    {{ $body_class = printf "%s %s" $body_class (printf "term-%s" (replace .Slug "/" "")) }}
+  {{ end }}
 {{ end }}
 
 {{ if $body_class }}
