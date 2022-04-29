@@ -4,6 +4,12 @@
   <div>
     <h3 class="title"><a href="{{ .Permalink }}">{{ $title }}</a></h3>
     <time datetime="{{ .Date.Format "2006-01-02T15:04" }}">{{ .Date | time.Format ":date_long" }}</time>
+    {{ range .Params.authors -}}
+      {{- $person := site.GetPage (printf "/persons/%s" .) -}}
+      {{ with $person -}}
+        <p class="author"><a href="{{ .Permalink }}">{{ partial "PrepareHTML" .Title }}</a></p>
+      {{- end }}
+    {{- end }}
     {{- partial "posts/categories" . -}}
     <p>{{ partial "GetTruncateContent" $description }}</p>
   </div>

@@ -10,7 +10,7 @@
         </div>
         */}}
 
-        {{ if .Params.Categories }}
+        {{- if .Params.Categories }}
         <div>
           <p>
             {{- if gt (len .Params.Categories) 1 -}}
@@ -23,7 +23,7 @@
             {{ partial "posts/categories.html" . }}
           </div>
         </div>
-        {{ end }}
+        {{ end -}}
 
         {{ if .Date }}
         <div>
@@ -35,7 +35,7 @@
       <div>
         <p class="lead">{{ partial "PrepareHTML" (replace .Params.description_short "\n" "<br/>") }}</p>
         {{ range .GetTerms "authors" }}
-          {{ $person := site.GetPage (printf "/persons/%s" .Slug) }}
+          {{- $person := site.GetPage (printf "/persons/%s" .Slug) -}}
           {{ with $person }}
             <div class="author" itemscope itemtype="https://schema.org/Person" itemprop="author">
               {{ if .Params.image }}
@@ -49,7 +49,7 @@
                       )}}
               {{ end }}
               <div>
-                <p itemprop="name"><a href="{{ .Permalink }}">{{ safeHTML .Title }}</a></p>
+                <p itemprop="name"><a href="{{ .Permalink }}" itemprop="url">{{ partial "PrepareHTML" .Title }}</a></p>
                 {{ if .Params.description_short }}
                   <p itemprop="description">{{ partial "PrepareHTML" .Params.description_short }}</p>
                 {{ end }}
