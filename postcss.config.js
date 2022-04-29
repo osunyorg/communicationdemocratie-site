@@ -8,7 +8,8 @@ var devPlugins = {},
         '@fullhuman/postcss-purgecss': {
             content: [
                 './themes/**/*.html',
-                'layouts/**/*.html'
+                'layouts/**/*.html',
+                'public/**/*.html'
             ],
             safelist: {
                 standard: [
@@ -67,5 +68,6 @@ var devPlugins = {},
     };
 
 module.exports = {
-    plugins: process.env.HUGO_ENVIRONMENT === 'production' ? productionPlugins : devPlugins
+    // plugins: process.env.HUGO_ENVIRONMENT === 'production' ? productionPlugins : devPlugins
+    plugins: productionPlugins 
 };
