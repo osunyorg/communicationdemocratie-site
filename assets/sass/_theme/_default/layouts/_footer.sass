@@ -6,6 +6,8 @@ footer[role="contentinfo"]
 
     a, span
         color: white
+    a:hover
+        color: white
 
     address
         font-size: px2rem(14)
@@ -77,6 +79,8 @@ footer[role="contentinfo"]
             padding-left: 0
         a
             @include link
+            &:hover
+                color: white
 
     nav[role="navigation"]
         .nav-level-1
@@ -98,6 +102,8 @@ footer[role="contentinfo"]
             color: white
             padding-left: 0
             text-decoration-color: rgba(white, 0)
+        a:hover
+            color: white
 
         .nav-level-2
             @include media-breakpoint-down(lg)
