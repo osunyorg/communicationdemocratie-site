@@ -60,7 +60,10 @@ var devPlugins = {},
                     /association/,
                     /pleas/,
                     /posts/,
-                    /challenges/
+                    /challenges/,
+                    /point-de-vue/,
+                    /publications/,
+                    /actualites/
                 ]
             }
         }
