@@ -1,7 +1,7 @@
 <aside>
   {{ $h2s := partial "H2Extract" .context.Content }}
   {{ if or .Pages $h2s }}
-  <p><small>Plan du document</small></p>
+  <p><small>{{ i18n "commons.toc" }}</small></p>
   {{ end }}
   {{- partial "pages/toc.html" . -}}
 </aside>
