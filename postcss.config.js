@@ -6,10 +6,15 @@ var devPlugins = {},
             preset: 'default'
         },
         '@fullhuman/postcss-purgecss': {
-            content: [
-                './themes/**/*.html',
-                'layouts/**/*.html'
-            ],
+            content: ['./hugo_stats.json'],
+            // content: [
+            //     './themes/**/*.html',
+            //     'layouts/**/*.html'
+            // ],
+            defaultExtractor: (content) => {
+                let els = JSON.parse(content).htmlElements;
+                return els.tags.concat(els.classes, els.ids);
+            },
             safelist: {
                 standard: [
                     'show',
@@ -52,23 +57,11 @@ var devPlugins = {},
                     /^gbtn/,
                     /^gcontainer/
                 ],
-                greedy: [
-                    /__home/,
-                    /__page/,
-                    /__section/,
-                    /__term/,
-                    /association/,
-                    /pleas/,
-                    /posts/,
-                    /challenges/,
-                    /point-de-vue/,
-                    /publications/,
-                    /actualites/
-                ]
+                greedy: []
             }
         }
     };
 
 module.exports = {
-    plugins: process.env.HUGO_ENVIRONMENT === 'production' ? productionPlugins : devPlugins
-};
+    plugins: productionPlugins
+}

@@ -23,3 +23,5 @@ params:
   _merge: deep
   cookie_banner:
     enable: false
+build:
+  writeStats: true
