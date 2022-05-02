@@ -7,10 +7,6 @@ var devPlugins = {},
         },
         '@fullhuman/postcss-purgecss': {
             content: ['./hugo_stats.json'],
-            // content: [
-            //     './themes/**/*.html',
-            //     'layouts/**/*.html'
-            // ],
             defaultExtractor: (content) => {
                 let els = JSON.parse(content).htmlElements;
                 return els.tags.concat(els.classes, els.ids);
@@ -63,5 +59,5 @@ var devPlugins = {},
     };
 
 module.exports = {
-    plugins: productionPlugins
-}
+    plugins: process.env.HUGO_ENVIRONMENT === 'production' ? productionPlugins : devPlugins
+};
