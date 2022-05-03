@@ -47,7 +47,7 @@
   target: "/fr/publications/actualites/"
   kind: news_category
   children:
-  - title: Toutes les actualités
+  - title: Actualités
     target: "/fr/publications/actualites/"
     kind: news_category
     children: []
