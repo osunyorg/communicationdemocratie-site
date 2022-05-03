@@ -79,4 +79,8 @@
   target: "/fr/l-association/agir-et-soutenir/"
   kind: page
   children: []
+- title: Tous les plaidoyers
+  target: "/fr/plaidoyers/"
+  kind: page
+  children: []
 
