@@ -2,11 +2,15 @@
   {{ partial "pages/hero.html" . }}
   {{ partial "header/page-detail.html" . }}
 
-  {{- $category := site.GetPage (printf "/categories%s" .Params.category) -}}
   <div>
 
-    {{- $getLevel := .Params.url | strings.Count "/" -}}
-    {{- if gt $getLevel 3 }}
+    {{- if .Pages }}
+
+        {{ partial "pages/children.html" .Pages }}
+        {{ partial "blocks/list.html" .Params.blocks }}
+
+    {{- else -}}
+      {{- $category := site.GetPage (printf "/categories%s" .Params.category) -}}
 
       {{ partial "pages/aside.html"
           (dict
@@ -23,11 +27,6 @@
           {{ partial "commons/backtotop.html" }}
         </div>
       </section>
-
-    {{- else -}}
-
-      {{ partial "pages/children.html" .Pages }}
-      {{ partial "blocks/list.html" .Params.blocks }}
 
     {{ end -}}
 
