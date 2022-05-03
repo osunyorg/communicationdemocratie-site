@@ -43,11 +43,15 @@
     target: "/fr/plaidoyers/pour-une-loi-sapin-iii/"
     kind: page
     children: []
+  - title: Tous les plaidoyers
+    target: "/fr/plaidoyers/"
+    kind: page
+    children: []
 - title: Publications
   target: "/fr/publications/actualites/"
   kind: news_category
   children:
-  - title: Toutes les actualités
+  - title: Actualités
     target: "/fr/publications/actualites/"
     kind: news_category
     children: []
@@ -76,7 +80,7 @@
     kind: page
     children: []
 - title: Agir et soutenir
-  target: "/fr/agir-et-soutenir/"
+  target: "/fr/l-association/agir-et-soutenir/"
   kind: page
   children: []
 
