@@ -4,7 +4,7 @@ class BlockTimeline {
     constructor (block) {
         this.block = block;
         this.content = this.block.querySelector('.timeline');
-        this.list = this.block.querySelector('.events ul');
+        this.list = this.block.querySelector('.events ol');
         this.items = this.list.querySelectorAll('.event');
         this.previous = this.block.querySelector('.previous');
         this.next = this.block.querySelector('.next');
@@ -74,9 +74,9 @@ class BlockTimeline {
     }
 
     setStyle (element, width, marginLeft) {
-        element.style.width = `${width}px`;
-        element.style.maxWidth = `${width}px`;
-        element.style.marginLeft = `${marginLeft}px`;
+        // element.style.width = `${width}px`;
+        // element.style.maxWidth = `${width}px`;
+        // element.style.marginLeft = `${marginLeft}px`;
     }
 
     getAbsoluteOffset (_element) {

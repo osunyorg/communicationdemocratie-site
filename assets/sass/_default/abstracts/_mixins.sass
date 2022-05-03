@@ -6,16 +6,9 @@
     text-transform: uppercase
 
 @mixin full-width-background-color($color)
-    position: relative
-    &::before
-        background-color: $color
-        bottom: calc(var(--bs-gutter-y)*-1)
-        content: ''
-        left: 50%
-        position: absolute
-        top: calc(var(--bs-gutter-y)*-1)
-        transform: translateX(-50%)
-        width: 100vw
+    background-color: $color
+    padding-bottom: 3rem
+    padding-top: 3rem
 
 @mixin icon-code($icon)
     @include icon

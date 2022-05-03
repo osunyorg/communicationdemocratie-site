@@ -1,34 +1,35 @@
 {{ define "main" }}
   {{ partial "pages/hero.html" . }}
-
+  {{ partial "header/page-detail.html" . }}
 
   {{- $category := site.GetPage (printf "/categories%s" .Params.category) -}}
-  <article>
-    {{ partial "header/page-detail.html" . }}
-
-    <div class="container">
+  <div>
 
     {{- $getLevel := .Params.url | strings.Count "/" -}}
     {{- if gt $getLevel 3 }}
-      <div class="content">
-        {{ partial "pages/aside.html"
-            (dict
-                "category" $category
-                "context" .
-            )
-        }}
-        <div>
-          {{ partial "pages/body.html" . }}
-          {{ partial "blocks/list.html" .Params.blocks }}
-          {{ partial "posts/related.html" $category }}
+
+      {{ partial "pages/aside.html"
+          (dict
+              "category" $category
+              "context" .
+          )
+      }}
+
+      {{/* TODO: DELETE IT */}} {{ partial "pages/body.html" .Content }}
+      {{ partial "blocks/list.html" .Params.blocks }}
+      {{ partial "posts/related.html" $category }}
+      <section>
+        <div class="container">
           {{ partial "commons/backtotop.html" }}
         </div>
-      </div>
-    {{ else }}
+      </section>
+
+    {{- else -}}
+
       {{ partial "pages/children.html" .Pages }}
       {{ partial "blocks/list.html" .Params.blocks }}
+
     {{ end -}}
 
-    </div>
-  </article>
+  </div>
 {{ end }}

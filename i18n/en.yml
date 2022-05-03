@@ -1,3 +1,7 @@
+blocks:
+  timeline:
+    next: Aller à l'évènement suivant
+    prev: Aller à l'évènement précédent
 commons:
   toc: Plan du site
 posts:

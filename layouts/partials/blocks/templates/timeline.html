@@ -1,30 +1,37 @@
-{{ $position := .position }}
-<section class="block-timeline">
-  <div class="timeline">
-    {{ if .title }}
-      <h2 id="block-{{ $position }}">{{ partial "PrepareHTML" .title }}</h2>
-    {{ end }}
-    {{ with .data }}
-      {{ if .description }}
-        <h3>{{ partial "PrepareHTML" .description }}</h3>
-      {{ end }}
-      <div class="events">
-        <ul>
-          {{ range .events }}
-            <li class="event">
-              <p><strong>{{- partial "PrepareHTML" .title -}}</strong></p>
-              <hr>
-              <p>{{- partial "PrepareHTML" .text -}}</p>
-            </li>
+{{- $position := .position -}}
+{{- $title := .title -}}
+{{- with .data -}}
+  <section class="block-timeline" id="block-{{ $position }}">
+    <div class="container">
+
+      <div class="timeline">
+        {{ if $title }}
+          <h2>{{ partial "PrepareHTML" $title }}</h2>
+        {{ end }}
+        {{ with . }}
+          {{ if .description }}
+            <h3>{{ partial "PrepareHTML" .description }}</h3>
           {{ end }}
-        </ul>
-        {{ if  (gt (len .events) 0) }}
-          <div class="timeline-arrows">
-            <button class="previous" disabled aria-label="Aller à l'événement précédent"></button>
-            <button class="next" aria-label="Aller à l'événement suivant"></button>
+          <div class="events">
+            <ol>
+              {{ range .events }}
+                <li class="event">
+                  <p><strong>{{- partial "PrepareHTML" .title -}}</strong></p>
+                  <hr>
+                  <p>{{- partial "PrepareHTML" .text -}}</p>
+                </li>
+              {{ end }}
+            </ol>
+            {{ if  (gt (len .events) 0) }}
+              <div class="timeline-arrows">
+                <button class="previous" disabled title="{{ i18n "blocks.timeline.prev"}}"></button>
+                <button class="next" title="{{ i18n "blocks.timeline.next"}}"></button>
+              </div>
+            {{ end }}
           </div>
         {{ end }}
       </div>
-    {{ end }}
-  </div>
-</section>
+
+    </div>
+  </section>
+{{- end -}}
