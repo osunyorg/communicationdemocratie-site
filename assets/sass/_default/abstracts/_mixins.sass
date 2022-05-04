@@ -27,3 +27,25 @@
         border-bottom-color: $color
     .nav-level-2 > li > a
         text-decoration-color: rgba($color, 1) !important
+
+
+@mixin code-page-color($color)
+    .logotype
+        path
+            fill: $color
+    .breadcrumb-container
+        background: $color
+    .toc
+        ol
+            > li
+                > a
+                    &.active
+                        &::before
+                            background-color: $color
+    .page-detail
+        background: $color
+    .pages
+        .page
+            .title
+                a
+                    text-decoration-color: $color

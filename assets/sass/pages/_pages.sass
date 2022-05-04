@@ -1,53 +1,12 @@
 body
     &.page-association, &.page-agir-soutenir
-        .logotype
-            path
-                fill: $association
-        .breadcrumb-container
-            background: $association
-        .toc
-            ol
-                > li
-                    > a
-                        &.active
-                            &::before
-                                background-color: $association
-        .page-detail
-            background: $association
-
+        @include code-page-color($association)
     &.page-challenges
-        .logotype
-            path
-                fill: $challenges
-        .breadcrumb-container
-            background: $challenges
-        .toc
-            ol
-                > li
-                    > a
-                        &.active
-                            &::before
-                                background-color: $challenges
-        .page-detail
-            background: $challenges
-
+        @include code-page-color($challenges)
     &.page-pleas
-        .logotype
-            path
-                fill: $pleas
-        .breadcrumb-container
-            background: $pleas
+        @include code-page-color($pleas)
         .media
             picture
                 border-radius: 50%
                 display: block
                 overflow: hidden
-        .toc
-            ol
-                > li
-                    > a
-                        &.active
-                            &::before
-                                background-color: $pleas
-        .page-detail
-            background: $pleas
