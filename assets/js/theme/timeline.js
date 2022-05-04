@@ -67,16 +67,7 @@ class BlockTimeline {
         contentWidth = this.content.offsetWidth;
         this.itemWidth = this.items[0].offsetWidth;
 
-        this.setStyle(this.content, contentWidth, offset.left);
-        this.setStyle(this.block, width, -offset.left);
-
         this.update();
-    }
-
-    setStyle (element, width, marginLeft) {
-        // element.style.width = `${width}px`;
-        // element.style.maxWidth = `${width}px`;
-        // element.style.marginLeft = `${marginLeft}px`;
     }
 
     getAbsoluteOffset (_element) {
