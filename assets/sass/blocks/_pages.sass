@@ -1,6 +1,6 @@
 .block-pages
     // main page
-    .container > .page
+    .main-page
         .title
             text-align: left
             a
@@ -30,10 +30,13 @@
         .block-pages.block-page-pleas
             padding-bottom: 5rem
             position: relative
-            .pages
-                --bs-gutter-y: 4rem
+            .block-content
                 padding-left: 0
                 padding-right: 0
+            .top, .main-page
+                padding-left: col(4)
+            .pages
+                --bs-gutter-y: 4rem
                 > *
                     width: 100%
                 .page
