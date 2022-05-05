@@ -1,6 +1,15 @@
-.page:not(.page-pleas)
-    .media
-        background-color: transparent
-        img
-            object-fit: contain
-            object-position: center
+.page
+    &:not(.page-pleas)
+        .media
+            background-color: transparent
+            img
+                object-fit: contain
+                object-position: center
+
+    &.page-association,
+    &.page-agir-soutenir
+        @include title-color($association)
+    &.page-challenges
+        @include title-color($challenges)
+    &.page-pleas
+        @include title-color($pleas)

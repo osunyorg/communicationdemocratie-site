@@ -22,8 +22,8 @@
     //                     .title
     //                         font-size: px2rem(30)
     //                         line-height: px2rem(36)
-                
-    
+
+
     @include media-breakpoint-up(md)
         .posts
             display: grid
@@ -59,11 +59,8 @@
                     grid-column: 8/13
                     grid-row: 2
 
-    .page-association.block-pages:nth-child(odd)
+    .block-page-association.block-pages:nth-child(odd)
         @include full-width-background-color($association)
         .page
-            .title
-                a
-                    text-decoration-color: rgba(white, 1) !important
-                    &::after
-                        color: white
+            @include title-color(white)
+        

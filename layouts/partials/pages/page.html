@@ -1,12 +1,13 @@
-{{ $page := . }}
-{{ $class := "page" }}
 {{ $show_description := true }}
 {{ $show_image := false }}
-{{ if eq $page.Params.bodyclass "pleas" }}
-  {{ $show_image = true }}
-  {{ $class = printf "%s page-pleas" $class }}
+{{ $class := "page" }}
+{{ if .Params.bodyclass }}
+  {{ $class = printf "%s page-%s" $class .Params.bodyclass }}
+  {{ if eq .Params.bodyclass "pleas" }}
+    {{ $show_image = true }}
+  {{ end }}
 {{ end }}
-{{ with $page }}
+{{ with . }}
 <div class="{{ $class }}">
   <div>
     <p class="title">

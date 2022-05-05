@@ -2,6 +2,7 @@
     // main page
     .container > .page
         .title
+            text-align: left
             a
                 @include suptitle
         @include media-breakpoint-up(md)
@@ -14,46 +15,19 @@
                 margin-left: px2rem(10)
                 text-decoration: none
 
-    &.page-pleas
+    &.block-page-pleas
         @include full-width-background-color($pleas)
         .page
+            @include title-color(white)
             .media
                 &::after
                     color: white
 
 
-    &.page-association
-        .page
-            .title
-                a
-                    text-decoration-color: rgba($association, .3)
-                    &::after
-                        color: $association
-                    &:hover
-                        text-decoration-color: $association
-    &.page-challenges
-        .page
-            .title
-                a
-                    text-decoration-color: rgba($challenges, .3)
-                    &::after
-                        color: $challenges
-                    &:hover
-                        text-decoration-color: $challenges
-    &.page-publications
-        .page
-            .title
-                a
-                    text-decoration-color: rgba($publications, .3)
-                    &::after
-                        color: $publications
-                    &:hover
-                        text-decoration-color: $publications
-
 // Specific to block-page for pleas inside single page
 @include media-breakpoint-up(md)
     body.pages__section
-        .block-pages.page-pleas
+        .block-pages.block-page-pleas
             padding-bottom: 5rem
             position: relative
             .pages
