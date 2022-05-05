@@ -20,14 +20,26 @@
     @include media-breakpoint-down(lg)
         border-bottom-color: $color !important
     a
-        text-decoration-color: $color
+        text-decoration-color: rgba($color, .3)
+        &:hover
+            text-decoration-color: $color
         &::after
             color: $color
     .dropdown-menu
         border-bottom-color: $color
     .nav-level-2 > li > a
-        text-decoration-color: rgba($color, 1) !important
+        text-decoration-color: rgba($color, .3)
+        &:hover
+            text-decoration-color: $color
 
+@mixin title-color($color)
+    .title
+        a
+            text-decoration-color: rgba($color, .3)
+            &:hover
+                text-decoration-color: $color
+            &::after
+                color: $color
 
 @mixin code-page-color($color)
     .logotype
@@ -44,8 +56,3 @@
                             background-color: $color
     .page-detail
         background: $color
-    .pages
-        .page
-            .title
-                a
-                    text-decoration-color: $color

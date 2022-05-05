@@ -18,7 +18,7 @@
                 & > span
                     font-size: px2rem(14)
                     line-height: px2rem(17)
-    > ul
+    > .nav-level-1
         > li
             &.item-page
                 &-association
@@ -31,6 +31,12 @@
                     @include code-menu-color($pleas)
                 &-agir-soutenir
                     background: $association
+                    @include media-breakpoint-down(lg)
+                        margin-left: calc(#{$grid-gutter-width} / -2)
+                        margin-right: calc(#{$grid-gutter-width} / -2)
+                        margin-top: -1px
+                        padding-left: calc(#{$grid-gutter-width} / 2)
+                        padding-right: calc(#{$grid-gutter-width} / 2)
         .dropdown-menu
             border-bottom: 5px solid $primary
             border-radius: 0
@@ -52,18 +58,21 @@
                 border-left-width: 0
                 border-right-width: 0
                 border-top-width: 0
-            li
-                a, span
-                    padding: 15px 0 !important // Shame : abused use of !important to avoid long queries to target elements...
-                    text-decoration: none !important
-                > p
-                    display: none
             > li
                 border-bottom: 1px solid $primary
                 position: relative
                 a, span
-                    font-size: px2rem(22) !important
-            .nav-level-2
+                    font-size: px2rem(22)
+                    padding: px2rem(15) 0
+            > .has-children
                 li
                     a, span
-                        font-size: px2rem(18) !important
+                        display: flex
+                        font-size: px2rem(18)
+                        justify-content: space-between
+                        padding: px2rem(15) 0
+                        text-decoration: none
+                    a::after
+                        margin-top: 0.4rem
+                p
+                    display: none
