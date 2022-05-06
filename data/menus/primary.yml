@@ -43,6 +43,10 @@
     target: "/fr/plaidoyers/pour-une-loi-sapin-iii/"
     kind: page
     children: []
+  - title: Soutenir fiscalement les associations de défenses des causes
+    target: "/fr/plaidoyers/pour-une-regime-fiscal-veritablement-favorable-et-transparence-pour-les-associations/"
+    kind: page
+    children: []
   - title: Tous les plaidoyers
     target: "/fr/plaidoyers/"
     kind: page
@@ -81,10 +85,6 @@
     children: []
 - title: Agir et soutenir
   target: "/fr/l-association/agir-et-soutenir/"
-  kind: page
-  children: []
-- title: Soutenir fiscalement les associations de défenses des causes
-  target: "/fr/plaidoyers/pour-une-regime-fiscal-veritablement-favorable-et-transparence-pour-les-associations/"
   kind: page
   children: []
 
