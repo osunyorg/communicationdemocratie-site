@@ -31,7 +31,7 @@
   target: "/fr/plaidoyers/"
   kind: page
   children:
-  - title: Lutter contre le greenwashing à l'UE
+  - title: Lutter contre le greenwashing à l'échelle européenne
     target: "/fr/plaidoyers/lutte-contre-le-greenwashing-au-niveau-europeen/"
     kind: page
     children: []
@@ -39,8 +39,12 @@
     target: "/fr/plaidoyers/campagne-pour-une-loi-evin-du-climat-europeenne/"
     kind: page
     children: []
-  - title: Pour une loi Sapin III
+  - title: 'Pour la transparence du lobbying 360° '
     target: "/fr/plaidoyers/pour-une-loi-sapin-iii/"
+    kind: page
+    children: []
+  - title: Soutenir fiscalement les ONG de défenses des causes
+    target: "/fr/plaidoyers/pour-une-regime-fiscal-veritablement-favorable-et-transparence-pour-les-associations/"
     kind: page
     children: []
   - title: Tous les plaidoyers
