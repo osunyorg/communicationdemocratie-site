@@ -1,4 +1,6 @@
 .block-posts
+    .top h2
+        @include suptitle
     .posts
         > div
             &:not(:first-child)
@@ -38,4 +40,3 @@
                     color: $viewpoint
             a
                 text-decoration-color: rgba($viewpoint, 1) !important
-
