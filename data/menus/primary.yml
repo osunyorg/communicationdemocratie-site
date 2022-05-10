@@ -52,8 +52,8 @@
     kind: page
     children: []
 - title: Publications
-  target: "/fr/publications/actualites/"
-  kind: news_category
+  target: "/fr/publications/"
+  kind: page
   children:
   - title: Actualités
     target: "/fr/publications/actualites/"
