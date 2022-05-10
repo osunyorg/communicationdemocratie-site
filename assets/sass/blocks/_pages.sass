@@ -17,6 +17,10 @@
                 margin-left: px2rem(10)
                 text-decoration: none
 
+    .pages > *
+        aside + .blocks &
+            @extend .col-md-6
+
     &.block-page-pleas
         @include full-width-background-color($pleas)
         .page
