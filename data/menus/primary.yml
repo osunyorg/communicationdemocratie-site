@@ -87,4 +87,8 @@
   target: "/fr/l-association/agir-et-soutenir/"
   kind: page
   children: []
+- title: Espace presse
+  target: "/fr/publications/espace-presse/"
+  kind: page
+  children: []
 
