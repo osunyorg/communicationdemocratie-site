@@ -171,6 +171,8 @@
       "block-4",
       "block-5",
       "block-6",
+      "block-7",
+      "block-8",
       "dropdown-enjeux",
       "dropdown-lassociation",
       "dropdown-plaidoyers",
@@ -181,7 +183,6 @@
       "page-h2-0",
       "page-h2-1",
       "page-h2-2",
-      "page-informations",
       "page-posts"
     ]
   }
