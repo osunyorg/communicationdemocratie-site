@@ -68,7 +68,8 @@ var devPlugins = {},
                     /challenges/,
                     /point-de-vue/,
                     /publications/,
-                    /actualites/
+                    /actualites/,
+                    /agir-soutenir/
                 ]
             }
         }
