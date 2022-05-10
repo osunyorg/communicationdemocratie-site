@@ -1,6 +1,6 @@
 ---
-- title: Mentions légales
-  target: "/fr/mentions-legales/"
+- title: Mentions légales et politique de proection des données
+  target: "/fr/politique-de-confidentialite/"
   kind: page
   children: []
 - title: Politique de confidentialité
