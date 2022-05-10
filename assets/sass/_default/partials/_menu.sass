@@ -25,8 +25,6 @@
                     @include code-menu-color($association)
                 &-challenges
                     @include code-menu-color($challenges)
-                &-publications
-                    @include code-menu-color($publications)
                 &-pleas
                     @include code-menu-color($pleas)
                 &-agir-soutenir
@@ -45,11 +43,12 @@
                     @include icon-code("code-arrow-right")
                     font-size: 10px
                     padding-left: 0.75rem
-        .nav-level-2
-            li.actualites
-                @include code-menu-color($publications)
-            li.point-de-vue
-                @include code-menu-color($viewpoint)
+        li
+            .nav-level-2
+                > li.actualites
+                    @include code-menu-color($publications)
+                > li.point-de-vue
+                    @include code-menu-color($viewpoint)
 
         @include media-breakpoint-down(lg)
             padding-left: calc(#{$grid-gutter-width} / 2)
