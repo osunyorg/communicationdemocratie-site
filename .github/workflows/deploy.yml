@@ -18,7 +18,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.93.0'
+          hugo-version: ${{ secrets.HUGO_VERSION }}
           extended: true
 
       - name: Setup Node
@@ -31,7 +31,7 @@ jobs:
         run: yarn install --frozen-lockfile
 
       - name: Build
-        run: hugo --minify
+        run: hugo -e ${{ secrets.HUGO_ENV }} --minify
 
       - name: Install SSH Key
         uses: shimataro/ssh-key-action@v2
