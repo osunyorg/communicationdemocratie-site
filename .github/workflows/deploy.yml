@@ -20,6 +20,15 @@ jobs:
         with:
           hugo-version: '0.93.0'
 
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+          cache: 'yarn'
+
+      - name: Install JS dependencies
+        run: yarn install --frozen-lockfile
+
       - name: Build
         run: hugo --minify
 
