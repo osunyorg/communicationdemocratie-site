@@ -34,27 +34,4 @@
 
     .posts
         > div
-            &:first-child
-                @extend .col-lg-12
-                @include media-breakpoint-up(md)
-                    .post
-                        flex-direction: row
-                        > div
-                            width: calc(50% - #{$grid-gutter-width} / 2)
-                        .media
-                            margin-right: $grid-gutter-width
-                        .title
-                            font-size: px2rem(30)
-                            line-height: px2rem(36)
-            &:not(:first-child)
-                @include media-breakpoint-up(md)
-                    .post
-                        flex-direction: row
-                        > div:first-of-type
-                            padding-top: 0
-                        .media
-                            align-self: flex-start
-                            flex-shrink: 0
-                            margin-left: #{$grid-gutter-width}
-                            order: 2
-                            width: calc((100% - #{$grid-gutter-width} * 5) / 6)
+            @include grid-posts()
