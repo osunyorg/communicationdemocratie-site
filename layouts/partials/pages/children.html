@@ -2,9 +2,10 @@
   <section>
     <div class="container">
       <div class="pages">
-        {{ range sort . ".Params.position"  }}
+        {{ range . }}
+          {{ $page := partial "GetPageByUrl" . }}
           <div>
-            {{ partial "pages/page.html" . }}
+            {{ partial "pages/page.html" $page }}
           </div>
         {{ end }}
       </div>

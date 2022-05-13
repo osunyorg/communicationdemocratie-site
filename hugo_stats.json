@@ -86,7 +86,6 @@
       "dropdown-menu",
       "event",
       "events",
-      "featured-image",
       "has-children",
       "hero",
       "item-page-agir-soutenir",
@@ -177,10 +176,10 @@
       "main",
       "nav-toc",
       "navigation",
+      "page-children",
       "page-h2-0",
       "page-h2-1",
-      "page-h2-2",
-      "page-informations"
+      "page-h2-2"
     ]
   }
 }
