@@ -45,14 +45,18 @@
                 --bs-gutter-y: 4rem
                 > *
                     width: 100%
+               
                 .page
                     @include make-row()
                     align-items: center
                     flex-direction: row
+
                     > div
                         @include make-col-ready()
                         @include make-col(8)
                         text-align: left
+                        &:last-child:not(.media)
+                            @include make-col-offset(4)
                         &.media
                             @include make-col-offset(2)
                             @include make-col(2)
