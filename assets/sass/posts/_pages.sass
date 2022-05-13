@@ -69,10 +69,12 @@
             &:not(:first-child)
                 @include media-breakpoint-up(md)
                     .post
-                        flex-direction: row-reverse
+                        flex-direction: row
                         > div:first-of-type
                             padding-top: 0
                         .media
                             align-self: flex-start
                             flex-shrink: 0
-                            width: 80px
+                            margin-left: #{$grid-gutter-width}
+                            order: 2
+                            width: calc((100% - #{$grid-gutter-width} * 5) / 6)
