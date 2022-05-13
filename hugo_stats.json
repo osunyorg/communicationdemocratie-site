@@ -11,6 +11,7 @@
       "br",
       "br/",
       "button",
+      "caption",
       "div",
       "em",
       "figcaption",
@@ -42,8 +43,13 @@
       "strong",
       "sup",
       "svg",
+      "table",
+      "tbody",
+      "td",
+      "th",
       "time",
       "title",
+      "tr",
       "ul"
     ],
     "classes": [
@@ -91,6 +97,10 @@
       "glightbox",
       "has-children",
       "hero",
+      "icon",
+      "icon-facebook",
+      "icon-linkedin",
+      "icon-twitter",
       "item-page-agir-soutenir",
       "item-page-association",
       "item-page-challenges",
@@ -134,9 +144,10 @@
       "posts__page",
       "posts__section",
       "previous",
-      "related",
       "row",
+      "share",
       "sitemap__section",
+      "table-infos",
       "taxonomies",
       "term-actualites",
       "term-actualitescommunique-de-presse",
@@ -181,8 +192,7 @@
       "navigation",
       "page-h2-0",
       "page-h2-1",
-      "page-h2-2",
-      "page-posts"
+      "page-h2-2"
     ]
   }
 }
