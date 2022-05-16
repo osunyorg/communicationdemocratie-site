@@ -1,0 +1,13 @@
+{{ define "main" }}
+  {{ partial "categories/hero-term.html" . }}
+  <section class="page-detail">
+    <div class="container">
+      {{ partial "categories/description.html" . }}
+    </div>
+  </section>
+
+  <div class="container">
+    {{ partial "posts/posts.html" . }}
+    {{ partial "commons/pagination.html" . }}
+  </div>
+{{ end }}

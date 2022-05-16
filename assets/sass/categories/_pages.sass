@@ -4,9 +4,6 @@
             fill: $publications
     .breadcrumb-container
         background: $publications
-        margin-bottom: px2rem(60)
-        @include media-breakpoint-up(md)
-            margin-bottom: px2rem(90)
     .toc
         ol
             > li
@@ -34,3 +31,7 @@
         .post-categories
             .cat-point-de-vue:not(.cat-child)
                 display: none
+
+    .posts
+        > div
+            @include grid-posts()

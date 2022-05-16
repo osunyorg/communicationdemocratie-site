@@ -1,34 +1,29 @@
 {{ define "main" }}
   {{ partial "pages/hero.html" . }}
-  {{ partial "header/page-detail.html" . }}
+
+  {{- $category := site.GetPage (printf "/categories%s" .Params.category) -}}
 
   <div>
-
     {{- if .Pages }}
-
-        {{ partial "pages/children.html" .Pages }}
-        {{ partial "blocks/list.html" .Params.blocks }}
-
+        {{/* Si pas de sous-pages : pleine largeur */}}
     {{- else -}}
-      {{- $category := site.GetPage (printf "/categories%s" .Params.category) -}}
-
-      {{ partial "pages/aside.html"
-          (dict
-              "category" $category
-              "context" .
-          )
-      }}
-
-      {{/* TODO: DELETE IT */}} {{ partial "pages/body.html" .Content }}
-      {{ partial "blocks/list.html" .Params.blocks }}
-      {{ partial "posts/related.html" $category }}
-      <section>
-        <div class="container">
-          {{ partial "commons/backtotop.html" }}
-        </div>
-      </section>
-
+        {{ partial "pages/aside.html"
+            (dict
+                "category" $category
+                "context" .
+            )
+        }}
     {{ end -}}
 
+    {{- if .Params.blocks }}
+      {{ partial "blocks/list.html" .Params.blocks }}
+    {{ else }}
+      {{ partial "pages/image.html" .Params.image }}
+      {{/* LEGACY */}}{{ partial "pages/body.html" .Content }}
+      {{/* LEGACY */}}{{ partial "pages/body.html" .Params.legacy_text }}
+      {{ partial "pages/children.html" .Params.children }}
+      {{/* LEGACY */}}{{ partial "posts/related.html" $category }}
+    {{ end }}
   </div>
+
 {{ end }}
