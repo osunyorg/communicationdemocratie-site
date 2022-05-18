@@ -43,6 +43,10 @@
     target: "/fr/plaidoyers/pour-une-loi-sapin-iii/"
     kind: page
     children: []
+  - title: Pour l'inclusion du plaidoyer dans la notion d'intérêt général
+    target: "/fr/plaidoyers/soutenir-le-developpement-des-associations-et-du-plaidoyer/"
+    kind: page
+    children: []
   - title: Tous les plaidoyers
     target: "/fr/plaidoyers/"
     kind: page
@@ -81,10 +85,6 @@
     children: []
 - title: Agir et soutenir
   target: "/fr/l-association/agir-et-soutenir/"
-  kind: page
-  children: []
-- title: Pour l'inclusion du plaidoyer dans la notion d'intérêt général
-  target: "/fr/plaidoyers/soutenir-le-developpement-des-associations-et-du-plaidoyer/"
   kind: page
   children: []
 
