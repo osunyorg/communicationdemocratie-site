@@ -6,11 +6,20 @@
     .title
         h1
             margin-bottom: 0
+            &::after
+                @extend .icon
+                @include icon-code("code-logo")
+                color: $pleas
+                display: block
+                font-size: 44px
+                margin-top: px2rem(25)
+
         > p
             @include suptitle
         @include media-breakpoint-down(md)
             .logotype
                 display: none
+        
     .media
         margin-bottom: px2rem(30)
         picture
@@ -29,7 +38,7 @@
         flex-direction: column-reverse
 
     @include media-breakpoint-up(md)
-        padding-bottom: 150px
+        padding-bottom: 130px
         padding-top: 100px
         .row
             align-items: center
@@ -44,5 +53,3 @@
             .title
                 @include make-col(8)
 
-    .logotype
-        margin-top: px2rem(25)
