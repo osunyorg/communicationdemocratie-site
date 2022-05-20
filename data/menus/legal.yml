@@ -1,6 +1,6 @@
 ---
 - title: contact@communication-democratie.org
-  target: "/"
+  target: mailto:contact@communication-democratie.org/
   kind: url
   children: []
 - title: Mentions légales et politique de protection des données
