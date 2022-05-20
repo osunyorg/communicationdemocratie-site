@@ -1,2 +1,6 @@
---- []
+---
+- title: contact@communication-democratie.org
+  target: "/"
+  kind: url
+  children: []
 
