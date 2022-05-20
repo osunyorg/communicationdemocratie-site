@@ -9,17 +9,16 @@
 
     {{ partial "header/page-detail.html" . }}
 
-    {{ if .Params.authors }}
-      <section class="disclaimer">
-        <p>{{ i18n "posts.disclaimer" }}</p>
-      </section>
-    {{ end }}
-
     <section class="container">
       <div class="content">
         {{ partial "posts/aside.html" . }}
         <div>
           {{ partial "posts/body.html" . }}
+          {{ if .Params.authors }}
+            <section class="disclaimer">
+              <p>{{ i18n "posts.disclaimer" }}</p>
+            </section>
+          {{ end }}
           {{ partial "commons/backtotop.html" }}
         </div>
       </div>
