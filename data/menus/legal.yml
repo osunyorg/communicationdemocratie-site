@@ -1,4 +1,8 @@
 ---
+- title: contact@communication-democratie.org
+  target: "/"
+  kind: url
+  children: []
 - title: Mentions légales et politique de protection des données
   target: "/fr/politique-de-confidentialite/"
   kind: page
@@ -10,9 +14,5 @@
 - title: Espace presse
   target: "/fr/espace-presse/"
   kind: page
-  children: []
-- title: contact@communication-democratie.org
-  target: "/"
-  kind: url
   children: []
 
