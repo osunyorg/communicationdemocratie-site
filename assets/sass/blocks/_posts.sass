@@ -1,7 +1,10 @@
 .block-posts
+    margin-top: $grid-gutter-width * 3
+    margin-bottom: $grid-gutter-width * 3
     .top h2
         @include suptitle
     .posts
+        --bs-gutter-y: #{map-get($spacers, 3)}
         > div
             &:not(:first-child)
                 @include media-breakpoint-up(md)
