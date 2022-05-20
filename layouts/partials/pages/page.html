@@ -1,40 +1,43 @@
-{{ $show_description := true }}
-{{ $show_image := false }}
-{{ $class := "page" }}
-{{ if .Params.bodyclass }}
+{{- $class := "page" -}}
+{{- $custom_class := "" -}}
+
+{{- if .Params.bodyclass -}}
   {{ $class = printf "%s page-%s" $class .Params.bodyclass }}
-  {{ if eq .Params.bodyclass "pleas" }}
-    {{ $show_image = true }}
-  {{ end }}
-{{ end }}
-{{ with . }}
-<div class="{{ $class }}">
+{{- end -}}
+
+{{- if .Scratch.Get "class" -}}
+  {{ $custom_class = .Scratch.Get "class" }}
+  {{ $class = printf "%s %s" $class $custom_class }}
+{{- end -}}
+<article class="{{ $class }}">
   <div>
     <p class="title">
       <a href="{{ .Permalink }}">
         {{- partial "PrepareHTML" .Title -}}
       </a>
     </p>
-    {{ if and .Params.description $show_description }}
-      <p>{{- partial "PrepareHTML" .Params.description -}}</p>
+    {{ if .Scratch.Get "show_description" }}
+      {{ if .Params.description_short }}
+        <p>{{- partial "PrepareHTML" .Params.description -}}</p>
+      {{ end }}
+    {{ end }}
+    {{ if .Scratch.Get "show_more" }}
+      <p class="more">{{- i18n "commons.more" -}}</p>
     {{ end }}
   </div>
-  {{ if $show_image }}
+  {{ if .Scratch.Get "show_image" }}
     <div class="media">
       {{- if .Params.image -}}
         {{- partial "commons/image.html"
               (dict
                 "image"    .Params.image
-                "alt"      .Title
-                "mobile"   "351x351"
-                "tablet"   "216x216"
-                "desktop"  "416x416"
-                "crop"     true
+                "mobile"   "351x291"
+                "tablet"   "334x167"
+                "desktop"  "634x317"
               ) -}}
       {{- else -}}
         {{- partial "commons/image-default.html" -}}
       {{- end -}}
     </div>
-  {{ end }}
-</div>
-{{ end }}
+  {{- end }}
+</article>
