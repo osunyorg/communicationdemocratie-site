@@ -11,4 +11,8 @@
   target: "/fr/espace-presse/"
   kind: page
   children: []
+- title: contact@communication-democratie.org
+  target: "/"
+  kind: url
+  children: []
 
