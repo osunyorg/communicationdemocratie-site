@@ -8,7 +8,8 @@
                     @extend .h2
                     @extend .stretched-link
                     @include link
-                    font-weight: $headings-font-weight
+                    @include media-breakpoint-up(lg)
+                        font-weight: $headings-font-weight
                 p
                     @extend .small
 
