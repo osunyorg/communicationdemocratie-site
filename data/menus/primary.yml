@@ -68,7 +68,7 @@
   kind: page
   children:
   - title: Notre mission
-    target: "/fr/l-association/notre-mission/"
+    target: "/fr/l-association/notre-vision/"
     kind: page
     children: []
   - title: Vision politique
