@@ -4,10 +4,12 @@
     padding-bottom: px2rem(60)
     padding-top: px2rem(60)
     .title
+        @include media-breakpoint-down(md)
+            .logotype
+                display: none
         h1
             margin-bottom: 0
             &::after
-                @extend .icon
                 @include icon-code("code-logo")
                 color: $pleas
                 display: block
@@ -16,9 +18,6 @@
 
         > p
             @include suptitle
-        @include media-breakpoint-down(md)
-            .logotype
-                display: none
 
     .media
         margin-bottom: px2rem(30)
