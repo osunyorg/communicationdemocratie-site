@@ -24,6 +24,12 @@
       {{ partial "pages/children.html" .Params.children }}
       {{/* LEGACY */}}{{ partial "posts/related.html" $category }}
     {{ end }}
+
+    <section>
+      <div class="container">
+        {{ partial "commons/backtotop.html" . }}
+      </div>
+    </section>
   </div>
 
 {{ end }}
