@@ -87,4 +87,8 @@
   target: "/fr/l-association/agir-et-soutenir/"
   kind: page
   children: []
+- title: Texte fondateur
+  target: "/fr/l-association/texte-fondateur/"
+  kind: page
+  children: []
 
