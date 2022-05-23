@@ -71,8 +71,8 @@
     target: "/fr/l-association/notre-mision/"
     kind: page
     children: []
-  - title: Vision politique
-    target: "/fr/l-association/notre-mision/"
+  - title: Notre vision
+    target: "/fr/l-association/notre-vision/"
     kind: page
     children: []
   - title: Texte fondateur
