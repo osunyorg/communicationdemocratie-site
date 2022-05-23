@@ -1,10 +1,12 @@
 {{ define "main" }}
   {{ partial "categories/hero-term.html" . }}
+  {{ if partial "GetTextFromHTML" .Content }}
   <section class="page-detail">
     <div class="container">
       {{ partial "categories/description.html" . }}
     </div>
   </section>
+  {{ end }}
 
   <div class="container">
     {{ partial "posts/posts.html" . }}

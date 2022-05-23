@@ -1,0 +1,28 @@
+{{ define "main" }}
+  {{ partial "posts/hero-list.html" . }}
+  {{ if (partial "GetTextFromHTML" .Params.description_short) }}
+  <section class="page-detail">
+    <div class="container">
+        <div class="lead">
+          {{ partial "PrepareHTML" .Params.description_short }}
+        </div>
+    </div>
+  </section>
+  {{ end }}
+
+  <div class="container">
+    {{ partial "posts/posts.html" . }}
+    {{ partial "commons/pagination.html" . }}
+  </div>
+
+  {{ if .Params.blocks }}
+    {{ partial "blocks/list.html" .Params.blocks }}
+  {{ end }}
+
+  <section>
+    <div class="container">
+      {{ partial "commons/backtotop.html" }}
+    </div>
+  </section>
+
+{{ end }}

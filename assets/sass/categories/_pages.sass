@@ -13,8 +13,21 @@
                     &.active
                         &::before
                             background-color: $publications
+
+    .breadcrumb-container
+        margin-bottom: px2rem(60)
+        @include media-breakpoint-up(md)
+            margin-bottom: px2rem(90)
     .page-detail
         background: $publications
+        margin-bottom: px2rem(60)
+        margin-top: px2rem(-60)
+        @include media-breakpoint-up(md)
+            margin-bottom: px2rem(90)
+            margin-top: px2rem(-90)
+        .lead
+            margin-bottom: 0
+
     &.term-point-de-vue
         .logotype
             path
