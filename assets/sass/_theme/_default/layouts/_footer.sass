@@ -18,6 +18,11 @@ footer[role="contentinfo"]
     .logo
         margin-top: 200px
         text-align: center
+        &::before
+            @include icon-code("code-logo")
+            color: $pleas
+            font-size: 50px
+            margin-right: 10px
         @include media-breakpoint-down(md)
             margin-top: 200px
         img
