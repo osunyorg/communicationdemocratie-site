@@ -35,11 +35,15 @@
                 color: $publications
                 margin-left: px2rem(10)
         a
-            text-decoration-color: rgba($publications, 1) !important
+            text-decoration-color: rgba($publications, .3)
+            &:hover
+                text-decoration-color: $publications
     &.term-point-de-vue
         .top
             h2
                 &::after
                     color: $viewpoint
             a
-                text-decoration-color: rgba($viewpoint, 1) !important
+                text-decoration-color: rgba($viewpoint, .3)
+                &:hover
+                    text-decoration-color: $viewpoint
