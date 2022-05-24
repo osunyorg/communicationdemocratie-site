@@ -3,7 +3,11 @@
   {{ if partial "GetTextFromHTML" .Content }}
   <section class="page-detail">
     <div class="container">
-      {{ partial "categories/description.html" . }}
+      <div class="content">
+        <div>
+          {{ partial "categories/description.html" . }}
+        </div>
+      </div>
     </div>
   </section>
   {{ end }}
