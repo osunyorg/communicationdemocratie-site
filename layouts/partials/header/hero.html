@@ -5,7 +5,7 @@
       <div class="title">
         {{ if partial "GetTextFromHTML" .Params.header_text }}
           <p>{{ partial "PrepareHTML" .Title }}</p>
-          <h1>{{ partial "PrepareHTML" .Params.header_text | plainify }}</h1>
+          <h1>{{ partial "PrepareHTML" .Params.header_text }}</h1>
         {{ else }}
           <h1>{{ partial "PrepareHTML" .Title }}</h1>
         {{ end }}
