@@ -24,6 +24,15 @@
         picture
             aspect-ratio: 1
             display: block
+            position: relative
+            @supports not (aspect-ratio: 1)
+                &::before
+                    content: ''
+                    display: block
+                    padding-top: 100%
+                img
+                    position: absolute
+                    top: 0
             .persons__page &
                 border-radius: 50%
                 display: block

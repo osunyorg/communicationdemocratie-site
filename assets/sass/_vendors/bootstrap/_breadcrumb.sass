@@ -1,4 +1,9 @@
 .breadcrumb
+    @include media-breakpoint-down(md)
+        &-container
+            .container
+                padding-left: 0
+                padding-right: 0
     a
         color: $link-color
         text-decoration-color: rgba($link-color, 0.3)
