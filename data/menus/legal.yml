@@ -11,4 +11,8 @@
   target: "/fr/plan-du-site/"
   kind: page
   children: []
+- title: Mentions légales
+  target: "/fr/mentions-legales/"
+  kind: page
+  children: []
 
