@@ -1,7 +1,7 @@
 ---
 - title: contact@communication-democratie.org
-  target: mailto:contact@communication-democratie.org/
-  kind: url
+  target: "/"
+  kind: blank
   children: []
 - title: Espace presse
   target: "/fr/espace-presse/"
