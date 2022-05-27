@@ -91,4 +91,8 @@
   target: "/fr/l-association/agir-et-soutenir/"
   kind: page
   children: []
+- title: Lutte européenne contre l'influence pour la malbouffe
+  target: "/fr/plaidoyers/lutte-europeenne-contre-l-influence-pour-la-malbouffe/"
+  kind: page
+  children: []
 
