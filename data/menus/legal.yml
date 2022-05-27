@@ -3,16 +3,16 @@
   target: mailto:contact@communication-democratie.org/
   kind: url
   children: []
+- title: Espace presse
+  target: "/fr/espace-presse/"
+  kind: page
+  children: []
 - title: Mentions légales et politique de protection des données
   target: "/fr/politique-de-confidentialite/"
   kind: page
   children: []
 - title: Plan du site
   target: "/fr/plan-du-site/"
-  kind: page
-  children: []
-- title: Espace presse
-  target: "/fr/espace-presse/"
   kind: page
   children: []
 
