@@ -83,6 +83,10 @@
     target: "/fr/l-association/texte-fondateur/"
     kind: page
     children: []
+  - title: Notre démarche de communication
+    target: "/fr/l-association/notre-demarche-de-communication/"
+    kind: page
+    children: []
   - title: Organes et fonctionnement
     target: "/fr/l-association/organes-et-fonctionnement/"
     kind: page
@@ -91,10 +95,6 @@
     target: "/fr/l-association/a-lorigine-de-lassociation/"
     kind: page
     children: []
-- title: Notre démarche de communication
-  target: "/fr/l-association/notre-demarche-de-communication/"
-  kind: page
-  children: []
 - title: Agir et soutenir
   target: "/fr/l-association/agir-et-soutenir/"
   kind: page
