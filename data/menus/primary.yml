@@ -95,4 +95,8 @@
   target: "/fr/l-association/agir-et-soutenir/"
   kind: page
   children: []
+- title: Notre démarche de communication
+  target: "/fr/l-association/notre-demarche-de-communication/"
+  kind: page
+  children: []
 
