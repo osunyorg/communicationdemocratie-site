@@ -71,12 +71,12 @@
   target: "/fr/l-association/"
   kind: page
   children:
-  - title: Notre mission
-    target: "/fr/l-association/notre-mision/"
-    kind: page
-    children: []
   - title: Notre vision
     target: "/fr/l-association/notre-vision/"
+    kind: page
+    children: []
+  - title: Notre mission
+    target: "/fr/l-association/notre-mision/"
     kind: page
     children: []
   - title: Texte fondateur
