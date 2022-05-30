@@ -13,14 +13,20 @@
     {{- partial "posts/categories" . -}}
     <p>{{ partial "GetTruncateContent" $description }}</p>
   </div>
+
   {{- if .Params.image -}}
+    {{- $desktop_size := "636x318" -}}
+    {{- if .Scratch.Get "small" -}}
+      {{- $desktop_size = "172x86" -}}
+    {{- end -}}
     <div class="media">
       {{- partial "commons/image.html"
             (dict
               "image"    .Params.image
               "mobile"   "351x291"
-              "tablet"   "334x167"
-              "desktop"  "634x317"
+              "tablet"   "336x278"
+              "desktop"  $desktop_size
+              "crop" true
             ) -}}
     </div>
   {{- end -}}
