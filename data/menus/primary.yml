@@ -61,11 +61,11 @@
   children:
   - title: Actualités
     target: "/fr/publications/actualites/"
-    kind: news_category
+    kind: category
     children: []
   - title: Point de vue
     target: "/fr/publications/point-de-vue/"
-    kind: news_category
+    kind: category
     children: []
 - title: L’association
   target: "/fr/l-association/"
