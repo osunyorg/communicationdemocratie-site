@@ -7,16 +7,16 @@
 
     .timeline-arrows
         display: flex
+        margin-left: -6px
         > button
             -webkit-appearance: button
             background: none
             border: none
             cursor: pointer
-            font-size: 20px
-            padding: $grid-gutter-width * 0.5
+            font-size: px2rem(20)
+            padding: px2rem(8) px2rem(20)
             &:first-child
-                @extend .icon
-                margin-right: $grid-gutter-width * 0.5
+                // margin-right: $grid-gutter-width * 0.5
                 &::after
                     @include icon-code( "code-arrow-left")
             &:last-child
