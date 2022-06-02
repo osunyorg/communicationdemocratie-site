@@ -7,9 +7,10 @@ body
         @include code-page-color($pleas)
         .hero
             .media
-                margin-left: auto
-                margin-right: auto
-                width: calc(100%/12*10)
+                @include media-breakpoint-down(md)
+                    margin-left: auto
+                    margin-right: auto
+                    width: calc(100%/12*10)
                 img
                     object-fit: cover
                 picture
