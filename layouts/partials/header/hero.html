@@ -16,12 +16,12 @@
           {{ partial "commons/image.html"
               (dict
                 "image"    .image
-                "alt"      .title
                 "mobile"   "351x168"
                 "tablet"   "456x219"
                 "desktop"  "856x410"
                 "lazy"     false
               ) }}
+          {{ partial "PrepareHTML" .image.credit }}
         </div>
       {{ end -}}
     </div>

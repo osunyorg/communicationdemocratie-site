@@ -4,11 +4,15 @@ footer[role="contentinfo"]
     padding-bottom: calc(#{$grid-gutter-width} * 5)
     padding-top: calc(#{$grid-gutter-width} * 2.5)
 
-    a, span
+    a,
+    span
         color: white
-    a:hover
-        color: white
-        text-decoration-color: white
+        &:hover
+            color: white
+    a
+        text-decoration-color: rgba(white, .3)
+        &:hover
+            text-decoration-color: white
 
     address
         font-size: px2rem(14)
@@ -79,6 +83,9 @@ footer[role="contentinfo"]
             padding: 0
         li
             @extend .nav-item
+            span
+                &:hover
+                    text-decoration: none
         a,
         span
             @extend .nav-link
@@ -87,10 +94,13 @@ footer[role="contentinfo"]
             font-size: px2rem(14)
             line-height: 1.4
             padding-left: 0
+            &:hover
+                color: white
         a
             @include link
-            &:hover, &:focus
-                color: white
+            text-decoration-color: transparent
+            &:hover
+                text-decoration-color: white
 
     nav[role="navigation"]
         .nav-level-1
@@ -108,12 +118,10 @@ footer[role="contentinfo"]
                 display: block
                 font-size: px2rem(18)
 
-        a, span
-            color: white
-            padding-left: 0
-            text-decoration-color: rgba(white, 0)
-        a:hover
-            color: white
+            a,
+            span
+                padding-left: 0
+
 
         .nav-level-2
             @include media-breakpoint-down(lg)

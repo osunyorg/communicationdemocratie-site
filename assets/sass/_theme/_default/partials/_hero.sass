@@ -3,6 +3,7 @@
     color: $primary
     padding-bottom: px2rem(60)
     padding-top: px2rem(60)
+    position: relative
     .title
         @include media-breakpoint-down(md)
             .logotype
@@ -42,6 +43,16 @@
             height: 100%
             object-fit: contain
             width: 100%
+        p
+            @extend .container
+            @extend .small
+            bottom: $spacer
+            left: 50%
+            margin-bottom: 0
+            padding: 0 calc(#{$grid-gutter-width} / 2)
+            position: absolute
+            text-align: right
+            transform: translateX(-50%)
     .with-image
         flex-direction: column-reverse
 
@@ -54,7 +65,8 @@
                 flex-direction: row
         .media
             @include make-col(4)
-            margin-bottom: px2rem(68)
+            margin-bottom: 0
+            // margin-bottom: px2rem(68)
         .title
             @include make-col(10)
         .with-image
