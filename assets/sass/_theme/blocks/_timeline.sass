@@ -9,19 +9,23 @@
         display: flex
         margin-left: -6px
         > button
-            -webkit-appearance: button
+            appearance: none
             background: none
             border: none
+            color: white
             cursor: pointer
             font-size: px2rem(20)
             padding: px2rem(8) px2rem(20)
+            &:hover
+                color: black
             &:first-child
-                // margin-right: $grid-gutter-width * 0.5
                 &::after
                     @include icon-code( "code-arrow-left")
             &:last-child
                 &::after
                     @include icon-code( "code-arrow-right")
+            &:disabled
+                color: rgba(white, .5)
     .events
         margin-left: -$grid-gutter-width/2
         margin-right: -$grid-gutter-width/2
