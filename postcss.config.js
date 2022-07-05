@@ -70,7 +70,8 @@ var devPlugins = {},
                     /publications/,
                     /actualites/,
                     /agir-soutenir/,
-                    /call_to_action/
+                    /call_to_action/,
+                    /block-timeline/
                 ]
             }
         }
