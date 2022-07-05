@@ -11,11 +11,10 @@
             .media
                 max-width: calc(100% / 3)
     .title
-        a
-            &::after
-                @include icon-code("code-arrow-right")
-                margin-left: px2rem(10)
-                text-decoration: none
+        a::after
+            @include icon-code("code-arrow-right")
+            margin-left: px2rem(10)
+            text-decoration: none
 
     .pages > *
         aside + .blocks &
