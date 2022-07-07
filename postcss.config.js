@@ -39,6 +39,8 @@ var devPlugins = {},
                     'gzoomOut'
                 ],
                 deep: [
+                    /block-/,
+                    /ratio/,
                     // Glightbox
                     /^glightbox/,
                     /^gslide/,
@@ -62,6 +64,7 @@ var devPlugins = {},
                     /__page/,
                     /__section/,
                     /__term/,
+                    /__taxonomy/,
                     /association/,
                     /pleas/,
                     /posts/,
