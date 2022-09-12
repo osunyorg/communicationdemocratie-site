@@ -11,11 +11,7 @@
     {{ partial "header/page-detail.html" . }}
 
     {{- if .Params.blocks }}
-      {{ if .Params.authors }}
-        <section class="disclaimer">
-          <p>{{ i18n "posts.disclaimer" }}</p>
-        </section>
-      {{ end }}
+      
       <div class="content-blocks">
         {{ partial "posts/aside.html" . }}
         <div class="blocks blocks-chapo">
@@ -34,6 +30,18 @@
             </div>
           </div>
         </div>
+        {{ if .Params.authors }}
+          <section class="blocks blocks-disclaimer">
+            <div class="container">
+              <div class="block-content">
+                <div class="disclaimer">
+                  <p>{{ i18n "posts.disclaimer" }}</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        {{ end }}
+       
       </div>
     {{ else }}
       <div class="container">
