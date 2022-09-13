@@ -10,16 +10,8 @@
 
     {{ partial "header/page-detail.html" . }}
 
-
     <div class="content-blocks">
       {{ partial "posts/aside.html" . }}
-      <div class="blocks blocks-chapo">
-        <div class="container">
-          <div class="block-content">
-            {{ partial "posts/image.html" .Params.image }}
-          </div>
-        </div>
-      </div>
       {{ partial "blocks/list.html" .Params.blocks }}
       <div class="blocks blocks-pagination">
         <div class="container">
