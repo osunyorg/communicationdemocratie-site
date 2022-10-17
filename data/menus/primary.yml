@@ -59,9 +59,9 @@
   target: "/fr/publications/"
   kind: page
   children:
-  - title: Actualités
-    target: "/fr/publications/actualites/"
-    kind: category
+  - title: Rapports
+    target: "/fr/rapports/"
+    kind: page
     children: []
   - title: Point de vue
     target: "/fr/publications/point-de-vue/"
