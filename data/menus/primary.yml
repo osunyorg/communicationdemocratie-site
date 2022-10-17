@@ -60,7 +60,7 @@
   kind: page
   children:
   - title: Rapports
-    target: "/fr/rapports/"
+    target: "/fr/publications/rapports/"
     kind: page
     children: []
   - title: Point de vue
