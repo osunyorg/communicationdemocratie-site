@@ -59,10 +59,6 @@
   target: "/fr/publications/"
   kind: page
   children:
-  - title: La communication commerciale à l'ère de la sobriété
-    target: "/fr/publications/rapports/la-communication-commerciale-a-l-ere-de-la-sobriete/"
-    kind: page
-    children: []
   - title: Rapports
     target: "/fr/publications/rapports/"
     kind: page
