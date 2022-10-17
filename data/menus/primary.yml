@@ -63,14 +63,14 @@
     target: "/fr/publications/rapports/"
     kind: page
     children: []
+  - title: Actualités
+    target: "/fr/publications/actualites/"
+    kind: category
+    children: []
   - title: Point de vue
     target: "/fr/publications/point-de-vue/"
     kind: category
     children: []
-- title: Actualités
-  target: "/fr/publications/actualites/"
-  kind: category
-  children: []
 - title: L’association
   target: "/fr/l-association/"
   kind: page
