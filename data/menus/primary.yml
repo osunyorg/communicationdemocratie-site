@@ -107,8 +107,4 @@
   target: "/fr/agir-et-soutenir/"
   kind: page
   children: []
-- title: Rapports
-  target: "/fr/publications/rapports/"
-  kind: page
-  children: []
 
