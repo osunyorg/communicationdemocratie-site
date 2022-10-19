@@ -67,7 +67,7 @@
     target: "/fr/publications/actualites/"
     kind: category
     children: []
-  - title: Point de vue
+  - title: Points de vue
     target: "/fr/publications/point-de-vue/"
     kind: category
     children: []
