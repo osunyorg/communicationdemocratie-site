@@ -78,7 +78,7 @@ module.exports = {
                     /pleas/,
                     /posts/,
                     /challenges/,
-                    /point-de-vue/,
+                    /points-de-vue/,
                     /publications/,
                     /actualites/,
                     /agir-soutenir/
