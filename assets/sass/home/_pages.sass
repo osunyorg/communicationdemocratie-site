@@ -2,7 +2,9 @@
     .block-call_to_action
         text-align: center
         .block-content .call_to_action > div
-            padding: 3rem
+            padding: $grid-gutter-width
+            @include media-breakpoint-up(md)
+                padding: 3rem
     .hero + .blocks
         [class^="block"]:first-child
             margin-top: 0
@@ -41,7 +43,7 @@
                     grid-column: 8/13
                     grid-row: 2
 
-    .block-page-association.block-pages:nth-child(odd)
+    .block-page-association.block-pages
         @include full-width-background-color($association)
         .page
             @include title-color(white)
@@ -54,3 +56,9 @@
                 object-position: left
         .page
             @include title-color(white)
+
+    // .block-page-challenges.block-pages + .block-page-association.block-pages,
+    // .block-page-association.block-pages + .block-page-challenges.block-pages
+    // .block-pages.block-page-pleas + .block-page-challenges.block-pages,
+    // .block-pages.block-page-pleas + .block-page-association.block-pages,
+    //     background: transparent

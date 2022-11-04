@@ -9,26 +9,33 @@
                 color: $body-color
                 &,
                 aside ~ .blocks &
-                    padding: $grid-gutter-width
-                    padding-bottom: calc(#{$btn-padding-y} * 2)
-                div + div,
-                & > a
-                    bottom: 0
-                    left: 50%
-                    position: absolute
-                    transform: translate(-50%, 50%)
-                div + div
-                    text-align: center
-                    width: 100%
+                    padding: $grid-gutter-width / 2
+                    @include media-breakpoint-up(md)
+                        padding: $grid-gutter-width
+                        padding-bottom: calc(#{$btn-padding-y} * 2)
+                
+                @include media-breakpoint-up(md)
+                    div + div,
+                    & > a
+                        bottom: 0
+                        left: 50%
+                        position: absolute
+                        transform: translate(-50%, 50%)
+                        // max-width: 40%
+                    
                 div + div,
                 & >
                     a
                         @extend .btn-primary
                         @extend .btn
-                        max-width: 40%
                         overflow: hidden
                         text-overflow: ellipsis
                         white-space: nowrap
+                        margin-bottom: 1rem
+
+                div + div
+                    text-align: center
+                    width: 100%
 
             .page-pleas &
                 border-color: $pleas
