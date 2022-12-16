@@ -1,0 +1,106 @@
+---
+- title: Enjeux
+  target: "/en/enjeux/"
+  kind: page
+  children:
+  - title: Communication commerciale
+    target: "/en/enjeux/communication-consommation/"
+    kind: page
+    children: []
+  - title: Communication & RSE
+    target: "/en/enjeux/communication-et-rse/"
+    kind: page
+    children: []
+  - title: Influence politique
+    target: "/en/enjeux/influence-politique/"
+    kind: page
+    children: []
+  - title: Médias & Annonceurs
+    target: "/en/enjeux/mediasannonceurs/"
+    kind: page
+    children: []
+  - title: Pub & Numérique
+    target: "/en/enjeux/pubnumerique/"
+    kind: page
+    children: []
+  - title: Communication des ONG
+    target: "/en/enjeux/discours-des-ong/"
+    kind: page
+    children: []
+- title: Plaidoyers
+  target: "/en/plaidoyers/"
+  kind: page
+  children:
+  - title: Lutter contre le greenwashing à l’échelle européenne
+    target: "/en/plaidoyers/lutte-contre-le-greenwashing-au-niveau-europeen/"
+    kind: page
+    children: []
+  - title: Pour une loi Evin européenne du climat
+    target: "/en/plaidoyers/campagne-pour-une-loi-evin-du-climat-europeenne/"
+    kind: page
+    children: []
+  - title: Lutte européenne contre l'influence pour la malbouffe
+    target: "/en/plaidoyers/lutte-europeenne-contre-l-influence-pour-la-malbouffe/"
+    kind: page
+    children: []
+  - title: Pour la transparence du lobbying 360°
+    target: "/en/plaidoyers/pour-une-loi-sapin-iii/"
+    kind: page
+    children: []
+  - title: Pour l'inclusion du plaidoyer dans la notion d'intérêt général
+    target: "/en/plaidoyers/soutenir-le-developpement-des-associations-de-plaidoyer/"
+    kind: page
+    children: []
+  - title: 'Tous les plaidoyers                                                                                                     '
+    target: "/en/plaidoyers/"
+    kind: page
+    children: []
+- title: Publications
+  target: "/en/publications/"
+  kind: page
+  children:
+  - title: Rapports
+    target: "/en/publications/rapports/"
+    kind: page
+    children: []
+  - title: Actualités
+    target: "/en/publications/actualites/"
+    kind: category
+    children: []
+  - title: Points de vue
+    target: "/en/publications/points-de-vue/"
+    kind: category
+    children: []
+- title: L’association
+  target: "/en/l-association/"
+  kind: page
+  children:
+  - title: Notre vision
+    target: "/en/l-association/notre-vision/"
+    kind: page
+    children: []
+  - title: Notre mission
+    target: "/en/l-association/notre-mision/"
+    kind: page
+    children: []
+  - title: Texte fondateur
+    target: "/en/l-association/texte-fondateur/"
+    kind: page
+    children: []
+  - title: Notre démarche de communication
+    target: "/en/l-association/notre-demarche-de-communication/"
+    kind: page
+    children: []
+  - title: Organes et fonctionnement
+    target: "/en/l-association/organes-et-fonctionnement/"
+    kind: page
+    children: []
+  - title: A l'origine de l'association
+    target: "/en/l-association/a-lorigine-de-lassociation/"
+    kind: page
+    children: []
+- title: Agir et soutenir
+  target: "/en/agir-et-soutenir/"
+  kind: page
+  children: []
+
