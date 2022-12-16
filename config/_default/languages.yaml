@@ -1,4 +1,10 @@
-fr:
-  title: Communication et démocratie
 en:
   title: Communication et démocratie
+  contentDir: content/en
+  languageCode: en
+  languageName: English
+fr:
+  title: Communication et démocratie
+  contentDir: content/fr
+  languageCode: fr
+  languageName: Français
