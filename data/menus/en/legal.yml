@@ -4,19 +4,19 @@
   kind: blank
   children: []
 - title: Espace presse
-  target: "/en/espace-presse/"
+  target: "/fr/espace-presse/"
   kind: page
   children: []
 - title: Plan du site
-  target: "/en/plan-du-site/"
+  target: "/fr/plan-du-site/"
   kind: page
   children: []
 - title: Mentions légales
-  target: "/en/mentions-legales/"
+  target: "/fr/mentions-legales/"
   kind: page
   children: []
 - title: Politique de confidentialité
-  target: "/en/politique-de-confidentialite/"
+  target: "/fr/politique-de-confidentialite/"
   kind: page
   children: []
 
