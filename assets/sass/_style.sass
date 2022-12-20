@@ -1,0 +1,43 @@
+.container
+    max-width: px2rem(540)
+    @include media-breakpoint-up(sm)
+        max-width: px2rem(750)
+    @include media-breakpoint-up(desktop)
+        max-width: px2rem(960)
+    @include media-breakpoint-up(lg)
+        max-width: px2rem(1140)
+    @include media-breakpoint-up(xxl)
+        max-width: $grid-max-width
+
+.lead
+    .pages__section:not(.full-width) &
+        @include lead
+        
+header
+    .menu
+        .nav-level-1
+            > li
+                > a
+                    @include h2
+                    font-weight: normal
+
+// blocks
+.block
+    &-call_to_action
+        .call_to_action
+            > div
+                border: 1px solid $color-border
+                padding: $spacing2
+                position: relative
+                .description
+                    p
+                        @include inherit-text
+                @include in-page-with-or-without-sidebar
+                    .actions
+                        bottom: 0
+                        display: inline-block
+                        grid-column: unset
+                        left: 50%
+                        position: absolute
+                        transform: translate(-50%,50%)
+                        white-space: nowrap
