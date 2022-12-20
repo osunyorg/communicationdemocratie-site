@@ -1,1 +1,5 @@
 baseURL: /
+
+## LANGUAGE
+defaultContentLanguage: fr
+defaultContentLanguageInSubdir: true
