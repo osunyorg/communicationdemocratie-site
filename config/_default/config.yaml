@@ -1,4 +1,4 @@
-theme: osuny-hugo-theme
+theme: osuny-hugo-theme-aaa
 
 ## ADVANCED
 paginate: 18
@@ -15,3 +15,5 @@ params:
     enable: false
 build:
   writeStats: true
+
+removePathAccents: true
