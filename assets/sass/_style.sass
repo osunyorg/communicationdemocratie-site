@@ -101,7 +101,7 @@ header#document-header
             background-color: $pleas
             article
                 .media
-                    margin: auto
+                    margin: 0 auto
                     position: relative
                     width: col(2, 4)
                     &::before
@@ -199,6 +199,8 @@ body.page__home
     hgroup
         display: flex
         flex-direction: column-reverse
+        p
+            @include h5
     h1
         &::after
             @include icon-code("code-logo")
