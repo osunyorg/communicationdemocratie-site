@@ -38,6 +38,9 @@ header#document-header
                     font-weight: normal
                     @include media-breakpoint-up(desktop)
                         @include meta
+                .dropdown-menu
+                    @include media-breakpoint-up(desktop)
+                        border-bottom: 5px solid black
                 &:not(:last-child)
                     a::after
                     @include icon-code("code-arrow-bottom")
@@ -210,10 +213,13 @@ body.page__home
     &.page-pleas 
         @include code-page-color($pleas) 
         .hero
-            figure
-                img 
-                    aspect-ratio: 1
-                    border-radius: 100%
+            .content
+                align-items: center
+                figure
+                    width: col(3)
+                    img 
+                        aspect-ratio: 1
+                        border-radius: 100%
         .block-pages
             article
                 .media
@@ -246,9 +252,10 @@ body.page__home
 
 // Hero
 .hero
-    margin-bottom: 0
     .container
         padding-top: $spacing4
+        .content
+            align-items: flex-start
     hgroup
         display: flex
         flex-direction: column-reverse
