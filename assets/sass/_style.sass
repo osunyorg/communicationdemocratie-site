@@ -1,19 +1,34 @@
-.container
-    max-width: px2rem(540)
-    @include media-breakpoint-up(sm)
-        max-width: px2rem(750)
-    @include media-breakpoint-up(desktop)
-        max-width: px2rem(960)
-    @include media-breakpoint-up(lg)
-        max-width: px2rem(1140)
-    @include media-breakpoint-up(xxl)
-        max-width: $grid-max-width
+// .container
+    // max-width: px2rem(540)
+    // @include media-breakpoint-up(sm)
+    //     max-width: px2rem(750)
+    // @include media-breakpoint-up(desktop)
+    //     max-width: px2rem(960)
+    // @include media-breakpoint-up(lg)
+    //     max-width: px2rem(1140)
+    // @include media-breakpoint-up(xxl)
+    //     max-width: $grid-max-width
 
 .lead
     .pages__section:not(.full-width) &
         @include lead
         
-header
+header#document-header
+    border-bottom: 0
+    .logo
+        @include media-breakpoint-up(lg)
+            align-items: center
+            display: flex
+            text-decoration: none
+            &::before
+                @include icon-code("code-logo")
+                color: $pleas
+                font-size: 44px
+                margin-right: 5px
+        img
+            height: 26px
+            @include media-breakpoint-up(md)
+                height: 44px
     .menu
         .nav-level-1
             > li
