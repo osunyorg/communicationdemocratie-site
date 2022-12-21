@@ -38,11 +38,30 @@ header#document-header
                     font-weight: normal
                     @include media-breakpoint-up(desktop)
                         @include meta
+                &:not(:last-child)
+                    a::after
+                    @include icon-code("code-arrow-bottom")
+                    display: inline-block
+                    font-size: px2rem(5)
+                    margin-left: half($spacing0)
+                &:first-child
+                    @include code-menu-color($challenges)
+                &:nth-child(2)
+                    @include code-menu-color($pleas)
+                &:nth-child(4)
+                    @include code-menu-color($association)
+                        
         .nav-level-2
+            @include grid(3)
             > li
                 > a
                     @include media-breakpoint-up(desktop)
                         @include h2
+                    &::after
+                        @include icon-code("code-arrow-right")
+                        display: inline-block
+                        font-size: px2rem(10)
+                        margin-left: half($spacing0)
 
 // blocks
 .block
@@ -97,6 +116,12 @@ header#document-header
                     a
                         @include link(white)
                         color: black
+                        &::after
+                            @include icon-code("code-arrow-right")
+                            color: white
+                            display: inline-block
+                            margin-left: half($spacing0)
+    
         &.block-page-pleas
             background-color: $pleas
             article
@@ -119,7 +144,7 @@ header#document-header
                             border-radius: 50%
                             object-fit: cover
                 h1
-                    padding-top: $spacing0
+                    padding-top: calc(#{$spacing1} + #{half($spacing0)})
                     text-align: center
                 p
                     text-align: center
@@ -194,6 +219,7 @@ body.page__home
 
 // Hero
 .hero
+    margin-bottom: 0
     .container
         padding-top: $spacing4
     hgroup
