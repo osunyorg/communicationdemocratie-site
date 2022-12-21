@@ -1,0 +1,27 @@
+{{- $bodyclass := .Params.bodyclass | default "" -}}
+
+{{- if ne $bodyclass "" -}}
+  {{- $bodyclass = printf "page-%s" $bodyclass -}}
+{{- end -}}
+
+{{- if or .Params.full_width (and (eq .Kind "section") (eq .Type "posts")) (and (or (eq .Type "programs") (eq .Type "diplomas") ) (not .Params.diplomas)) -}}
+  {{- $bodyclass = printf "full-width %s" $bodyclass -}}
+{{- end -}}
+
+{{- if .Params.diplomas -}}
+  {{- $bodyclass = printf "offcanvas-toc %s" $bodyclass -}}
+{{- end -}}
+
+{{ if eq .Kind "term" }}
+  {{ $bodyclass = printf "%s %s" $bodyclass (printf "term-%s" (replace .Slug "/" "")) }}
+{{ end }}
+
+{{ range .GetTerms "categories" }}
+  {{ if .Params.parent }}
+    {{ $bodyclass = printf "%s %s" $bodyclass (printf "term-%s" (replace .Params.parent "/" "")) }}
+  {{ else }}
+    {{ $bodyclass = printf "%s %s" $bodyclass (printf "term-%s" (replace .Slug "/" "")) }}
+  {{ end }}
+{{ end }}
+
+{{ return $bodyclass }}
