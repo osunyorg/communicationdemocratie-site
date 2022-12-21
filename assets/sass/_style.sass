@@ -70,9 +70,14 @@ header#document-header
 .block
     .top
         h2
+            @include h5
             a 
                 @include in-page-with-or-without-sidebar
                     @include link
+                &::after
+                    @include icon-code("code-arrow-right")
+                    margin-left: $spacing0
+                    display: inline-block
     &-call_to_action
         .call_to_action
             > div
@@ -168,6 +173,9 @@ body.page__home
                     a
                         @include link(white)
                         color: black
+                        &::after
+                            @include icon-code("code-arrow-right")
+                            color: white
             &.block-page-association
                 background-color: $association
                 article
@@ -181,14 +189,26 @@ body.page__home
                     a
                         @include link($pleas)
                         color: black
+                        &::after
+                            color: $pleas
         &.term-points-de-vue
             .top
                 h2
                     a
                         @include link($viewpoint)
                         color: black
-.pages__section
-    &.page-pleas  
+                        &::after
+                            color: $viewpoint
+.categories__term
+    &.term-points-de-vue
+        @include code-page-color($viewpoint)
+.pages__section 
+    &.page-challenges
+        @include code-page-color($challenges) 
+    &.page-association
+        @include code-page-color($association) 
+    &.page-pleas 
+        @include code-page-color($pleas) 
         .hero
             figure
                 img 
@@ -206,19 +226,16 @@ body.page__home
                 h1
                     position: relative
                     padding-top: calc(#{$spacing1} + #{half($spacing0)})
-                    a
-                        @include link($pleas)
-                        color: black
-                        &::after
-                            @include icon-code("code-logo")
-                            color: $pleas
-                            display: block
-                            font-size: 52px
-                            position: absolute
-                            top: 0
-                            left: 50%
-                            transform: translate(-50%, -50%)
-                            z-index: 3
+                    &::before
+                        @include icon-code("code-logo")
+                        color: $pleas
+                        display: block
+                        font-size: 52px
+                        position: absolute
+                        top: 0
+                        left: 50%
+                        transform: translate(-50%, -50%)
+                        z-index: 3
                 p
                     text-align: center
 .posts

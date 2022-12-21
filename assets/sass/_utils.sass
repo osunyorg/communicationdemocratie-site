@@ -31,20 +31,25 @@
 
 @mixin code-page-color($color)
     .hero
-        .title h1
+        h1
             &::after
                 color: $color
-    .logotype
-        path
-            fill: $color
-    .breadcrumb-container
+    .breadcrumb-nav
         background: $color
-    .toc
-        ol
-            > li
-                > a
-                    &.active
-                        &::before
-                            background-color: $color
-    .page-detail
-        background: $color
+    // TODO : ajouter la bordure du TOC
+    // TODO : lead ?
+    // .lead
+    //     background: $color
+    .block-pages
+        .top h2,
+        article h1
+            a
+                @include link($color)
+                color: black
+                &::after
+                    color: $color
+        .top
+            h2::after
+                @include icon-code("code-arrow-right")
+                color: $color
+                margin-left: $spacing0
