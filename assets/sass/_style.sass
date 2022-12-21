@@ -44,13 +44,17 @@ header#document-header
                     display: inline-block
                     font-size: px2rem(5)
                     margin-left: half($spacing0)
+                // TODO : changer une fois le dom modifié
                 &:first-child
                     @include code-menu-color($challenges)
                 &:nth-child(2)
                     @include code-menu-color($pleas)
                 &:nth-child(4)
                     @include code-menu-color($association)
-                        
+                &:last-child
+                    a
+                        background-color: $association
+                        padding: px2rem(8) px2rem(16)
         .nav-level-2
             @include grid(3)
             > li
@@ -62,7 +66,6 @@ header#document-header
                         display: inline-block
                         font-size: px2rem(10)
                         margin-left: half($spacing0)
-
 // blocks
 .block
     .top
@@ -92,8 +95,10 @@ header#document-header
                             @include btn
                             background: $block-call-to-action-button-background
                             color: $block-call-to-action-button-color
+                            margin: 0
                             + a
                                 margin-top: 0
+                                margin-left: half($spacing0)
     &-timeline
         &--horizontal
             h2 
@@ -184,6 +189,11 @@ body.page__home
                         color: black
 .pages__section
     &.page-pleas  
+        .hero
+            figure
+                img 
+                    aspect-ratio: 1
+                    border-radius: 100%
         .block-pages
             article
                 .media
@@ -235,3 +245,17 @@ body.page__home
             font-size: 44px
             font-weight: normal
             margin-top: $spacing1
+
+// Breadcrumb
+.breadcrumb
+    li
+        &:not(:first-child)
+            padding-left: half($spacing0)
+            &::before
+                @include icon-code($breadcrumb-icon)
+                color: $breadcrumb-icon-color
+                font-size: 8px
+                padding-right: 0
+        a
+            @include link
+            font-size: px2rem(13)
