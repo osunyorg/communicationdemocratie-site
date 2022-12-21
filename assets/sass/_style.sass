@@ -46,6 +46,11 @@ header#document-header
 
 // blocks
 .block
+    .top
+        h2
+            a 
+                @include in-page-with-or-without-sidebar
+                    @include link
     &-call_to_action
         .call_to_action
             > div
@@ -98,7 +103,7 @@ header#document-header
                 .media
                     margin: auto
                     position: relative
-                    width: calc(50% - #{$spacing0})
+                    width: col(2, 4)
                     &::before
                         @include icon-code("code-logo")
                         color: white
@@ -118,22 +123,40 @@ header#document-header
                     text-align: center
                 p
                     text-align: center
-        &.block-page-association
-            background-color: $association
-            article
-                .media
-                    background-color: white
-        &.block-page-challenges
-            background-color: $challenges
         &.block-page-association,
         &.block-page-challenges
             article
                 .media
                     img
                         object-fit: contain
-.page__home
-    .block-pages
-        padding: $spacing2 0
+body.page__home
+    .block
+        &-pages
+            padding: $spacing2 0
+            .top
+                h2
+                    a
+                        @include link(white)
+                        color: black
+            &.block-page-association
+                background-color: $association
+                article
+                    .media
+                        background-color: white
+            &.block-page-challenges
+                background-color: $challenges
+        &.term-actualites
+            .top
+                h2
+                    a
+                        @include link($pleas)
+                        color: black
+        &.term-points-de-vue
+            .top
+                h2
+                    a
+                        @include link($viewpoint)
+                        color: black
 .pages__section
     &.page-pleas  
         .block-pages
@@ -163,9 +186,16 @@ header#document-header
                             z-index: 3
                 p
                     text-align: center
+.posts
+    article
+        h1
+            a
+                @include link
 
 // Hero
 .hero
+    .container
+        padding-top: $spacing4
     hgroup
         display: flex
         flex-direction: column-reverse
