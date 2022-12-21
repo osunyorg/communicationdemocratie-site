@@ -20,6 +20,13 @@ header
                 > a
                     @include h2
                     font-weight: normal
+                    @include media-breakpoint-up(desktop)
+                        @include meta
+        .nav-level-2
+            > li
+                > a
+                    @include media-breakpoint-up(desktop)
+                        @include h2
 
 // blocks
 .block
@@ -41,3 +48,19 @@ header
                         position: absolute
                         transform: translate(-50%,50%)
                         white-space: nowrap
+                        a 
+                            @include btn
+                            background: $block-call-to-action-button-background
+                            color: $block-call-to-action-button-color
+    &-timeline
+        &--horizontal
+            h2 
+                @include in-page-with-or-without-sidebar
+                    @include h2
+            .event
+                .title
+                    @include h3    
+    &-posts
+        &--grid     
+            h2
+                @include h5           
