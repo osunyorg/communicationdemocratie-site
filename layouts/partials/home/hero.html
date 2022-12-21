@@ -1,0 +1,13 @@
+{{- $title := or .Params.header_text .Title -}}
+{{- $subtitle := false -}}
+{{ if partial "GetTextFromHTML" .Params.header_text }}
+  {{- $subtitle = .Title -}}
+{{ end }}
+{{ partial "header/hero.html"
+      (dict
+        "title" $title
+        "image" .Params.image
+        "subtitle" $subtitle
+        "breadcrumb" false
+        "context" .
+      )}}

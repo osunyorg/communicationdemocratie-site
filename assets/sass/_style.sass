@@ -56,3 +56,15 @@ header#document-header
                         position: absolute
                         transform: translate(-50%,50%)
                         white-space: nowrap
+
+// Hero
+.hero
+    hgroup
+        display: flex
+        flex-direction: column-reverse
+        &::before
+            @include icon-code("code-logo")
+            color: $pleas
+            display: block
+            font-size: 44px
+            margin-top: px2rem(25)
