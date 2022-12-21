@@ -9,6 +9,7 @@
     // @include media-breakpoint-up(xxl)
     //     max-width: $grid-max-width
 
+
 .lead
     .pages__section:not(.full-width) &
         @include lead
@@ -67,6 +68,8 @@ header#document-header
                             @include btn
                             background: $block-call-to-action-button-background
                             color: $block-call-to-action-button-color
+                            + a
+                                margin-top: 0
     &-timeline
         &--horizontal
             h2 
@@ -74,11 +77,92 @@ header#document-header
                     @include h2
             .event
                 .title
-                    @include h3    
+                    @include h4    
     &-posts
         &--grid     
             h2
-                @include h5           
+                @include h5 
+        article
+            time
+                text-transform: uppercase
+    &-pages
+        .grid
+            article
+                h1
+                    a
+                        @include link(white)
+                        color: black
+        &.block-page-pleas
+            background-color: $pleas
+            article
+                .media
+                    margin: auto
+                    position: relative
+                    width: calc(50% - #{$spacing0})
+                    &::before
+                        @include icon-code("code-logo")
+                        color: white
+                        display: block
+                        font-size: 52px
+                        position: absolute
+                        bottom: 0
+                        left: 50%
+                        transform: translate(-50%, 50%)
+                    picture
+                        img 
+                            aspect-ratio: 1
+                            border-radius: 50%
+                            object-fit: cover
+                h1
+                    padding-top: $spacing0
+                    text-align: center
+                p
+                    text-align: center
+        &.block-page-association
+            background-color: $association
+            article
+                .media
+                    background-color: white
+        &.block-page-challenges
+            background-color: $challenges
+        &.block-page-association,
+        &.block-page-challenges
+            article
+                .media
+                    img
+                        object-fit: contain
+.page__home
+    .block-pages
+        padding: $spacing2 0
+.pages__section
+    &.page-pleas  
+        .block-pages
+            article
+                .media
+                    margin: auto
+                    position: relative
+                    width: calc(50% - #{$spacing0})
+                    img 
+                        aspect-ratio: 1
+                        border-radius: 50%
+                h1
+                    position: relative
+                    padding-top: calc(#{$spacing1} + #{half($spacing0)})
+                    a
+                        @include link($pleas)
+                        color: black
+                        &::after
+                            @include icon-code("code-logo")
+                            color: $pleas
+                            display: block
+                            font-size: 52px
+                            position: absolute
+                            top: 0
+                            left: 50%
+                            transform: translate(-50%, -50%)
+                            z-index: 3
+                p
+                    text-align: center
 
 // Hero
 .hero
@@ -91,3 +175,10 @@ header#document-header
             display: block
             font-size: 44px
             margin-top: px2rem(25)
+    h1
+        &::after
+            @include icon-code("code-logo")
+            color: $pleas
+            display: block
+            font-size: 44px
+            margin-top: $spacing1
