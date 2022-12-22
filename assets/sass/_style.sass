@@ -224,6 +224,7 @@ body.page__home
                     img 
                         aspect-ratio: 1
                         border-radius: 100%
+                        object-fit: cover
         .block-pages
             article
                 .media
@@ -233,20 +234,19 @@ body.page__home
                     img 
                         aspect-ratio: 1
                         border-radius: 50%
-                h1
-                    padding-top: calc(#{$spacing1} + #{half($spacing0)})
-                    position: relative
-                    text-align: center
                     &::before
                         @include icon-code("code-logo")
                         color: $pleas
                         display: block
                         font-size: 52px
                         position: absolute
-                        top: 0
+                        bottom: 0
                         left: 50%
-                        transform: translate(-50%, -50%)
+                        transform: translate(-50%, 50%)
                         z-index: 3
+                h1
+                    padding-top: calc(#{$spacing1} + #{half($spacing0)})
+                    text-align: center
                 p
                     text-align: center
 .posts

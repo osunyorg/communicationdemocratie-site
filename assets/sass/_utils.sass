@@ -45,15 +45,21 @@
     // .lead
     //     background: $color
     .block-pages
-        .top h2,
-        article h1
-            a
-                @include link($color)
-                color: black
-                &::after
-                    color: $color
+        &.block-page-challenges,
+        &.block-page-association
+
+            .top h2,
+            article h1
+                a
+                    @include link($color)
+                    color: black
+                    &::after
+                        color: $color
         .top
-            h2::after
-                @include icon-code("code-arrow-right")
-                color: $color
-                margin-left: $spacing0
+            h2
+                a::after
+                    @include icon-code("code-arrow-right")
+                    color: $color
+                    margin-left: $spacing0
+    .block-timeline--horizontal
+        background-color: $color
