@@ -36,7 +36,11 @@
                 color: $color
     .breadcrumb-nav
         background: $color
-    // TODO : ajouter la bordure du TOC
+    nav.toc-pages
+        ol
+            > li
+                > a.active::before
+                    background-color: $color
     // TODO : lead ?
     // .lead
     //     background: $color

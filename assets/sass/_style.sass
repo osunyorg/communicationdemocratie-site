@@ -175,6 +175,10 @@ footer#document-footer
                 .title
                     @include h4    
     &-posts
+        article
+            h1
+                a
+                    @include link
         &--grid     
             h2
                 @include h5 
@@ -289,8 +293,9 @@ body.page__home
                         aspect-ratio: 1
                         border-radius: 50%
                 h1
-                    position: relative
                     padding-top: calc(#{$spacing1} + #{half($spacing0)})
+                    position: relative
+                    text-align: center
                     &::before
                         @include icon-code("code-logo")
                         color: $pleas
@@ -342,3 +347,22 @@ body.page__home
         a
             @include link
             font-size: px2rem(13)
+
+// TOC
+nav.toc-pages
+    ol
+        > li
+            > a
+                position: relative
+                padding-left: $spacing0
+                &::before
+                    content: ""
+                    background-color: transparent
+                    position: absolute
+                    top: 0
+                    bottom: 0
+                    left: 0
+                    width: 4px
+                &.active::before
+                    background-color: $pleas
+                    
