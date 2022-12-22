@@ -63,3 +63,38 @@
                     margin-left: $spacing0
     .block-timeline--horizontal
         background-color: $color
+
+// TYPOGRAPHY
+
+@mixin h5-code
+    font-family: $h5-font-family
+    font-size: $h5-size
+    font-weight: $h5-weight
+    letter-spacing: 1.8px
+    line-height: $h5-line-height
+    text-transform: $h5-text-transform
+    @include media-breakpoint-up(desktop)
+        font-size: $h5-size-desktop
+    a
+        text-decoration: none
+
+@mixin post-layout-list
+    article
+        border-bottom: none
+        flex-direction: row-reverse
+        justify-content: space-between
+        h1
+            @include h2
+        .post-content
+            margin-left: 0
+            time
+                order: 2
+            p
+                order: 3
+    .media
+        img 
+            aspect-ratio: 2
+    @include in-page-with-sidebar
+        article
+            .media
+                    width: col(3)
