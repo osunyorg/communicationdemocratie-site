@@ -1,15 +1,3 @@
-// .container
-    // max-width: px2rem(540)
-    // @include media-breakpoint-up(sm)
-    //     max-width: px2rem(750)
-    // @include media-breakpoint-up(desktop)
-    //     max-width: px2rem(960)
-    // @include media-breakpoint-up(lg)
-    //     max-width: px2rem(1140)
-    // @include media-breakpoint-up(xxl)
-    //     max-width: $grid-max-width
-
-
 .lead
     .pages__section:not(.full-width) &
         @include lead
@@ -142,6 +130,10 @@ footer#document-footer
                     display: inline-block
     &-call_to_action
         .call_to_action
+            &--without-image
+                > div
+                    @include in-page-with-or-without-sidebar
+                       display: block
             > div
                 border: 1px solid $color-border
                 padding: $spacing2
@@ -149,6 +141,8 @@ footer#document-footer
                 .description
                     p
                         @include inherit-text
+                        @include in-page-without-sidebar
+                            text-align: center
                 @include in-page-with-or-without-sidebar
                     .actions
                         bottom: 0
@@ -193,10 +187,26 @@ footer#document-footer
                             @include icon-code("code-arrow-right")
                             color: $pleas
                             margin-left: $spacing0
-                @include post-layout-list
-            
+                article
+                    border-bottom: none
+                    display: flex
+                    flex-direction: row-reverse
+                    justify-content: space-between
+                    h1
+                        @include h2
+                    .post-content
+                        margin-left: 0
+                        time
+                            order: 2
+                        p
+                            order: 3
+                .media
+                    img 
+                        aspect-ratio: 2
             @include in-page-with-sidebar
-                @include post-layout-list-media
+                article
+                    .media
+                        width: col(3)
     &-pages
         .grid
             article
@@ -282,13 +292,16 @@ body.page__home
 .categories__term
     &.term-points-de-vue
         @include code-page-color($viewpoint)
-    // TODO : changer dom ?
-    // &.term-actualites
-    //     .document-content
-    //         .posts
-    //             @include post-layout-list
-    //             @include media-breakpoint-up(desktop)
-    //                 @include grid(2)
+    &.term-actualites
+        .document-content
+            .posts
+                article
+                    &:first-child
+                        grid-column: 1 / 4
+                        flex-direction: row
+                    .media
+                        margin-right: 
+
 
 .pages__section 
     &.page-challenges

@@ -77,25 +77,3 @@
         font-size: $h5-size-desktop
     a
         text-decoration: none
-
-@mixin post-layout-list
-    article
-        border-bottom: none
-        display: flex
-        flex-direction: row-reverse
-        justify-content: space-between
-        h1
-            @include h2
-        .post-content
-            margin-left: 0
-            time
-                order: 2
-            p
-                order: 3
-    .media
-        img 
-            aspect-ratio: 2
-@mixin post-layout-list-media
-    article
-        .media
-            width: col(3)
