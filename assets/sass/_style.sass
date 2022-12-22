@@ -193,6 +193,10 @@ footer#document-footer
                             @include icon-code("code-arrow-right")
                             color: $pleas
                             margin-left: $spacing0
+                @include post-layout-list
+            
+            @include in-page-with-sidebar
+                @include post-layout-list-media
     &-pages
         .grid
             article
@@ -278,6 +282,14 @@ body.page__home
 .categories__term
     &.term-points-de-vue
         @include code-page-color($viewpoint)
+    // TODO : changer dom ?
+    // &.term-actualites
+    //     .document-content
+    //         .posts
+    //             @include post-layout-list
+    //             @include media-breakpoint-up(desktop)
+    //                 @include grid(2)
+
 .pages__section 
     &.page-challenges
         @include code-page-color($challenges) 

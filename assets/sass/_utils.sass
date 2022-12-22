@@ -81,6 +81,7 @@
 @mixin post-layout-list
     article
         border-bottom: none
+        display: flex
         flex-direction: row-reverse
         justify-content: space-between
         h1
@@ -94,7 +95,7 @@
     .media
         img 
             aspect-ratio: 2
-    @include in-page-with-sidebar
-        article
-            .media
-                    width: col(3)
+@mixin post-layout-list-media
+    article
+        .media
+            width: col(3)
