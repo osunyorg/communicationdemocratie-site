@@ -132,7 +132,7 @@ footer#document-footer
 .block
     .top
         h2
-            @include h5
+            @include h5-code
             a 
                 @include in-page-with-or-without-sidebar
                     @include link
@@ -181,10 +181,37 @@ footer#document-footer
                     @include link
         &--grid     
             h2
-                @include h5 
+                @include h5-code 
         article
             time
                 text-transform: uppercase
+        &--list
+            @include in-page-with-or-without-sidebar
+                .top
+                    h2
+                        &::after
+                            @include icon-code("code-arrow-right")
+                            color: $pleas
+                            margin-left: $spacing0
+                article
+                    border-bottom: none
+                    flex-direction: row-reverse
+                    justify-content: space-between
+                    h1
+                        @include h2
+                    .post-content
+                        margin-left: 0
+                        time
+                            order: 2
+                        p
+                            order: 3
+                .media
+                    img 
+                        aspect-ratio: 2
+            @include in-page-with-sidebar
+                article
+                    .media
+                            width: col(3)
     &-pages
         .grid
             article
@@ -197,7 +224,10 @@ footer#document-footer
                             color: white
                             display: inline-block
                             margin-left: half($spacing0)
-    
+        &.block-page-pleas,
+        &.block-page-challenges,
+        &.block-page-association
+            padding: $spacing2 0
         &.block-page-pleas
             background-color: $pleas
             article
@@ -233,7 +263,6 @@ footer#document-footer
 body.page__home
     .block
         &-pages
-            padding: $spacing2 0
             .top
                 h2
                     a
@@ -308,6 +337,7 @@ body.page__home
                     text-align: center
                 p
                     text-align: center
+        
 .posts
     article
         h1
@@ -324,7 +354,7 @@ body.page__home
         display: flex
         flex-direction: column-reverse
         p
-            @include h5
+            @include h5-code
     h1
         &::after
             @include icon-code("code-logo")
