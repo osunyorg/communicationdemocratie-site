@@ -173,12 +173,18 @@ footer#document-footer
             h1
                 a
                     @include link
+            time
+                text-transform: uppercase
         &--grid     
             h2
                 @include h5-code 
-        article
-            time
-                text-transform: uppercase
+        &--highlight
+            .list
+                article
+                    h1
+                        @include h2
+                        a
+                            @include link
         &--list
             @include in-page-with-or-without-sidebar
                 .top
