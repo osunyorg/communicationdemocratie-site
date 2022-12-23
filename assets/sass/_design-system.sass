@@ -17,14 +17,18 @@ header#document-header
                 height: 44px
     @include media-breakpoint-down(desktop)
         .container
-            > button[type="button"][aria-expanded="true"]
+            > button[type="button"][aria-expanded="false"]
                 span:last-of-type
                     height: unset
                     margin-left: half($spacing0)
                     &::before
-                        @include icon-code("code-close")
+                        @include icon-code("code-logo")
                         color: $pleas
                         font-size: px2rem(26)
+            > button[type="button"][aria-expanded="true"]
+                span:last-of-type
+                    &::before
+                        @include icon-code("code-close")
     .menu
         .nav-level-1
             > li
@@ -53,6 +57,10 @@ header#document-header
                     a
                         background-color: $association
                         padding: px2rem(8) px2rem(16)
+                @include media-breakpoint-down(desktop)
+                    &:last-child
+                        a
+                            margin-bottom: $spacing1
                 @include media-breakpoint-up(desktop)
                     &.page-publications
                         ul.nav-level-2
