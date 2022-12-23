@@ -1,0 +1,169 @@
+.block
+    .top
+        h2
+            @include h5
+            a 
+                @include in-page-with-or-without-sidebar
+                    @include link
+                &::after
+                    @include icon-code("code-arrow-right")
+                    margin-left: $spacing0
+                    display: inline-block
+    &-call_to_action
+        @include in-page-without-sidebar
+            .block-content
+                padding-top: $spacing3
+        .call_to_action
+            &--without-image
+                > div
+                    @include in-page-with-or-without-sidebar
+                       display: block
+            > div
+                border: 1px solid black
+                padding: $spacing1
+                position: relative
+                @include media-breakpoint-up(desktop)
+                    padding: $spacing2
+                .description
+                    p
+                        @include inherit-text
+                        @include in-page-without-sidebar
+                            text-align: center
+                @include in-page-with-or-without-sidebar
+                    .actions
+                        bottom: 0
+                        display: inline-block
+                        grid-column: unset
+                        text-align: center
+                        @include media-breakpoint-up(desktop)
+                            left: 50%
+                            position: absolute
+                            transform: translate(-50%,50%)
+                            white-space: nowrap
+                        a 
+                            @include btn
+                            background: $block-call-to-action-button-background
+                            color: $block-call-to-action-button-color
+                            margin: 0
+                            margin-bottom: $spacing0
+                            @include media-breakpoint-up(desktop)
+                                margin: 0
+                            + a
+                                margin-top: 0
+                                margin-left: half($spacing0)
+    &-timeline
+        &--horizontal
+            h2 
+                @include in-page-with-or-without-sidebar
+                    @include h2
+            .event
+                .title
+                    @include h4    
+    &-posts
+        article
+            h1
+                a
+                    @include link
+            time
+                text-transform: uppercase
+        &--grid     
+            h2
+                @include h5-code 
+        &--highlight
+            .highlight-post
+                h1
+                    margin-bottom: 0
+                    margin-top: $spacing0
+                    @include h3
+                .post-content
+                    display: flex
+                    flex-direction: column
+            .list
+                border: none
+                article
+                    border: none
+                    h1
+                        @include h2
+                        a
+                            @include link
+            article
+                time
+                    order: 2
+                p
+                    order: 3
+        &--list
+            @include in-page-with-or-without-sidebar
+                .top
+                    h2
+                        &::after
+                            @include icon-code("code-arrow-right")
+                            color: $pleas
+                            margin-left: $spacing0
+                article
+                    border-bottom: none
+                    display: flex
+                    flex-direction: row-reverse
+                    justify-content: space-between
+                    h1
+                        @include h2
+                    .post-content
+                        margin-left: 0
+                        time
+                            order: 2
+                        p
+                            order: 3
+                .media
+                    img 
+                        aspect-ratio: 2
+            @include in-page-with-sidebar
+                article
+                    .media
+                        width: col(3)
+    &-pages
+        .grid
+            article
+                h1
+                    a
+                        @include link(white)
+                        color: black
+                        &::after
+                            @include icon-code("code-arrow-right")
+                            color: white
+                            display: inline-block
+                            margin-left: half($spacing0)
+        &.block-page-pleas,
+        &.block-page-challenges,
+        &.block-page-association
+            padding: $spacing2 0
+        &.block-page-pleas
+            background-color: $pleas
+            article
+                .media
+                    margin: 0 auto
+                    position: relative
+                    width: col(2, 4)
+                    &::before
+                        @include icon-code("code-logo")
+                        color: white
+                        display: block
+                        font-size: 52px
+                        position: absolute
+                        bottom: 0
+                        left: 50%
+                        transform: translate(-50%, 50%)
+                    picture
+                        img 
+                            aspect-ratio: 1
+                            border-radius: 50%
+                            object-fit: cover
+                h1
+                    padding-top: calc(#{$spacing1} + #{half($spacing0)})
+                    text-align: center
+                p
+                    text-align: center
+        &.block-page-association,
+        &.block-page-challenges
+            article
+                .media
+                    img
+                        object-fit: contain
