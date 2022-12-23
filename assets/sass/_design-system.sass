@@ -15,6 +15,16 @@ header#document-header
             height: 26px
             @include media-breakpoint-up(md)
                 height: 44px
+    @include media-breakpoint-down(desktop)
+        .container
+            > button[type="button"][aria-expanded="true"]
+                span:last-of-type
+                    height: unset
+                    margin-left: half($spacing0)
+                    &::before
+                        @include icon-code("code-close")
+                        color: $pleas
+                        font-size: px2rem(26)
     .menu
         .nav-level-1
             > li
@@ -43,32 +53,36 @@ header#document-header
                     a
                         background-color: $association
                         padding: px2rem(8) px2rem(16)
-                &.page-publications
-                    ul.nav-level-2
-                        a
-                            @include link
-                        > li
-                            &.actualites
-                                a
-                                    @include link($pleas)
-                                    color: black
-                                    &::after
-                                        color: $pleas
-                            &.points-de-vue
-                                a
-                                    @include link($viewpoint)
-                                    color: black
-                                    &::after
-                                        color: $viewpoint
+                @include media-breakpoint-up(desktop)
+                    &.page-publications
+                        ul.nav-level-2
+                            a
+                                @include link
+                            > li
+                                &.actualites
+                                    a
+                                        @include link($pleas)
+                                        color: black
+                                        &::after
+                                            color: $pleas
+                                &.points-de-vue
+                                    a
+                                        @include link($viewpoint)
+                                        color: black
+                                        &::after
+                                            color: $viewpoint
 
         .nav-level-2
-            @include grid(3)
+            @include grid(3, desktop)
             > li
                 &::after
                     display: none
                 > a
                     @include media-breakpoint-up(desktop)
                         @include h2
+                    @include media-breakpoint-down(desktop)
+                        display: flex
+                        justify-content: space-between
                     &::after
                         @include icon-code("code-arrow-right")
                         display: inline-block
@@ -78,6 +92,9 @@ header#document-header
                     padding-top: $spacing0
                     @include meta
                     line-height: px2rem(26)
+            @include media-breakpoint-down(desktop)
+                p
+                    display: none
 
 // Footer
 footer#document-footer
