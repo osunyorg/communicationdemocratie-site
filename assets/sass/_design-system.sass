@@ -43,6 +43,24 @@ header#document-header
                     a
                         background-color: $association
                         padding: px2rem(8) px2rem(16)
+                &.page-publications
+                    ul.nav-level-2
+                        a
+                            @include link
+                        > li
+                            &.actualites
+                                a
+                                    @include link($pleas)
+                                    color: black
+                                    &::after
+                                        color: $pleas
+                            &.points-de-vue
+                                a
+                                    @include link($viewpoint)
+                                    color: black
+                                    &::after
+                                        color: $viewpoint
+
         .nav-level-2
             @include grid(3)
             > li
