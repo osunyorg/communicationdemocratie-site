@@ -136,8 +136,10 @@ footer#document-footer
                        display: block
             > div
                 border: 1px solid $color-border
-                padding: $spacing2
+                padding: $spacing1
                 position: relative
+                @include media-breakpoint-up(desktop)
+                    padding: $spacing2
                 .description
                     p
                         @include inherit-text
@@ -148,15 +150,20 @@ footer#document-footer
                         bottom: 0
                         display: inline-block
                         grid-column: unset
-                        left: 50%
-                        position: absolute
-                        transform: translate(-50%,50%)
-                        white-space: nowrap
+                        text-align: center
+                        @include media-breakpoint-up(desktop)
+                            left: 50%
+                            position: absolute
+                            transform: translate(-50%,50%)
+                            white-space: nowrap
                         a 
                             @include btn
                             background: $block-call-to-action-button-background
                             color: $block-call-to-action-button-color
                             margin: 0
+                            margin-bottom: $spacing0
+                            @include media-breakpoint-up(desktop)
+                                margin: 0
                             + a
                                 margin-top: 0
                                 margin-left: half($spacing0)
