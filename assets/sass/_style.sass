@@ -179,12 +179,26 @@ footer#document-footer
             h2
                 @include h5-code 
         &--highlight
+            .highlight-post
+                h1
+                    margin-bottom: 0
+                    margin-top: $spacing0
+                    @include h3
+                .post-content
+                    display: flex
+                    flex-direction: column
             .list
                 article
+                    border: none
                     h1
                         @include h2
                         a
                             @include link
+            article
+                time
+                    order: 2
+                p
+                    order: 3
         &--list
             @include in-page-with-or-without-sidebar
                 .top
