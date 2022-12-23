@@ -140,8 +140,10 @@ footer#document-footer
                        display: block
             > div
                 border: 1px solid $color-border
-                padding: $spacing2
+                padding: $spacing1
                 position: relative
+                @include media-breakpoint-up(desktop)
+                    padding: $spacing2
                 .description
                     p
                         @include inherit-text
@@ -152,15 +154,20 @@ footer#document-footer
                         bottom: 0
                         display: inline-block
                         grid-column: unset
-                        left: 50%
-                        position: absolute
-                        transform: translate(-50%,50%)
-                        white-space: nowrap
+                        text-align: center
+                        @include media-breakpoint-up(desktop)
+                            left: 50%
+                            position: absolute
+                            transform: translate(-50%,50%)
+                            white-space: nowrap
                         a 
                             @include btn
                             background: $block-call-to-action-button-background
                             color: $block-call-to-action-button-color
                             margin: 0
+                            margin-bottom: $spacing0
+                            @include media-breakpoint-up(desktop)
+                                margin: 0
                             + a
                                 margin-top: 0
                                 margin-left: half($spacing0)
@@ -177,12 +184,33 @@ footer#document-footer
             h1
                 a
                     @include link
+            time
+                text-transform: uppercase
         &--grid     
             h2
                 @include h5-code 
-        article
-            time
-                text-transform: uppercase
+        &--highlight
+            .highlight-post
+                h1
+                    margin-bottom: 0
+                    margin-top: $spacing0
+                    @include h3
+                .post-content
+                    display: flex
+                    flex-direction: column
+            .list
+                border: none
+                article
+                    border: none
+                    h1
+                        @include h2
+                        a
+                            @include link
+            article
+                time
+                    order: 2
+                p
+                    order: 3
         &--list
             @include in-page-with-or-without-sidebar
                 .top
@@ -296,9 +324,11 @@ body.page__home
 .categories__term
     &.term-points-de-vue
         @include code-page-color($viewpoint)
-    &.term-actualites
+    &.term-actualites,
+    &.term-points-de-vue
         .document-content
             .posts
+                margin-top: $spacing2
                 > article
                     &:first-of-type
                         @include media-breakpoint-down(desktop)
@@ -326,6 +356,7 @@ body.page__home
                         time
                             order: 2
                             text-transform: uppercase
+                            margin-bottom: half($spacing0)
                         p
                             order: 3
                     .media
@@ -399,6 +430,7 @@ body.page__home
 
 // Breadcrumb
 .breadcrumb
+    padding: $spacing1 0
     li
         &:not(:first-child)
             padding-left: half($spacing0)
