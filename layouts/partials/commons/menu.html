@@ -55,7 +55,6 @@
           {{- if and (eq $level 2) -}}
             {{- $page := partial "GetPageByUrl" .target -}}
             {{ if $page }}
-              YO
               {{- if $page.Params.description }}
                 <p>{{ partial "PrepareHTML" $page.Params.description }}</p>
               {{ end -}}

@@ -31,10 +31,10 @@ header#document-header
                         border-bottom: 5px solid black
                 &:not(:last-child)
                     a::after
-                    @include icon-code("code-arrow-bottom")
-                    display: inline-block
-                    font-size: px2rem(5)
-                    margin-left: half($spacing0)
+                        @include icon-code("code-arrow-right")
+                        display: inline-block
+                        font-size: px2rem(10)
+                        margin-left: $spacing0
                 // TODO : changer une fois le dom modifié
                 &:first-child
                     @include code-menu-color($challenges)
@@ -57,6 +57,9 @@ header#document-header
                         display: inline-block
                         font-size: px2rem(10)
                         margin-left: half($spacing0)
+                p
+                    padding-top: $spacing0
+                    @include meta
 
 nav.posts-navigation
     ul 
