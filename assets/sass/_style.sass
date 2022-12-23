@@ -298,9 +298,11 @@ body.page__home
 .categories__term
     &.term-points-de-vue
         @include code-page-color($viewpoint)
-    &.term-actualites
+    &.term-actualites,
+    &.term-points-de-vue
         .document-content
             .posts
+                margin-top: $spacing2
                 > article
                     &:first-of-type
                         @include media-breakpoint-down(desktop)
@@ -328,6 +330,7 @@ body.page__home
                         time
                             order: 2
                             text-transform: uppercase
+                            margin-bottom: half($spacing0)
                         p
                             order: 3
                     .media
