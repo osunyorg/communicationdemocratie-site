@@ -129,7 +129,11 @@ footer#document-footer
                     margin-left: $spacing0
                     display: inline-block
     &-call_to_action
+        @include in-page-without-sidebar
+            .block-content
+                padding-top: $spacing3
         .call_to_action
+                
             &--without-image
                 > div
                     @include in-page-with-or-without-sidebar
