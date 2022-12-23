@@ -458,20 +458,28 @@ body.page__home
             @include link
 
 // TOC
-nav.toc-pages
+nav.toc
     ol
         > li
             > a
                 position: relative
-                padding-left: $spacing0
                 &::before
                     content: ""
                     background-color: transparent
                     position: absolute
                     top: 0
                     bottom: 0
-                    left: 0
+                    left: -$spacing0
                     width: 4px
                 &.active::before
                     background-color: $pleas
-                    
+
+.toc-content
+    @include media-breakpoint-up(desktop)
+        @include in-page-with-sidebar
+            padding-left: $spacing1
+            margin-left: -$spacing1
+
+.block-chapo
+    background: $pleas
+    padding-top: $spacing3 !important
