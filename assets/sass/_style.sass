@@ -58,6 +58,18 @@ header#document-header
                         font-size: px2rem(10)
                         margin-left: half($spacing0)
 
+nav.posts-navigation
+    ul 
+        > li
+            a
+                @include meta
+                @include link
+                text-decoration-color: rgba(0,0,0,0)
+                &:hover
+                    color: inherit
+                span
+                    color: $color-text-alt
+
 footer#document-footer
     padding-bottom: $spacing4
     nav
@@ -135,7 +147,7 @@ footer#document-footer
                     @include in-page-with-or-without-sidebar
                        display: block
             > div
-                border: 1px solid $color-border
+                border: 1px solid black
                 padding: $spacing1
                 position: relative
                 @include media-breakpoint-up(desktop)
