@@ -119,9 +119,44 @@ body.page__home
                     text-align: center
                 p
                     text-align: center
-        
+
 .posts
     article
         h1
             a
                 @include link
+
+.post
+    .post-categories
+        margin-bottom: 0
+
+.post-categories
+    li
+        font-weight: 700
+        text-transform: uppercase
+        &:not(:first-child)
+            &::before
+                content: none
+        &:not(:last-child)
+            margin-right: 18px
+    a
+        line-height: px2rem(17)
+        text-decoration: none !important
+        &::before
+            background: black
+            content: ''
+            display: inline-block
+            height: 10px
+            margin-right: 3px
+            vertical-align: baseline
+            width: 10px
+    .cat
+        &-supports
+            &::before
+                background-color: $association
+        &-points-de-vue
+            &::before
+                background-color: $viewpoint
+        &-actualites
+            &::before
+                background-color: $publications

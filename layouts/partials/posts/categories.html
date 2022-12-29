@@ -1,0 +1,17 @@
+{{ if .Params.Categories }}
+<ul class="post-categories">
+  {{- range $index, $s := .GetTerms "categories" -}}
+    {{- $term_class := false -}}
+    {{ if .Params.parent }}
+      {{- $term_class = printf "cat-child cat-%s" (replace .Params.parent "/" "") -}}
+    {{ else }}
+      {{- $term_class = printf "cat-%s" (replace .Slug "/" "") -}}
+    {{ end }}
+    <li>
+      <a href="{{ .Permalink }}"{{ if $term_class }} class="{{ $term_class }}"{{ end }}>
+        {{- safeHTML .Title -}}
+      </a>
+    </li>
+  {{- end }}
+</ul>
+{{ end }}

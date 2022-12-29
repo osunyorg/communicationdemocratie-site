@@ -167,7 +167,6 @@ footer#document-footer
 // Hero
 .hero
     .container
-        padding-top: $spacing4
         .content
             align-items: flex-start
     hgroup
@@ -233,3 +232,13 @@ nav.posts-navigation
 .lead
     .pages__section:not(.full-width) &
         @include lead
+
+.backtotop
+    p
+        @include meta
+        padding: $grid-gutter 0
+        &::before
+            @include icon-code("code-arrow-top")
+            font-size: px2rem(5)
+            margin-right: 10px
+            vertical-align: middle
