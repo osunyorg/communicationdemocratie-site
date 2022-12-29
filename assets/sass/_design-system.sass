@@ -185,7 +185,9 @@ footer#document-footer
 
 // Breadcrumb
 .breadcrumb
-    padding: $spacing1 0
+    padding: 0 $grid-gutter-sm
+    @include media-breakpoint-up(desktop)
+        padding: 0 $grid-gutter
     li
         &:not(:first-child)
             padding-left: half($spacing0)
@@ -203,17 +205,20 @@ nav.toc-pages
         > li
             > a
                 position: relative
-                padding-left: $spacing0
                 &::before
                     content: ""
                     background-color: transparent
                     position: absolute
                     top: 0
                     bottom: 0
-                    left: 0
+                    left: -$spacing0
                     width: 4px
                 &.active::before
                     background-color: $pleas
+
+.toc-content
+    padding-left: $spacing1
+    margin-left: -$spacing1
 
 // Pagination
 nav.posts-navigation
@@ -242,3 +247,7 @@ nav.posts-navigation
             font-size: px2rem(5)
             margin-right: 10px
             vertical-align: middle
+
+.block-chapo
+    position: relative
+    z-index: 2
