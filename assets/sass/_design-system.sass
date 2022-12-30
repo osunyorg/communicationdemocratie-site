@@ -189,6 +189,7 @@ footer#document-footer
     @include media-breakpoint-up(desktop)
         padding: 0 $grid-gutter
     li
+        @include meta
         &:not(:first-child)
             padding-left: half($spacing0)
             &::before

@@ -37,6 +37,9 @@ body.page__home
 .categories__term
     .lead
         width: col(8)
+    .breadcrumb-nav
+        background: $pleas
+        margin-bottom: $spacing3
     &.term-points-de-vue
         @include code-page-color($viewpoint)
     &.term-actualites,
@@ -131,6 +134,16 @@ body.page__home
 .post
     .post-categories
         margin-bottom: 0
+        .cat
+            &-supports
+                &::before
+                    background-color: $association
+            &-points-de-vue
+                &::before
+                    background-color: $viewpoint
+            &-actualites
+                &::before
+                    background-color: $publications
 
 .post-categories
     li
@@ -139,11 +152,10 @@ body.page__home
         &:not(:first-child)
             &::before
                 content: none
-        &:not(:last-child)
-            margin-right: 18px
     a
         line-height: px2rem(17)
         text-decoration: none !important
+        color: $color-text-alt
         &::before
             background: black
             content: ''
@@ -152,13 +164,45 @@ body.page__home
             margin-right: 3px
             vertical-align: baseline
             width: 10px
-    .cat
-        &-supports
-            &::before
-                background-color: $association
-        &-points-de-vue
-            &::before
-                background-color: $viewpoint
-        &-actualites
-            &::before
-                background-color: $publications
+
+.posts__section,
+.posts__page
+    .logotype
+        path
+            fill: $publications
+    .hero .title h1::after
+        color: $publications
+    .breadcrumb-nav
+        background: $publications
+    .block-chapo
+        background: $publications
+        margin-bottom: $spacing3
+    .post-sidebar
+        z-index: 4
+    .post-infos
+        span, a
+            color: black
+        .post-categories
+            a
+                &::before
+                    background: white
+    &.term-points-de-vue
+        .logotype
+            path
+                fill: $viewpoint
+        .hero .title h1::after
+            color: $viewpoint
+        .breadcrumb-nav
+            background: $viewpoint
+        .block-chapo
+            background: $viewpoint
+
+    .disclaimer
+        @include meta
+        background: $color-background-alt
+        text-align: center
+        padding: $spacing1
+        p
+            margin-bottom: 0
+            // TODO : fix original padding-left, and make sure it couldn't happen in aaa version
+            padding-left: 0 !important
