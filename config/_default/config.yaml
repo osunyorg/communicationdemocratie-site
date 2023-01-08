@@ -1,14 +1,7 @@
 theme: osuny-hugo-theme-aaa
-
-## ADVANCED
 paginate: 18
 enableRobotsTXT: true
-
-## MODULE
-module:
-  _merge: deep
-
-## PARAMS
+removePathAccents: true
 params:
   _merge: deep
   cookie_banner:
@@ -20,8 +13,5 @@ params:
   pages:
     list:
       truncate_description: 250
-
 build:
   writeStats: true
-
-removePathAccents: true
