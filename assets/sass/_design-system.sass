@@ -191,12 +191,13 @@ footer#document-footer
     li
         @include meta
         &:not(:first-child)
-            padding-left: half($spacing0)
+            padding-left: $spacing0
             &::before
                 @include icon-code($breadcrumb-icon)
                 color: $breadcrumb-icon-color
                 font-size: 8px
-                padding-right: 0
+                padding-right: half($spacing0)
+                font-weight: normal
         a
             @include link
 

@@ -7,11 +7,12 @@ params:
   cookie_banner:
     enable: false
   posts:
-    list:
+    index:
       show_categories: true
       truncate_description: 150
+      layout: grid
   pages:
-    list:
+    index:
       truncate_description: 250
 build:
   writeStats: true
