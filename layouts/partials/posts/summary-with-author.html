@@ -1,0 +1,36 @@
+{{- $text := (partial "GetTextFromHTML" .context.Params.description_short) -}}
+
+{{- if $text -}}
+  <section class="block block-summary">
+    <div class="container">
+      <div class="block-content">
+        <p class="lead">
+          {{ partial "PrepareHTML" .context.Params.description_short }}
+        </p>
+        {{ range .context.GetTerms "authors" }}
+          {{- $person := site.GetPage (printf "/persons/%s" .Slug) -}}
+          {{ with $person }}
+            <div class="author" itemscope itemtype="https://schema.org/Person" itemprop="author">
+              {{ if .Params.image }}
+                {{ partial "commons/image.html"
+                      (dict
+                        "image"    .Params.image
+                        "mobile"   "76x76"
+                        "tablet"   "76x76"
+                        "desktop"  "76x76"
+                        "itemprop" true
+                      )}}
+              {{ end }}
+              <div>
+                <p itemprop="name"><a href="{{ .Permalink }}" itemprop="url">{{ partial "PrepareHTML" .Title }}</a></p>
+                {{ if .Params.description_short }}
+                  <p itemprop="description">{{ partial "PrepareHTML" .Params.description_short }}</p>
+                {{ end }}
+              </div>
+            </div>
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </section>
+{{- end -}}
