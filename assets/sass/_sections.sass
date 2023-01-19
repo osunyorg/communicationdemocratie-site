@@ -194,6 +194,8 @@ body.page__home
         margin-bottom: $spacing3
     .post-sidebar
         z-index: 4
+        @include media-breakpoint-down(desktop)
+            background: $publications
     .post-infos
         span, a
             color: black
@@ -211,6 +213,9 @@ body.page__home
             background: $viewpoint
         .block-summary
             background: $viewpoint
+        @include media-breakpoint-down(desktop)
+            .post-sidebar
+                background: $viewpoint
 
     .disclaimer
         @include meta
