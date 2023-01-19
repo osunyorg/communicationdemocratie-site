@@ -12,45 +12,46 @@
     &-call_to_action
         @include in-page-without-sidebar
             .block-content
+                padding-bottom: $spacing3
                 padding-top: $spacing3
-        .call_to_action
-            &--without-image
-                > div
-                    @include in-page-with-or-without-sidebar
-                       display: block
-            > div
-                border: 1px solid black
-                padding: $spacing1
-                position: relative
-                @include media-breakpoint-up(desktop)
-                    padding: $spacing2
-                .description
-                    p
-                        @include inherit-text
-                        @include in-page-without-sidebar
-                            text-align: center
-                @include in-page-with-or-without-sidebar
-                    .actions
-                        bottom: 0
-                        display: inline-block
-                        grid-column: unset
-                        text-align: center
-                        @include media-breakpoint-up(desktop)
-                            left: 50%
-                            position: absolute
-                            transform: translate(-50%,50%)
-                            white-space: nowrap
-                        a 
-                            @include btn
-                            background: $block-call-to-action-button-background
-                            color: $block-call-to-action-button-color
-                            margin: 0
-                            margin-bottom: $spacing0
-                            @include media-breakpoint-up(desktop)
-                                margin: 0
-                            + a
-                                margin-top: 0
-                                margin-left: half($spacing0)
+        // .call_to_action
+            // &--without-image
+            //     > div
+            //         @include in-page-with-or-without-sidebar
+            //            display: block
+            // > div
+            //     border: 1px solid black
+            //     padding: $spacing1
+            //     position: relative
+            //     @include media-breakpoint-up(desktop)
+            //         padding: $spacing2
+            //     .description
+            //         p
+            //             @include inherit-text
+            //             @include in-page-without-sidebar
+            //                 text-align: center
+            //     @include in-page-with-or-without-sidebar
+            //         .actions
+            //             bottom: 0
+            //             display: inline-block
+            //             grid-column: unset
+            //             text-align: center
+            //             @include media-breakpoint-up(desktop)
+            //                 left: 50%
+            //                 position: absolute
+            //                 transform: translate(-50%,50%)
+            //                 white-space: nowrap
+            //             a 
+            //                 @include btn
+            //                 background: $block-call-to-action-button-background
+            //                 color: $block-call-to-action-button-color
+            //                 margin: 0
+            //                 margin-bottom: $spacing0
+            //                 @include media-breakpoint-up(desktop)
+            //                     margin: 0
+            //                 + a
+            //                     margin-top: 0
+            //                     margin-left: half($spacing0)
     &-timeline
         &--horizontal
             h2 
