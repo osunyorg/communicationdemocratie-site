@@ -87,11 +87,19 @@ body.page__home
                             order: 3
                     .media
                         margin-bottom: 0
-.pages__section 
+.pages__section
+    .breadcrumb-nav
+        margin-bottom: 0
+    .breadcrumb-nav + .block-summary
+        margin-top: 0
+    .breadcrumb-nav + .document-content
+        margin-top: $spacing3
     &.page-challenges
         @include code-page-color($challenges) 
     &.page-association
         @include code-page-color($association) 
+    &.page-publications
+        @include code-page-color($pleas) 
     &.page-pleas 
         @include code-page-color($pleas) 
         .hero
