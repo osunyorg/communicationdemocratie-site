@@ -1,39 +1,7 @@
-@import "_utils"
-
-@import "_config"
-
+@import "configuration"
+@import "fonts"
 @import "_theme/hugo-osuny"
-
-/*! purgecss start ignore */
-@import "_vendors/bootstrap/breadcrumb"
-@import "_vendors/bootstrap/btn"
-@import "_vendors/bootstrap/dropdown"
-
-@import "categories/pages"
-@import "categories/widgets"
-
-@import "home/pages"
-
-@import "pages/pages"
-@import "pages/widgets"
-    
-@import "partials/blocks/pages"
-@import "partials/blocks/posts"
-@import "partials/blocks/timeline"
-
-@import "partials/body/typography"
-
-@import "partials/header/header"
-@import "partials/header/page-detail"
-
-@import "partials/nav/backtotop"
-@import "partials/nav/breadcrumb"
-@import "partials/nav/menu"
-@import "partials/nav/toc"
-@import "partials/share/share"
-
-@import "persons/widgets"
-
-@import "posts/pages"
-@import "posts/widgets"
-/*! purgecss end ignore */
+@import "_utils"
+@import "blocks"
+@import "design-system"
+@import "sections"

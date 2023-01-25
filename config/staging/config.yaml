@@ -1,1 +1,5 @@
-baseURL: https://communicationetdemocratie.netlify.app/
+baseURL: /
+
+## LANGUAGE
+defaultContentLanguage: fr
+defaultContentLanguageInSubdir: true

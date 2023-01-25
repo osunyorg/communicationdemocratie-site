@@ -1,0 +1,255 @@
+body.page__home
+    .breadcrumb-nav
+        display: none
+    .block
+        &-pages
+            .top
+                h2
+                    a
+                        @include link(white)
+                        color: black
+                        &::after
+                            @include icon-code("code-arrow-right")
+                            color: white
+            &.block-page-association
+                background-color: $association
+                article
+                    .media
+                        background-color: white
+            &.block-page-challenges
+                background-color: $challenges
+        &.term-actualites
+            .top
+                h2
+                    a
+                        @include link($pleas)
+                        color: black
+                        &::after
+                            color: $pleas
+        &.term-points-de-vue
+            .top
+                h2
+                    a
+                        @include link($viewpoint)
+                        color: black
+                        &::after
+                            color: $viewpoint
+
+.categories__term
+    .lead
+        @include lead
+    .breadcrumb-nav
+        background: $pleas
+        margin-bottom: 0
+    .block-summary
+        margin-top: 0 !important
+    &.term-points-de-vue
+        @include code-page-color($viewpoint)
+    &.term-actualites
+        @include code-page-color($pleas)
+
+.posts__section,
+.categories__term
+    .document-content
+        .posts
+            margin-top: $spacing2
+            > article
+                &:first-of-type
+                    @include media-breakpoint-down(desktop)
+                        h1, h2, h3, h4
+                            margin-top: $spacing1
+                    @include media-breakpoint-up(desktop)
+                        grid-column: 1 / 3
+                        @include grid(2)
+                &:not(:first-of-type)
+                    @include grid(6)
+                    .post-content
+                        grid-column: 1 / 5
+                    .media
+                        grid-column: 5 / 7
+                        order: 2
+                    @include media-breakpoint-up(xl)
+                        @include grid(9)
+                        .post-content
+                            grid-column: 1 / 7
+                        .media
+                            grid-column: 7 / 10
+                    h2, h3
+                        @include media-breakpoint-down(desktop)
+                            margin-top: $spacing1
+                        a
+                            @include h2
+                .post-content
+                    display: flex
+                    flex-direction: column
+                    time
+                        order: 2
+                        text-transform: uppercase
+                        margin-bottom: half($spacing0)
+                    p
+                        order: 3
+                .media
+                    margin-bottom: 0
+
+.pages__section
+    .breadcrumb-nav
+        margin-bottom: 0
+    .breadcrumb-nav + .block-summary
+        margin-top: 0
+    .breadcrumb-nav + .document-content
+        margin-top: $spacing3
+    &.page-agir-soutenir
+        @include code-page-color($association)
+    &.page-challenges
+        @include code-page-color($challenges) 
+    &.page-association
+        @include code-page-color($association) 
+    &.page-publications
+        @include code-page-color($pleas) 
+    &.page-pleas 
+        @include code-page-color($pleas) 
+        .hero
+            .content
+                align-items: center
+                figure
+                    width: col(3)
+                    img 
+                        aspect-ratio: 1
+                        border-radius: 100%
+                        object-fit: cover
+        .block-pages
+            article
+                .media
+                    margin: auto
+                    position: relative
+                    width: calc(50% - #{$spacing0})
+                    img 
+                        aspect-ratio: 1
+                        border-radius: 50%
+                    &::before
+                        @include icon-code("code-logo")
+                        color: $pleas
+                        display: block
+                        font-size: 52px
+                        position: absolute
+                        bottom: 0
+                        left: 50%
+                        transform: translate(-50%, 50%)
+                        z-index: 3
+                h2, h3
+                    padding-top: calc(#{$spacing1} + #{half($spacing0)})
+                    text-align: center
+                p
+                    text-align: center
+
+.posts
+    article
+        h2, h3
+            a
+                @include link
+
+.post
+    .media:empty
+        display: none
+    .post-categories
+        margin-bottom: 0
+        a
+            text-decoration: none
+            color: $color-text-alt
+        .cat
+            &-supports
+                &::before
+                    background-color: $association
+            &-points-de-vue
+                &::before
+                    background-color: $viewpoint
+            &-actualites
+                &::before
+                    background-color: $publications
+
+.post-categories
+    li
+        font-weight: 700
+        text-transform: uppercase
+        &:not(:first-child)
+            &::before
+                content: none
+    a
+        line-height: px2rem(17)
+        color: $color-text-alt
+        &::before
+            background: black
+            content: ''
+            display: inline-block
+            height: 10px
+            margin-right: 3px
+            vertical-align: baseline
+            width: 10px
+
+.posts__section
+    .block-summary
+        padding-top: $spacing1 !important
+        margin-top: 0 !important
+
+.posts__section,
+.posts__page
+    .logotype
+        path
+            fill: $publications
+    .hero .title h1::after
+        color: $publications
+    .breadcrumb-nav
+        background: $publications
+    .block-summary
+        background: $publications
+        margin-bottom: $spacing3
+    .post-sidebar
+        z-index: 4
+        @include media-breakpoint-down(desktop)
+            background: $publications
+        .toc-container
+            padding-top: $spacing3
+    .post-infos
+        span, a
+            color: black
+        // Hide social share
+        li:last-of-type
+            display: none
+        .post-categories
+            li
+                font-size: inherit
+                font-weight: normal
+                text-transform: none
+            a
+                &::before
+                    display: none
+    &.term-points-de-vue
+        @include code-page-color($viewpoint)
+        @include media-breakpoint-down(desktop)
+            .post-sidebar
+                background: $viewpoint
+
+    .disclaimer
+        @include meta
+        background: $color-background-alt
+        text-align: center
+        padding: $spacing1
+        p
+            margin-bottom: 0
+            // TODO : fix original padding-left, and make sure it couldn't happen in aaa version
+            padding-left: 0 !important
+
+.posts__page
+    @include media-breakpoint-down(desktop)
+        .block-summary
+            margin-bottom: 0 !important
+        .post-sidebar
+            margin-bottom: $spacing3
+
+.persons__section,
+.persons__page,
+.authors__term
+    .breadcrumb
+        padding-left: 0
+        padding-right: 0
+

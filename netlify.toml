@@ -1,8 +1,10 @@
 [build.environment]
-  HUGO_VERSION = "0.108.0"
+  HUGO_VERSION = "0.110.0"
 [[headers]]
   for = "/*"
   [headers.values]
     X-Frame-Options = "SAMEORIGIN"
     X-XSS-Protection = "0"
     X-Content-Type-Options = "nosniff"
+[context.branch-deploy.environment]
+  HUGO_ENV = "staging"
