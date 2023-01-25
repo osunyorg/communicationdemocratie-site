@@ -20,6 +20,13 @@
         .call_to_action
             .description p
                 font-weight: normal
+            .actions
+                a, a:first-child
+                    @include btn
+                    background: $block-call-to-action-button-background
+                    color: $block-call-to-action-button-color
+                    @include media-breakpoint-up(desktop)
+                        padding: $spacing0
         // .call_to_action
             // &--without-image
             //     > div
