@@ -6,15 +6,15 @@ params:
   _merge: deep
   cookie_banner:
     enable: false
+  logo: 
+    footer: "/assets/images/logo-footer.svg"
   posts:
     index:
       show_categories: true
-      truncate_description: 150
+      truncate_description: 200
       layout: grid
   pages:
     index:
       truncate_description: 250
   breadcrumb:
     position: after-hero
-build:
-  writeStats: true
