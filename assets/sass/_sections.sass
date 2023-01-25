@@ -34,6 +34,7 @@ body.page__home
                         color: black
                         &::after
                             color: $viewpoint
+
 .categories__term
     .lead
         @include lead
@@ -153,6 +154,7 @@ body.page__home
     .post-categories
         margin-bottom: 0
         a
+            text-decoration: none
             color: $color-text-alt
         .cat
             &-supports
@@ -174,7 +176,6 @@ body.page__home
                 content: none
     a
         line-height: px2rem(17)
-        text-decoration: none !important
         color: $color-text-alt
         &::before
             background: black
@@ -206,13 +207,22 @@ body.page__home
         z-index: 4
         @include media-breakpoint-down(desktop)
             background: $publications
+        .toc-container
+            padding-top: $spacing3
     .post-infos
         span, a
             color: black
+        // Hide social share
+        li:last-of-type
+            display: none
         .post-categories
+            li
+                font-size: inherit
+                font-weight: normal
+                text-transform: none
             a
                 &::before
-                    background: white
+                    display: none
     &.term-points-de-vue
         @include code-page-color($viewpoint)
         @include media-breakpoint-down(desktop)
