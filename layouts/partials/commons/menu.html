@@ -27,7 +27,7 @@
     {{- $page = partial "GetPageByUrl" .target -}}
     {{- if $page -}}
       {{- if $page.Params.bodyclass -}}
-        {{- $pageClass = partial "GetBodyclass" $page }}
+        {{- $pageClass = printf "page-%s" $page.Params.bodyclass }}
         {{- $itemClass = printf "%s item-%s" $itemClass $pageClass -}}
       {{- else -}}
         {{- $itemClass = printf "%s %s" $itemClass (replace $page.Slug "/" "") -}}
