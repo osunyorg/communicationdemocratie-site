@@ -53,12 +53,13 @@
         &.block-page-association
 
             .top h2,
-            article h1
-                a
-                    @include link($color)
-                    color: black
-                    &::after
-                        color: $color
+            article
+                h2, h3
+                    a
+                        @include link($color)
+                        color: black
+                        &::after
+                            color: $color
         .top
             h2
                 a::after

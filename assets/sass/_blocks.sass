@@ -68,7 +68,7 @@
                     @include h4
     &-posts
         article
-            h1
+            h2, h3
                 a
                     @include link
             time
@@ -78,7 +78,7 @@
                 @include h5-code
         &--highlight
             .highlight-post
-                h1
+                h3
                     margin-bottom: 0
                     margin-top: $spacing0
                     @include h3
@@ -89,7 +89,7 @@
                 border: none
                 article
                     border: none
-                    h1
+                    h2, h3
                         @include h2
                         a
                             @include link
@@ -111,7 +111,7 @@
                     display: flex
                     // flex-direction: row-reverse
                     justify-content: space-between
-                    h1
+                    h2, h3
                         @include h2
                     .post-content
                         margin-left: 0
@@ -129,7 +129,7 @@
     &-pages
         .grid
             article
-                h1
+                h2, h3
                     a
                         @include link(white)
                         color: black

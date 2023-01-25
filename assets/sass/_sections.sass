@@ -74,7 +74,7 @@ body.page__home
                             grid-column: 1 / 7
                         .media
                             grid-column: 7 / 10
-                    h1
+                    h2, h3
                         @include media-breakpoint-down(desktop)
                             margin-top: $spacing1
                         a
@@ -136,7 +136,7 @@ body.page__home
                         left: 50%
                         transform: translate(-50%, 50%)
                         z-index: 3
-                h1
+                h2, h3
                     padding-top: calc(#{$spacing1} + #{half($spacing0)})
                     text-align: center
                 p
@@ -144,7 +144,7 @@ body.page__home
 
 .posts
     article
-        h1
+        h2, h3
             a
                 @include link
 
