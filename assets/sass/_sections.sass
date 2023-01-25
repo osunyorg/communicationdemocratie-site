@@ -11,16 +11,13 @@ body.page__home
                         &::after
                             @include icon-code("code-arrow-right")
                             color: white
-            &:nth-child(odd)
-                background: white
-            &:nth-child(even)
-                &.block-page-association
-                    background-color: $association
-                    article
-                        .media
-                            background-color: white
-                &.block-page-challenges
-                    background-color: $challenges
+            &.block-page-association
+                background-color: $association
+                article
+                    .media
+                        background-color: white
+            &.block-page-challenges
+                background-color: $challenges
         &.term-actualites
             .top
                 h2
