@@ -1,10 +1,11 @@
 <div class="container">
 
-  {{ if site.Data.menus.primary }}
+  {{ $menu := partial "GetMenu" "primary" }}
+  {{ if $menu }}
       <nav aria-label="{{ i18n "commons.menu.main" }}">
       {{ partial "commons/menu.html"
             (dict
-              "items"       site.Data.menus.primary
+              "kind"        "primary"
               "level"       1
               "stop"        2
               "hideDescription" true
@@ -15,6 +16,9 @@
   <div class="footer-info">
     <div class="footer-site">
       {{ partial "footer/site.html" }}
+    </div>
+    <div class="footer-i18n">
+      {{ partial "footer/i18n.html" }}
     </div>
     <div class="footer-legals">
       {{ partial "footer/legals.html" }}
