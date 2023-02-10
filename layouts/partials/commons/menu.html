@@ -1,3 +1,8 @@
+{{- $kind := .kind -}}
+{{ $items := .items }}
+{{ if $kind }}
+  {{ $items = partial "GetMenu" $kind }}
+{{ end }}
 {{- $level := .level -}}
 {{- $stop := .stop -}}
 {{- $dropdown := .dropdown }}
@@ -6,7 +11,7 @@
   {{- $ulClass = printf "%s " .class -}}
 {{- end -}}
 <ul class="{{ $ulClass }}{{ if $level }}nav-level-{{ $level }}{{ end }}">
-  {{- range .items -}}
+  {{- range $items -}}
     {{- $slug := urlize .title -}}
     {{- $itemClass := "" -}}
     {{- $linkClass := "" -}}
