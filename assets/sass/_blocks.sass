@@ -109,9 +109,9 @@
                         a
                             @include link
             article
-                time
+                .post-meta
                     order: 2
-                p
+                p[itemprop="articleBody"]
                     order: 3
         &--list
             @include in-page-with-or-without-sidebar
@@ -130,9 +130,9 @@
                         @include h2
                     .post-content
                         margin-left: 0
-                        time
+                        .post-meta
                             order: 2
-                        p
+                        p[itemprop="articleBody"]
                             order: 3
                 .media
                     img 
