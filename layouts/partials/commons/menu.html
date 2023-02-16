@@ -1,7 +1,8 @@
 {{- $kind := .kind -}}
 {{ $items := .items }}
 {{ if $kind }}
-  {{ $items = partial "GetMenu" $kind }}
+  {{ $menu := partial "GetMenu" $kind }}
+  {{ $items = $menu.items }}
 {{ end }}
 {{- $level := .level -}}
 {{- $stop := .stop -}}
