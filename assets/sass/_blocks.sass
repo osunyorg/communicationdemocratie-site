@@ -11,6 +11,24 @@
                     @include icon-code("code-arrow-right")
                     margin-left: $spacing0
                     display: inline-block
+    &-partners
+        .organization
+            .media
+                background: none
+                padding: 0
+                padding-right: 30%
+                picture
+                    aspect-ratio: 1.5
+                img
+                    object-position: left
+    &-chapter
+        &--accent_background
+            *
+                color: black
+            p
+                @include media-breakpoint-up(desktop)
+                    font-size: px2rem(28)
+                    line-height: 130%
     &-call_to_action
         .call_to_action
             .description p
