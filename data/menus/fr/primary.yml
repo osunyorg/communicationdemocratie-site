@@ -1,4 +1,6 @@
 ---
+title: Menu principal
+items:
 - title: Enjeux
   target: "/fr/enjeux/"
   kind: page
