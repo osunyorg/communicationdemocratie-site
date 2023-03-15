@@ -228,6 +228,10 @@
     &-summary
         .author
             margin-top: $spacing1
+            display: flex
+            picture
+                width: calc(#{col(1)} + #{$grid-gutter})
+                margin-right: $spacing1
             p[itemprop="name"]
                 @include small
                 font-weight: bold
