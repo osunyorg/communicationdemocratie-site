@@ -5,7 +5,7 @@
     <div class="container">
       <div class="block-content">
         <p class="lead">
-          {{ partial "PrepareText" .context.Params.summary }}
+          {{ partial "PrepareText" .context.Params.meta_description | default .context.Params.summary }}
         </p>
         {{ range .context.GetTerms "authors" }}
           {{- $person := site.GetPage (printf "/persons/%s" .Slug) -}}
