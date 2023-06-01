@@ -1,0 +1,16 @@
+---
+title: Menu principal
+items:
+- title: Publications
+  target: "/en/actualites/"
+  kind: page
+  children:
+  - title: Actualités
+    target: "/en/actualites/actualites/"
+    kind: category
+    children: []
+  - title: Points de vue
+    target: "/en/actualites/points-de-vue/"
+    kind: category
+    children: []
+
