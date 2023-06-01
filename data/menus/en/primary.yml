@@ -17,7 +17,7 @@ items:
   target: "/en/association/"
   kind: page
   children:
-  - title: Texte fondateur
+  - title: Founding document
     target: "/en/association/texte-fondateur/"
     kind: page
     children: []
