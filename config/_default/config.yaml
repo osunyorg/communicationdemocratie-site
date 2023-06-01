@@ -3,9 +3,7 @@ paginate: 18
 enableRobotsTXT: true
 removePathAccents: true
 params:
-  _merge: deep
-  cookie_banner:
-    enable: false
+  plausible: communication-democratie.org
   logo: 
     footer: "/assets/images/logo-footer.svg"
   posts:
