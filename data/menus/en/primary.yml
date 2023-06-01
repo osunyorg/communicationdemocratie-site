@@ -13,4 +13,20 @@ items:
     target: "/en/actualites/points-de-vue/"
     kind: category
     children: []
+- title: Association
+  target: "/en/association/"
+  kind: page
+  children:
+  - title: Texte fondateur
+    target: "/en/association/texte-fondateur/"
+    kind: page
+    children: []
+  - title: Organes et fonctionnement
+    target: "/en/association/organes-et-fonctionnement/"
+    kind: page
+    children: []
+  - title: A l'origine de l'association
+    target: "/en/association/a-lorigine-de-lassociation/"
+    kind: page
+    children: []
 
