@@ -101,12 +101,12 @@ items:
     target: "/fr/l-association/a-lorigine-de-lassociation/"
     kind: page
     children: []
+  - title: Rapports annuels
+    target: "/fr/l-association/rapports-annuels/"
+    kind: page
+    children: []
 - title: Agir et soutenir
   target: "/fr/agir-et-soutenir/"
-  kind: page
-  children: []
-- title: Rapports annuels
-  target: "/fr/l-association/rapports-annuels/"
   kind: page
   children: []
 
