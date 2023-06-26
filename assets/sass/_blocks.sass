@@ -11,10 +11,10 @@
                 display: block !important 
                 @include in-page-with-or-without-sidebar
                     @include link
-                &::after
-                    @include icon-code("code-arrow-right")
-                    margin-left: $spacing0
-                    display: inline-block
+                    &::after
+                        @include icon-code("code-arrow-right")
+                        margin-left: $spacing0
+                        display: inline-block
     &-partners
         .organization
             .media
@@ -109,7 +109,7 @@
         &--list
             @include in-page-with-or-without-sidebar
                 .top
-                    h2
+                    .block-title
                         &::after
                             @include icon-code("code-arrow-right")
                             color: $pleas
