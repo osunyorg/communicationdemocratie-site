@@ -1,10 +1,14 @@
+.heading + .block
+    margin-top: $spacing2
+
 .block
-    padding-top: $spacing2
-    padding-bottom: $spacing2
+    margin-top: $spacing2
+    margin-bottom: $spacing2
     .top
-        h2
+        .block-title
             @include h5
-            a 
+            a
+                display: block !important 
                 @include in-page-with-or-without-sidebar
                     @include link
                 &::after
@@ -53,7 +57,7 @@
             @include media-breakpoint-up(desktop)
                 .call_to_action--without-image
                         > div 
-                            h2, h3, .description
+                            .block-title, .description
                                 grid-column: 1/8
                             .actions
                                 grid-column: 9/13
@@ -64,7 +68,7 @@
                 padding-top: 0
     &-timeline
         &--horizontal
-            h2 
+            .block-title
                 @include in-page-with-or-without-sidebar
                     @include h2
             .event
@@ -142,10 +146,12 @@
                             color: white
                             display: inline-block
                             margin-left: half($spacing0)
-        // &.block-page-pleas,
-        // &.block-page-challenges,
-        // &.block-page-association
-        //     // padding: $spacing2 0
+        &.block-page-pleas,
+        &.block-page-challenges,
+        &.block-page-association
+            padding: $spacing2 0
+            margin-top: 0
+
         &.block-page-pleas
             background-color: $pleas
             article
@@ -191,6 +197,10 @@
                 font-size: $body-size
 
     &-summary
+        margin-bottom: 0
+        padding-bottom: $spacing2
+        margin-top: 0
+        padding-top: $spacing2
         .author
             margin-top: $spacing1
             display: flex
