@@ -1,7 +1,7 @@
 {{- $text := (partial "GetTextFromHTML" .context.Params.summary) -}}
 
 {{- if $text -}}
-  <section class="block block-summary">
+  <section class="block block-summary {{ if .context.GetTerms "authors" }}block-summary--with-author{{ end }}">
     <div class="container">
       <div class="block-content">
         <p class="lead">

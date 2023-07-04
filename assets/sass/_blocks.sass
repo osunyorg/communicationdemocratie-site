@@ -201,11 +201,21 @@
         padding-bottom: $spacing2
         margin-top: 0
         padding-top: $spacing2
+        &--with-author
+            @include media-breakpoint-up(desktop)
+                .lead
+                    padding-left: offset(4)
+                .author
+                    @include container-margin-left
+                    margin-top: 0
+                    top: 0
+                    left: 0
+                    height: 100%
+                    position: absolute
+                    width: col-outside-container(4)
         .author
             margin-top: $spacing1
             display: flex
-            @include media-breakpoint-up(desktop)
-                width: col(4)
             picture
                 display: none
                 // width: calc(#{col(1)} + #{$grid-gutter})
