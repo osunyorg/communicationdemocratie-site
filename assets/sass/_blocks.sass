@@ -204,6 +204,8 @@
         .author
             margin-top: $spacing1
             display: flex
+            @include media-breakpoint-up(desktop)
+                width: col(4)
             picture
                 display: none
                 // width: calc(#{col(1)} + #{$grid-gutter})
