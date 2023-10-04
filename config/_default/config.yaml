@@ -4,6 +4,8 @@ enableRobotsTXT: true
 removePathAccents: true
 params:
   plausible: communication-democratie.org
+  summary:
+    position: content
   logo: 
     footer: "/assets/images/logo-footer.svg"
   posts:
