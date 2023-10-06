@@ -7,7 +7,6 @@
   "dependencies": {
     "osuny-hugo-theme-aaa": "./themes/osuny-hugo-theme-aaa"
   },
-
   "scripts": {
     "watch": "npx osuny-hugo-theme watch",
     "build": "npx osuny-hugo-theme build",
