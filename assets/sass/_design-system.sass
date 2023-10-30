@@ -17,18 +17,23 @@ header#document-header
                 height: 44px
     @include media-breakpoint-down(desktop)
         .container
-            > button[type="button"][aria-expanded="false"]
+            > button[type="button"]:not(.pagefind-ui__button)
                 span:last-of-type
                     height: unset
                     margin-left: half($spacing0)
-                    &::before
-                        @include icon-code("code-logo")
-                        color: $pleas
-                        font-size: px2rem(26)
-            > button[type="button"][aria-expanded="true"]
-                span:last-of-type
-                    &::before
-                        @include icon-code("code-close")
+                &[aria-expanded="false"]
+                    span:last-of-type
+                        height: unset
+                        &::before
+                            @include icon-code("code-logo")
+                            font-size: px2rem(26)
+                            color: $pleas
+                &[aria-expanded="true"]
+                    span:last-of-type
+                        &::before
+                            @include icon-code("code-close")
+                            font-size: px2rem(26)
+
         .menu
             margin-left: half(-$grid-gutter-sm)
             margin-right: half(-$grid-gutter-sm)
@@ -71,7 +76,6 @@ header#document-header
                             padding: px2rem(8) px2rem(16)
                     @include media-breakpoint-up(desktop)
                         padding-left: $spacing0
-
 
                 @include media-breakpoint-down(desktop)
                     &:last-child
