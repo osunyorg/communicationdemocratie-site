@@ -61,13 +61,14 @@ contents:
     title: >-
       La communication commerciale, un volume colossal
     position: 0
-    level: 2
+    rank: 2
   - kind: block
     template: chapter
     title: >-
       
     position: 1
-    heading_level: 3
+    ranks:
+      self: false
     data:
       layout: no_background
       text: >-
@@ -90,7 +91,8 @@ contents:
     title: >-
       
     position: 2
-    heading_level: 3
+    ranks:
+      self: false
     data:
       text: >-
         <p>Dépenses de communication commerciale en France (Milliards d'euros Mds€)</p>
@@ -112,7 +114,8 @@ contents:
     title: >-
       
     position: 3
-    heading_level: 3
+    ranks:
+      self: false
     data:
       layout: no_background
       text: >-
@@ -135,13 +138,14 @@ contents:
     title: >-
       Cartographie des acteurs du marché publicitaire
     position: 1
-    level: 2
+    rank: 2
   - kind: block
     template: timeline
     title: >-
       
     position: 4
-    heading_level: 3
+    ranks:
+      self: false
     data:
       layout: horizontal
       events:
@@ -172,7 +176,9 @@ contents:
     title: >-
       Retrouvez notre rapport
     position: 5
-    heading_level: 3
+    ranks:
+      self: 3
+      children: 4
     data:
       show_main_description: false
       show_descriptions: false
@@ -190,13 +196,14 @@ contents:
     title: >-
       Par où passe la publicité?
     position: 2
-    level: 2
+    rank: 2
   - kind: block
     template: chapter
     title: >-
       
     position: 6
-    heading_level: 3
+    ranks:
+      self: false
     data:
       layout: no_background
       text: >-
@@ -219,7 +226,8 @@ contents:
     title: >-
       
     position: 7
-    heading_level: 3
+    ranks:
+      self: false
     data:
       text: >-
         
@@ -241,13 +249,14 @@ contents:
     title: >-
       Un marché concentré sur une poignée de secteurs
     position: 3
-    level: 2
+    rank: 2
   - kind: block
     template: chapter
     title: >-
       
     position: 8
-    heading_level: 3
+    ranks:
+      self: false
     data:
       layout: no_background
       text: >-
@@ -270,7 +279,8 @@ contents:
     title: >-
       
     position: 9
-    heading_level: 3
+    ranks:
+      self: false
     data:
       text: >-
         
@@ -292,7 +302,9 @@ contents:
     title: >-
       Nos dernières publications sur ces enjeux
     position: 10
-    heading_level: 3
+    ranks:
+      self: 3
+      children: 4
     data:
       category: "/enjeux/consommation/"
       layout: grid
@@ -308,13 +320,14 @@ contents:
     title: >-
       Publicité et obsolescence marketing
     position: 4
-    level: 2
+    rank: 2
   - kind: block
     template: chapter
     title: >-
       
     position: 11
-    heading_level: 3
+    ranks:
+      self: false
     data:
       layout: no_background
       text: >-
@@ -337,7 +350,9 @@ contents:
     title: >-
       Retrouvez nos plaidoyers sur ces sujets
     position: 12
-    heading_level: 3
+    ranks:
+      self: 3
+      children: 4
     data:
       page: 
         path: "/fr/plaidoyers/"

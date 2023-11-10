@@ -58,7 +58,8 @@ contents:
     title: >-
       Agissons!
     position: 1
-    heading_level: 2
+    ranks:
+      self: 2
     data:
       text: >-
         <p> Retrouvez la campagne européenne engagée entre octobre 2021 et octobre 2022. <br></p><p>  </p>
@@ -85,13 +86,14 @@ contents:
     title: >-
       Contexte : l’échec de la loi Climat en France, en 2021, à mettre fin à la publicité des pollueurs
     position: 0
-    level: 2
+    rank: 2
   - kind: block
     template: chapter
     title: >-
       
     position: 3
-    heading_level: 3
+    ranks:
+      self: false
     data:
       layout: no_background
       text: >-
@@ -114,13 +116,14 @@ contents:
     title: >-
       Chronologie des luttes d’influence sur la régulation de la publicité durant la loi Climat et résilience
     position: 1
-    level: 2
+    rank: 2
   - kind: block
     template: timeline
     title: >-
       
     position: 4
-    heading_level: 3
+    ranks:
+      self: false
     data:
       layout: horizontal
       events:
@@ -217,13 +220,14 @@ contents:
     title: >-
       Enjeu politique : L’industrie des médias et le pluralisme ne dépendent pas de l’industrie automobile
     position: 2
-    level: 2
+    rank: 2
   - kind: block
     template: chapter
     title: >-
       
     position: 5
-    heading_level: 3
+    ranks:
+      self: false
     data:
       layout: no_background
       text: >-
@@ -246,7 +250,9 @@ contents:
     title: >-
       Nos dernières publications sur le sujet
     position: 6
-    heading_level: 3
+    ranks:
+      self: 3
+      children: 4
     data:
       category: "/enjeux/rse/"
       layout: grid
