@@ -52,16 +52,16 @@
         &.block-page-challenges,
         &.block-page-association
 
-            .top h2,
+            .block-title,
             article
-                h2, h3
+                .page-title
                     a
                         @include link($color)
                         color: black
                         &::after
                             color: $color
         .top
-            h2
+            .block-title
                 a::after
                     @include icon-code("code-arrow-right")
                     color: $color
