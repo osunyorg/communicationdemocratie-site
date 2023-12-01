@@ -6,8 +6,4 @@ allowed_domains:
   - "osuny.s3.fr-par.scw.cloud"
   - "tile.openstreetmap.org"
   - "plausible.io"
-  - "youtube.com"
-  - "www.youtube.com"
-  - "img.youtube.com"
-  - "youtu.be"
   - "podcasters.spotify.com"
