@@ -1,16 +1,5 @@
-@font-face
-    font-display: swap
-    font-family: 'Basier Square'
-    font-style: normal
-    font-weight: 400
-    src: url("../fonts/Basier-Square/basiersquare-regular.woff2") format("woff2"), url("../fonts/Basier-Square/basiersquare-regular.woff") format("woff")
-
-@font-face
-    font-display: swap
-    font-family: 'Basier Square'
-    font-style: normal
-    font-weight: 700
-    src: url("../fonts/Basier-Square/basiersquare-bold.woff2") format("woff2"), url("../fonts/Basier-Square/basiersquare-bold.woff") format("woff")
+@include font-face("Basier Square", Basier-Square/basiersquare-regular, $exts: (woff2 woff))
+@include font-face("Basier Square", Basier-Square/basiersquare-bold, $weight: bold, $exts: (woff2 woff))
 
 @font-face
     font-display: block
