@@ -19,7 +19,7 @@
   {{ $bodyclass = printf "%s %s" $bodyclass (printf "term-%s" (replace .Slug "/" "")) }}
 {{ end }}
 
-{{ range .GetTerms "categories" }}
+{{ range .GetTerms "posts_categories" }}
   {{ if .Params.parent }}
     {{ $bodyclass = printf "%s %s" $bodyclass (printf "term-%s" (replace .Params.parent "/" "")) }}
   {{ else }}
