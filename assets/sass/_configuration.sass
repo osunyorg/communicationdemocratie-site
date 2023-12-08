@@ -1,54 +1,44 @@
-@import "_theme/utils"
 
-// MAIN COLORS
+$color-pleas: #FF6B4C             // Plaidoyers
+$color-publications: $color-pleas   // Actualités
+$color-association: #FDC652       // Association
+$color-challenges: #95D3E6        // Enjeux
+$color-viewpoint: #9CCD9A         // Point de vue (category)
+$color-accent: $color-pleas
 $color-text-alt: #6c757d
 $color-background-alt: #EBEBEB
 
-$link-underline-offset: 3px
-
-// Plaidoyers
-$pleas: #FF6B4C
-// $pleas: #D36F4E
-// Actualités
-$publications: $pleas
-// Association
-// $association: #FFD704
-$association: #FDC652
-// Enjeux
-// $challenges: #61D6FF
-$challenges: #95D3E6
-// Point de vue (category)
-// $viewpoint: #66EC49
-$viewpoint: #9CCD9A
-
-$color-accent: $pleas
-
-$body-font-family: 'Basier Square', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+$body-font-family: "Basier Square", sans-serif
 $heading-font-family: $body-font-family
 
-
-// Headings
 $h1-size: px2rem(40)
 $h1-line-height: 100%
-
 $h2-weight: bold
-
 $h2-size-desktop: px2rem(22)
 $h2-size: px2rem(22)
-
 $h4-size-desktop: px2rem(18)
 $h4-size: px2rem(18)
 $h4-line-height: 150% 
-
 $h5-size-desktop: px2rem(18)
 $h5-size: px2rem(18)
 $h5-line-height: 150%
-
 $body-size-desktop: px2rem(18)
 $body-line-height: 150%
+$small-size-desktop: px2rem(14)
+$small-size: px2rem(14)
+$meta-size-desktop: px2rem(14)
+$meta-line-height: 1.4
+$lead-size-desktop: px2rem(32)
+$lead-size: px2rem(22)
+$lead-line-height: 1.3125
+$lead-sidebar-size-desktop: px2rem(32)
+$lead-sidebar-line-height: 1.3125
+$quote-size-desktop-short: px2rem(60)
+$quote-size-desktop-long: px2rem(22)
+$quote-size: px2rem(22)
+$quote-line-height: 150%
 
 $font-icons-code: 'Icon-site'
-
 $icons-code: ()
 $icons-code: map-merge($icons-code, ("code-facebook": "\e900"))
 $icons-code: map-merge($icons-code, ("code-linkedin": "\e907"))
@@ -57,31 +47,11 @@ $icons-code: map-merge($icons-code, ("code-caret": "\e901"))
 $icons-code: map-merge($icons-code, ("code-close": "\e906"))
 $icons-code: map-merge($icons-code, ("code-divider": "\e902"))
 $icons-code: map-merge($icons-code, ("code-logo": "\e908"))
-
 $icons-code: map-merge($icons-code, ("code-arrow-right": "\e904"))
 $icons-code: map-merge($icons-code, ("code-arrow-bottom": "\e901"))
 $icons-code: map-merge($icons-code, ("code-arrow-left": "\e903"))
 $icons-code: map-merge($icons-code, ("code-arrow-top": "\e905"))
 
-// Meta
-$meta-size-desktop: px2rem(14)
-$meta-line-height: 1.4
-
-// Lead
-$lead-size-desktop: px2rem(32)
-$lead-size: px2rem(22)
-$lead-line-height: 1.3125
-
-$lead-sidebar-size-desktop: px2rem(32)
-$lead-sidebar-line-height: 1.3125
-
-// Quotes
-$quote-size-desktop-short: px2rem(60)
-$quote-size-desktop-long: px2rem(22)
-$quote-size: px2rem(22)
-$quote-line-height: 150%
-
-// Buttons
 $btn-font-size: px2rem(18)
 $btn-border-radius: px2rem(0)
 $btn-padding-x: px2rem(22)
@@ -89,15 +59,6 @@ $btn-padding-y: px2rem(15)
 $btn-padding-x-desktop: px2rem(22)
 $btn-padding-y-desktop: px2rem(15)
 
-// Grid
-// $grid-max-width: px2rem(1320)
-// $grid-gutter: px2rem(12)
-// $grid-gutter-sm: px2rem(12)
-
-$small-size-desktop: px2rem(14)
-$small-size: px2rem(14)
-
-// Header
 $header-background: white
 $header-dropdown-full: true
 $header-height: 60px
@@ -105,46 +66,30 @@ $header-height-desktop: 70px
 $header-logo-height: 44px
 $header-nav-padding-y: px2rem(12)
 
-// footer
 $footer-logo-height: 38px
 
-// Breacrumb
 $breadcrumb-icon: "code-divider"
 $breadcrumb-icon-color: black
 
 $footer-color: white
 $footer-background-color: black
 
-// Hero
 $hero-height-desktop: 356px
 $hero-background-color: white
 
-// BLOCKS
+$article-media-background: white
 
-// Block call to action
+$toc-background-color: white
+$toc-active-color: inherit
+$toc-font-size: $small-size
+$toc-font-size-desktop: $small-size-desktop
+
+$link-underline-offset: 3px
+
 $block-call-to-action-background: $color-background-alt
 $block-call-to-action-color: black
 $block-call-to-action-button-background: black
 $block-call-to-action-button-color: white
-
-// Block timeline
-$block-timeline-horizontal-background: $pleas
-
-// Block testimonials
+$block-timeline-horizontal-background: $color-pleas
 $block-testimonials-color: black
-
-// Sections
 $posts-grid-columns: 2
-
-$article-media-background: white
-
-
-// SYSTEM
-
-// Table of content
-
-$toc-background-color: white
-$toc-active-color: inherit
-
-$toc-font-size: $small-size
-$toc-font-size-desktop: $small-size-desktop

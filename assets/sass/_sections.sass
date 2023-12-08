@@ -14,41 +14,41 @@ body.page__home
                             @include icon-code("code-arrow-right")
                             color: white
             &.block-page-association
-                background-color: $association
+                background-color: $color-association
                 article
                     .media
                         background-color: white
             &.block-page-challenges
-                background-color: $challenges
+                background-color: $color-challenges
         &.term-actualites
             .top
                 .block-title
                     a
-                        @include link($pleas)
+                        @include link($color-pleas)
                         color: black
                         &::after
-                            color: $pleas
+                            color: $color-pleas
         &.term-points-de-vue
             .top
                 .block-title
                     a
-                        @include link($viewpoint)
+                        @include link($color-viewpoint)
                         color: black
                         &::after
-                            color: $viewpoint
+                            color: $color-viewpoint
 
 .posts_categories__term
     .lead
         @include lead
     .breadcrumb-nav
-        background: $pleas
+        background: $color-pleas
         margin-bottom: 0
     .block-summary
         margin-top: 0 !important
     &.term-points-de-vue
-        @include code-page-color($viewpoint)
+        @include code-page-color($color-viewpoint)
     &.term-actualites
-        @include code-page-color($pleas)
+        @include code-page-color($color-pleas)
 
 .posts__section,
 .posts_categories__term
@@ -102,15 +102,15 @@ body.page__home
     .breadcrumb-nav + .document-content
         margin-top: $spacing3
     &.page-agir-soutenir
-        @include code-page-color($association)
+        @include code-page-color($color-association)
     &.page-challenges
-        @include code-page-color($challenges) 
+        @include code-page-color($color-challenges) 
     &.page-association
-        @include code-page-color($association) 
+        @include code-page-color($color-association) 
     &.page-publications
-        @include code-page-color($pleas) 
+        @include code-page-color($color-pleas) 
     &.page-pleas 
-        @include code-page-color($pleas) 
+        @include code-page-color($color-pleas) 
         .hero
             .content
                 align-items: center
@@ -131,7 +131,7 @@ body.page__home
                         border-radius: 50%
                     &::before
                         @include icon-code("code-logo")
-                        color: $pleas
+                        color: $color-pleas
                         display: block
                         font-size: 52px
                         position: absolute
@@ -164,13 +164,13 @@ body.page__home
                 display: none
             &-supports
                 &::before
-                    background-color: $association
+                    background-color: $color-association
             &-points-de-vue
                 &::before
-                    background-color: $viewpoint
+                    background-color: $color-viewpoint
             &-actualites
                 &::before
-                    background-color: $publications
+                    background-color: $color-publications
 
 .post-categories
     li
@@ -205,18 +205,18 @@ body.page__home
 .posts__page
     .logotype
         path
-            fill: $publications
+            fill: $color-publications
     .hero .title h1::after
-        color: $publications
+        color: $color-publications
     .breadcrumb-nav
-        background: $publications
+        background: $color-publications
     .block-summary
-        background: $publications
+        background: $color-publications
         margin-bottom: $spacing3
     .post-sidebar
         z-index: 4
         @include media-breakpoint-down(desktop)
-            background: $publications
+            background: $color-publications
         .toc-container
             padding-top: $spacing3
     .post-infos
@@ -234,10 +234,10 @@ body.page__home
                 &::before
                     display: none
     &.term-points-de-vue
-        @include code-page-color($viewpoint)
+        @include code-page-color($color-viewpoint)
         @include media-breakpoint-down(desktop)
             .post-sidebar
-                background: $viewpoint
+                background: $color-viewpoint
 
     .disclaimer
         @include meta

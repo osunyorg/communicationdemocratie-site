@@ -8,7 +8,7 @@ header#document-header
             text-decoration: none
             &::before
                 @include icon-code("code-logo")
-                color: $pleas
+                color: $color-pleas
                 font-size: 44px
                 margin-right: 5px
         img
@@ -27,7 +27,7 @@ header#document-header
                         &::before
                             @include icon-code("code-logo")
                             font-size: px2rem(26)
-                            color: $pleas
+                            color: $color-pleas
                 &[aria-expanded="true"]
                     span:last-of-type
                         &::before
@@ -42,7 +42,7 @@ header#document-header
                     padding-left: half($grid-gutter-sm)
                     padding-right: half($grid-gutter-sm)
                     &.item-page-agir-soutenir
-                        background-color: $association
+                        background-color: $color-association
                         a
                             margin-bottom: 0 !important
     .menu
@@ -64,14 +64,14 @@ header#document-header
                         font-size: px2rem(5)
                         margin-left: $spacing0
                 &.item-page-challenges
-                    @include code-menu-color($challenges)
+                    @include code-menu-color($color-challenges)
                 &.item-page-pleas
-                    @include code-menu-color($pleas)
+                    @include code-menu-color($color-pleas)
                 &.item-page-association
-                    @include code-menu-color($association)
+                    @include code-menu-color($color-association)
                 &.item-page-agir-soutenir
                     a
-                        background-color: $association
+                        background-color: $color-association
                         @include media-breakpoint-up(desktop)
                             padding: px2rem(8) px2rem(16)
                     @include media-breakpoint-up(desktop)
@@ -90,16 +90,16 @@ header#document-header
                             > li
                                 &.actualites
                                     a
-                                        @include link($pleas)
+                                        @include link($color-pleas)
                                         color: black
                                         &::after
-                                            color: $pleas
+                                            color: $color-pleas
                                 &.points-de-vue
                                     a
-                                        @include link($viewpoint)
+                                        @include link($color-viewpoint)
                                         color: black
                                         &::after
-                                            color: $viewpoint
+                                            color: $color-viewpoint
 
         .nav-level-2
             @include grid(3, desktop)
@@ -163,7 +163,7 @@ footer#document-footer
         text-align: center
         &::before
             @include icon-code("code-logo")
-            color: $pleas
+            color: $color-pleas
             font-size: 40px
             margin-right: 5px
     @include media-breakpoint-down(desktop)
@@ -200,7 +200,7 @@ footer#document-footer
     h1
         &::after
             @include icon-code("code-logo")
-            color: $pleas
+            color: $color-pleas
             display: block
             font-size: 44px
             font-weight: normal
@@ -239,7 +239,7 @@ nav.toc-pages
                     left: -$spacing0
                     width: 4px
                 &.active::before
-                    background-color: $pleas
+                    background-color: $color-pleas
 
 .toc-content
     padding-left: $spacing1
