@@ -9,11 +9,14 @@
         {{- $term_class = printf "cat-parent cat-%s" (replace .Slug "/" "") -}}
       {{ end }}
 
-      <li>
-        <a href="{{ .Permalink }}"{{ if $term_class }} class="{{ $term_class }}"{{ end }}>
-          {{- safeHTML .Title -}}
-        </a>
-      </li>
+      {{ if .Params.parent }}
+        <li>
+          <a href="{{ .Permalink }}"{{ if $term_class }} class="{{ $term_class }}"{{ end }}>
+            {{- safeHTML .Title -}}
+          </a>
+        </li>
+      {{- end }}
+
     {{- end }}
   </ul>
 {{ end }}

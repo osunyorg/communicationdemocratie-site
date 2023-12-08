@@ -79,6 +79,7 @@
             [itemprop="headline"]
                 a
                     @include link
+                    text-decoration-color: transparent !important
             time
                 text-transform: uppercase
         &--grid
@@ -141,6 +142,7 @@
                     a
                         @include link(white)
                         color: $color-text
+                        text-decoration: none
                         &::after
                             @include icon-code("code-arrow-right")
                             color: white
