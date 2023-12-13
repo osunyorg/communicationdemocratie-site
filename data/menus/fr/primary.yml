@@ -77,6 +77,10 @@ items:
   target: "/fr/l-association/"
   kind: page
   children:
+  - title: Vision et mission
+    target: "/fr/l-association/vision-et-mission/"
+    kind: page
+    children: []
   - title: Texte fondateur
     target: "/fr/l-association/texte-fondateur/"
     kind: page
@@ -95,10 +99,6 @@ items:
     children: []
   - title: Rapports annuels
     target: "/fr/l-association/rapports-annuels/"
-    kind: page
-    children: []
-  - title: Vision et mission
-    target: "/fr/l-association/vision-et-mission/"
     kind: page
     children: []
 - title: Agir et soutenir
