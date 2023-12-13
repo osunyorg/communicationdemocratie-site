@@ -97,6 +97,10 @@ items:
     target: "/fr/l-association/rapports-annuels/"
     kind: page
     children: []
+  - title: Vision et mission
+    target: "/fr/l-association/vision-et-mission/"
+    kind: page
+    children: []
 - title: Agir et soutenir
   target: "/fr/agir-et-soutenir/"
   kind: page
