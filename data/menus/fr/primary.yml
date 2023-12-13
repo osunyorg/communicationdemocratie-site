@@ -81,16 +81,16 @@ items:
     target: "/fr/l-association/vision-et-mission/"
     kind: page
     children: []
+  - title: Organes et fonctionnement
+    target: "/fr/l-association/organes-et-fonctionnement/"
+    kind: page
+    children: []
   - title: Texte fondateur
     target: "/fr/l-association/texte-fondateur/"
     kind: page
     children: []
   - title: Notre démarche de communication
     target: "/fr/l-association/notre-demarche-de-communication/"
-    kind: page
-    children: []
-  - title: Organes et fonctionnement
-    target: "/fr/l-association/organes-et-fonctionnement/"
     kind: page
     children: []
   - title: A l'origine de l'association
