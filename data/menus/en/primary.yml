@@ -21,6 +21,10 @@ items:
     target: "/en/association/texte-fondateur/"
     kind: page
     children: []
+  - title: Notre démarche de communication
+    target: "/en/association/notre-demarche-de-communication/"
+    kind: page
+    children: []
   - title: Governing bodies and functioning of the organization
     target: "/en/association/organes-et-fonctionnement/"
     kind: page
