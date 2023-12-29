@@ -6,14 +6,13 @@ en:
   languageCode: en
   languageName: English
   permalinks:
-    categories: /actualites/:slug/
     posts: /actualites/:year-:month-:day-:slug/
+    posts_categories: /actualites/:slug/
     persons: /equipe/:slug/
     authors: /equipe/:slug/actualites/
   taxonomies:
     administrator: administrators
     author: authors
-    category: categories
     posts_category: posts_categories
     events_category: events_categories
     diploma: diplomas
@@ -25,14 +24,13 @@ fr:
   languageCode: fr
   languageName: Français
   permalinks:
-    categories: /publications/:slug/
     posts: /publications/:year-:month-:day-:slug/
+    posts_categories: /publications/:slug/
     persons: /equipe/:slug/
     authors: /equipe/:slug/publications/
   taxonomies:
     administrator: administrators
     author: authors
-    category: categories
     posts_category: posts_categories
     events_category: events_categories
     diploma: diplomas
