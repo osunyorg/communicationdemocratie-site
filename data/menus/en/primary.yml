@@ -17,6 +17,10 @@ items:
   target: "/en/association/"
   kind: page
   children:
+  - title: Vision and mission
+    target: "/en/association/vision-et-mission/"
+    kind: page
+    children: []
   - title: Founding document
     target: "/en/association/texte-fondateur/"
     kind: page
