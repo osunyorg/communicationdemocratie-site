@@ -158,6 +158,10 @@ footer#document-footer
         .container
             padding: 0
             display: block
+            width: fit-content
+            margin-right: 0
+            .dropdown-menu
+                padding: 0
     .footer-logo
         padding-top: $spacing3
         text-align: center
@@ -174,6 +178,9 @@ footer#document-footer
                     display: none
         .footer-logo
             margin-top: $spacing4
+        .footer-i18n
+            .container
+                margin-left: 0
     @include media-breakpoint-up(desktop)
         nav
             width: col(6)
@@ -184,8 +191,7 @@ footer#document-footer
                     padding-top: $spacing1
         .footer-legals
             text-align: right
-        .footer-i18n
-            text-align: right
+
 
 // Hero
 .hero
