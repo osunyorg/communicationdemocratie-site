@@ -57,6 +57,8 @@ header#document-header
                     @include media-breakpoint-up(desktop)
                         border-bottom: 5px solid black
                         padding-bottom: $spacing3
+                        &.dropdown-languages
+                            padding-bottom: 0
                 &:not(:last-child)
                     > a::after
                         @include icon-code("code-arrow-bottom")

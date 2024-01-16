@@ -19,3 +19,4 @@ params:
       truncate_description: 250
   breadcrumb:
     position: after-hero
+

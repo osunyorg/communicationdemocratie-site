@@ -47,7 +47,6 @@
       {{- end -}}
       {{- if ne $stop $level -}}
         {{- if $hasDropdown }}
-          {{/* dropdown-menu class is required for bootstrap js */}}
           <div class="dropdown-menu" aria-labelledby="dropdown-{{ $slug }}">
         {{- end -}}
         {{- if gt (len .children) 0 -}}
@@ -73,4 +72,7 @@
       {{- end -}}
     </li>
   {{- end -}}
+  {{ if and (eq $kind "primary") (site.Params.menu.i18n.display) }}
+    {{ partial "header/i18n.html" . }}
+  {{ end }}
 </ul>
