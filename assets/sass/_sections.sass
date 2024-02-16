@@ -101,15 +101,20 @@ body.page__home
         margin-top: 0
     .breadcrumb-nav + .document-content
         margin-top: $spacing3
-    &.page-agir-soutenir
+    &.page-agir-soutenir,
+    &.page-ancestor-agir-soutenir
         @include code-page-color($color-association)
-    &.page-challenges
+    &.page-challenges,
+    &.page-ancestor-challenges
         @include code-page-color($color-challenges) 
-    &.page-association
+    &.page-association,
+    &.page-ancestor-association
         @include code-page-color($color-association) 
-    &.page-publications
+    &.page-publications,
+    &.page-ancestor-publications
         @include code-page-color($color-pleas) 
-    &.page-pleas 
+    &.page-pleas,
+    &.page-ancestor-pleas
         @include code-page-color($color-pleas) 
         .hero
             .content
