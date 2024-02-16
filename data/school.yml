@@ -1,15 +1,10 @@
 ---
-name: >
-  Communication et démocratie
-address: >
+name: "Communication et démocratie"
+address: >-
   295 rue Saint Jacques
-zipcode: >
-  75005
-city: >
-  Paris
-country: >
-  France
-phone: >
-  
+zipcode: "75005"
+city: "Paris"
+country: "France"
+phone: ""
 roles: []
 ---
