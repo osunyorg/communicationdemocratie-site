@@ -5,7 +5,7 @@
     <div class="container">
       <div class="block-content">
         <p class="lead">
-          {{ partial "PrepareText" .context.Params.meta_description | default .context.Params.summary }}
+          {{ .context.Params.meta_description | default .context.Params.summary | safeHTML }}
         </p>
         {{ range .context.GetTerms "authors" }}
           {{- $person := site.GetPage (printf "/persons/%s" .Slug) -}}
@@ -24,7 +24,7 @@
               <div>
                 <p itemprop="name"><a href="{{ .Permalink }}" itemprop="url">{{ partial "PrepareHTML" .Title }}</a></p>
                 {{ if .Params.summary }}
-                  <p itemprop="description">{{ partial "PrepareText" .Params.summary }}</p>
+                  <p itemprop="description">{{ .Params.summary | safeHTML }}</p>
                 {{ end }}
               </div>
             </div>
