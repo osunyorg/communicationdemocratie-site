@@ -118,11 +118,12 @@ body.page__home
         @include code-page-color($color-pleas) 
         .hero
             figure
-                width: columns(3)
                 img 
                     aspect-ratio: 1
                     border-radius: 100%
                     object-fit: cover
+                @include media-breakpoint-up(desktop)
+                    width: columns(3)
         .block-pages
             article
                 .media
