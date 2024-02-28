@@ -1,0 +1,16 @@
+serve: ./public
+snapshots:
+  - name: Home
+    url: /fr/index.html
+  - name: Association
+    url: /fr/l-association/organes-et-fonctionnement/index.html
+  - name: Une page
+    url: /fr/enjeux/communication-et-rse/index.html
+  - name: Actualités
+    url: /fr/publications/actualites/index.html
+  - name: Une actualité
+    url: /fr/publications/2022/02/13/flash-back-la-campagne-de-total-en-amont-de-la-cop/index.html
+  - name: Plaidoyers
+    url: /fr/plaidoyers/index.html
+  - name: Un plaidoyer
+    url: /fr/plaidoyers/campagne-pour-une-loi-evin-du-climat-europeenne/index.html
