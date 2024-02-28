@@ -7,3 +7,4 @@ allowed_domains:
   - "tile.openstreetmap.org"
   - "plausible.io"
   - "podcasters.spotify.com"
+  - "framaforms.org"
