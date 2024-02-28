@@ -43,13 +43,10 @@
         .call_to_action
             .description p
                 font-weight: normal
-            // .actions
-            //     a, a:first-child
-            //         @include btn
-            //         background: $block-call-to-action-button-background
-            //         color: $block-call-to-action-button-color
-            //         @include media-breakpoint-up(desktop)
-            //             padding: $spacing-2
+            .actions 
+                a:first-child
+                    --btn-min-width: fit-content
+                    --btn-min-width-desktop: fit-content
         @include in-page-without-sidebar
             .block-content
                 padding-bottom: $spacing-5
