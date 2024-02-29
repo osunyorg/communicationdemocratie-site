@@ -20,27 +20,27 @@ header#document-header
             > button[type="button"]:not(.pagefind-ui__button)
                 span:last-of-type
                     height: unset
-                    margin-left: half($spacing0)
+                    margin-left: $spacing-1
                 &[aria-expanded="false"]
                     span:last-of-type
                         height: unset
                         &::before
                             @include icon-code("code-logo")
-                            font-size: px2rem(26)
+                            font-size: pxToRem(26)
                             color: $color-pleas
                 &[aria-expanded="true"]
                     span:last-of-type
                         &::before
                             @include icon-code("code-close")
-                            font-size: px2rem(26)
+                            font-size: pxToRem(26)
 
         .menu
-            margin-left: half(-$grid-gutter-sm)
-            margin-right: half(-$grid-gutter-sm)
+            margin-left: var(--grid-gutter-negative)
+            margin-right: var(--grid-gutter-negative)
             .nav-level-1
                 > li
-                    padding-left: half($grid-gutter-sm)
-                    padding-right: half($grid-gutter-sm)
+                    padding-left: var(--grid-gutter)
+                    padding-right: var(--grid-gutter)
                     &.item-page-agir-soutenir
                         background-color: $color-association
                         a
@@ -56,15 +56,15 @@ header#document-header
                 .dropdown-menu
                     @include media-breakpoint-up(desktop)
                         border-bottom: 5px solid black
-                        padding-bottom: $spacing3
+                        padding-bottom: $spacing-5
                         &.dropdown-languages
                             padding-bottom: 0
                 &:not(:last-child)
                     > a::after
                         @include icon-code("code-arrow-bottom")
                         display: inline-block
-                        font-size: px2rem(5)
-                        margin-left: $spacing0
+                        font-size: pxToRem(5)
+                        margin-left: $spacing-2
                 &.item-page-challenges
                     @include code-menu-color($color-challenges)
                 &.item-page-pleas
@@ -75,14 +75,19 @@ header#document-header
                     a
                         background-color: $color-association
                         @include media-breakpoint-up(desktop)
-                            padding: px2rem(8) px2rem(16)
+                            padding: pxToRem(8) pxToRem(16)
                     @include media-breakpoint-up(desktop)
-                        padding-left: $spacing0
+                        padding-left: $spacing-2
 
                 @include media-breakpoint-down(desktop)
+                    ul.nav-level-2
+                        a + p
+                            padding-top: 0
+                        li + li 
+                            margin-top: $spacing-2
                     &:last-child
                         a
-                            margin-bottom: $spacing1
+                            margin-bottom: $spacing-3
 
                 @include media-breakpoint-up(desktop)
                     &.page-publications
@@ -117,10 +122,10 @@ header#document-header
                     &::after
                         @include icon-code("code-arrow-right")
                         display: inline-block
-                        font-size: px2rem(10)
-                        margin-left: $spacing0
+                        font-size: pxToRem(10)
+                        margin-left: $spacing-2
                 p
-                    padding-top: $spacing0
+                    padding-top: $spacing-2
                     @include meta
                     line-height: 1.5
                     display: block
@@ -130,7 +135,7 @@ header#document-header
 
 // Footer
 footer#document-footer
-    padding-bottom: $spacing4
+    padding-bottom: $spacing-6
     nav
         a
             display: block
@@ -139,7 +144,7 @@ footer#document-footer
                 margin-top: 0
                 > a, > span
                     display: block
-                    padding-bottom: $spacing1
+                    padding-bottom: $spacing-3
                 p
                     display: none
                 &:last-child
@@ -151,12 +156,12 @@ footer#document-footer
     .footer-site
         @include meta
     .footer-legals
-        margin-top: $spacing2
+        margin-top: $spacing-4
     .footer-credit
         display: block
-        margin-top: $spacing2
+        margin-top: $spacing-4
     .footer-i18n
-        margin-top: $spacing2
+        margin-top: $spacing-4
         .container
             padding: 0
             display: block
@@ -165,8 +170,10 @@ footer#document-footer
             .dropdown-menu
                 padding: 0
     .footer-logo
-        padding-top: $spacing3
-        text-align: center
+        padding-top: $spacing-5
+        display: flex
+        align-items: center
+        justify-content: center
         &::before
             @include icon-code("code-logo")
             color: $color-pleas
@@ -174,23 +181,23 @@ footer#document-footer
             margin-right: 5px
     @include media-breakpoint-down(desktop)
         nav
-            width: col(6)
+            width: columns(6)
             .nav-level-1
                 ul
                     display: none
         .footer-logo
-            margin-top: $spacing4
+            margin-top: $spacing-6
         .footer-i18n
             .container
                 margin-left: 0
     @include media-breakpoint-up(desktop)
         nav
-            width: col(6)
+            width: columns(6)
             .nav-level-1
                 @include grid(2)
                 > li
                     border-top: 1px solid white
-                    padding-top: $spacing1
+                    padding-top: $spacing-3
         .footer-legals
             text-align: right
 
@@ -199,7 +206,7 @@ footer#document-footer
 .hero
     .container
         .content
-            align-items: flex-start
+            align-items: center
     hgroup
         display: flex
         flex-direction: column-reverse
@@ -212,7 +219,7 @@ footer#document-footer
             display: block
             font-size: 44px
             font-weight: normal
-            margin-top: $spacing1
+            margin-top: $spacing-3
 
 // Breadcrumb
 .breadcrumb
@@ -222,12 +229,11 @@ footer#document-footer
         align-items: center
         display: inline-flex
         &:not(:first-child)
-            padding-left: $spacing0
+            padding-left: $spacing-2
             &::before
                 @include icon-code($breadcrumb-icon)
                 color: $breadcrumb-icon-color
                 font-size: 8px
-                // padding-right: half($spacing0)
                 font-weight: normal
         a
             @include link
@@ -244,14 +250,14 @@ nav.toc-pages
                     position: absolute
                     top: 0
                     bottom: 0
-                    left: -$spacing0
+                    left: -$spacing-2
                     width: 4px
                 &.active::before
                     background-color: $color-pleas
 
 .toc-content
-    padding-left: $spacing1
-    margin-left: -$spacing1
+    padding-left: $spacing-3
+    margin-left: -$spacing-3
 
 // Pagination
 nav.siblings-navigation
@@ -274,10 +280,10 @@ nav.siblings-navigation
 .backtotop
     p
         @include meta
-        padding: $grid-gutter 0
+        padding: $spacing-5 0
         &::before
             @include icon-code("code-arrow-top")
-            font-size: px2rem(5)
+            font-size: pxToRem(5)
             margin-right: 10px
             vertical-align: middle
 

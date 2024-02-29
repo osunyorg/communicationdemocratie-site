@@ -54,12 +54,12 @@ body.page__home
 .posts_categories__term
     .document-content
         .posts
-            margin-top: $spacing2
+            margin-top: $spacing-4
             > article
                 &:first-of-type
                     @include media-breakpoint-down(desktop)
                         [itemprop="headline"]
-                            margin-top: $spacing1
+                            margin-top: $spacing-3
                     @include media-breakpoint-up(desktop)
                         grid-column: 1 / 3
                         @include grid(2)
@@ -78,7 +78,7 @@ body.page__home
                             grid-column: 7 / 10
                     [itemprop="headline"]
                         @include media-breakpoint-down(desktop)
-                            margin-top: $spacing1
+                            margin-top: $spacing-3
                         a
                             @include h2
                 .post-content
@@ -88,7 +88,7 @@ body.page__home
                         text-transform: uppercase
                     .post-meta
                         order: 2
-                        margin-bottom: half($spacing0)
+                        margin-bottom: $spacing-1
                     p
                         order: 3
                 .media
@@ -100,7 +100,7 @@ body.page__home
     .breadcrumb-nav + .block-summary
         margin-top: 0
     .breadcrumb-nav + .document-content
-        margin-top: $spacing3
+        margin-top: $spacing-5
     &.page-agir-soutenir,
     &.page-ancestor-agir-soutenir
         @include code-page-color($color-association)
@@ -117,26 +117,25 @@ body.page__home
     &.page-ancestor-pleas
         @include code-page-color($color-pleas) 
         .hero
-            .content
-                align-items: center
-                figure
-                    width: col(3)
-                    img 
-                        aspect-ratio: 1
-                        border-radius: 100%
-                        object-fit: cover
+            figure
+                img 
+                    aspect-ratio: 1
+                    border-radius: 100%
+                    object-fit: cover
+                @include media-breakpoint-up(desktop)
+                    width: columns(3)
         .block-pages
             article
                 .media
-                    margin: auto
+                    margin: 0 auto
                     position: relative
-                    width: calc(50% - #{$spacing0})
+                    width: calc(50% - #{$spacing-2})
                     img 
                         aspect-ratio: 1
                         border-radius: 50%
                     &::before
                         @include icon-code("code-logo")
-                        color: $color-pleas
+                        color: white
                         display: block
                         font-size: 52px
                         position: absolute
@@ -145,7 +144,7 @@ body.page__home
                         transform: translate(-50%, 50%)
                         z-index: 3
                 .page-title
-                    padding-top: calc(#{$spacing1} + #{half($spacing0)})
+                    padding-top: $spacing-4
                     text-align: center
                 p
                     text-align: center
@@ -185,7 +184,7 @@ body.page__home
             &::before
                 content: none
     a
-        line-height: px2rem(17)
+        line-height: pxToRem(17)
         color: $color-text-alt
         &::before
             background: black
@@ -198,13 +197,8 @@ body.page__home
 
 .posts__section
     .block-summary
-        padding-top: $spacing1 !important
+        padding-top: $spacing-3 !important
         margin-top: 0 !important
-    // .post
-    //     .post-categories
-    //         .cat
-    //             &-parent
-    //                 display: inline
 
 .posts__section,
 .posts__page
@@ -217,13 +211,14 @@ body.page__home
         background: $color-publications
     .block-summary
         background: $color-publications
-        margin-bottom: $spacing3
+        margin-bottom: $spacing-5
     .post-sidebar
         z-index: 4
         @include media-breakpoint-down(desktop)
             background: $color-publications
+            padding-bottom: $spacing-2 !important
         .toc-container
-            padding-top: $spacing3 !important
+            padding-top: $spacing-5 !important
     .post-infos
         span, a
             color: black
@@ -248,7 +243,7 @@ body.page__home
         @include meta
         background: $color-background-alt
         text-align: center
-        padding: $spacing1
+        padding: $spacing-3
         p
             margin-bottom: 0
             // TODO : fix original padding-left, and make sure it couldn't happen in aaa version
@@ -259,7 +254,7 @@ body.page__home
         .block-summary
             margin-bottom: 0 !important
         .post-sidebar
-            margin-bottom: $spacing3
+            margin-bottom: $spacing-5
 
 .persons__section,
 .persons__page,

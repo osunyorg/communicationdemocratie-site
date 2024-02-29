@@ -1,9 +1,9 @@
 .heading + .block
-    margin-top: $spacing2
+    margin-top: $spacing-4
 
 .block
-    margin-top: $spacing2
-    margin-bottom: $spacing2
+    margin-top: $spacing-4
+    margin-bottom: $spacing-4
     .top
         .block-title
             @include h5
@@ -13,7 +13,7 @@
                     @include link
                     &::after
                         @include icon-code("code-arrow-right")
-                        margin-left: $spacing0
+                        margin-left: $spacing-2
                         display: inline-block
     &-organizations
         .organization
@@ -31,29 +31,26 @@
                 order: 0
             figure
                 margin-bottom: 0
-                margin-top: $spacing1
+                margin-top: $spacing-3
         &--accent_background
             *
                 color: black
             p
                 @include media-breakpoint-up(desktop)
-                    font-size: px2rem(28)
+                    font-size: pxToRem(28)
                     line-height: 130%
     &-call_to_action
         .call_to_action
             .description p
                 font-weight: normal
-            // .actions
-            //     a, a:first-child
-            //         @include btn
-            //         background: $block-call-to-action-button-background
-            //         color: $block-call-to-action-button-color
-            //         @include media-breakpoint-up(desktop)
-            //             padding: $spacing0
+            .actions 
+                a:first-child
+                    --btn-min-width: fit-content
+                    --btn-min-width-desktop: fit-content
         @include in-page-without-sidebar
             .block-content
-                padding-bottom: $spacing3
-                padding-top: $spacing3
+                padding-bottom: $spacing-5
+                padding-top: $spacing-5
             @include media-breakpoint-up(desktop)
                 .call_to_action--without-image
                         > div 
@@ -62,11 +59,13 @@
                             .actions
                                 grid-column: 9/13
                                 a + a
-                                    margin-top: $spacing0
+                                    margin-top: $spacing-2
         @include in-page-with-sidebar
             &:first-child
                 padding-top: 0
     &-timeline
+        padding-bottom: $spacing-5
+        padding-top: $spacing-5
         &--horizontal
             .block-title
                 @include in-page-with-or-without-sidebar
@@ -89,7 +88,7 @@
             .highlight-post
                 [itemprop="headline"]
                     margin-bottom: 0
-                    margin-top: $spacing0
+                    margin-top: $spacing-2
                     @include h3
                 .post-content
                     display: flex
@@ -114,7 +113,7 @@
                         &::after
                             @include icon-code("code-arrow-right")
                             color: $color-pleas
-                            margin-left: $spacing0
+                            margin-left: $spacing-2
                 article
                     border-bottom: none
                     display: flex
@@ -131,10 +130,6 @@
                 .media
                     img 
                         aspect-ratio: 2
-            @include in-page-with-sidebar
-                article
-                    .media
-                        width: col(3)
     &-pages
         .grid
             article
@@ -147,11 +142,11 @@
                             @include icon-code("code-arrow-right")
                             color: white
                             display: inline-block
-                            margin-left: half($spacing0)
+                            margin-left: $spacing-1
         &.block-page-pleas,
         &.block-page-challenges,
         &.block-page-association
-            padding: $spacing2 0
+            padding: $spacing-4 0
             margin-top: 0
 
         &.block-page-pleas
@@ -160,7 +155,7 @@
                 .media
                     margin: 0 auto
                     position: relative
-                    width: col(2, 4)
+                    width: columns(2)
                     &::before
                         @include icon-code("code-logo")
                         color: white
@@ -176,17 +171,20 @@
                             border-radius: 50%
                             object-fit: cover
                 .page-title
-                    padding-top: calc(#{$spacing1} + #{half($spacing0)})
+                    padding-top: $spacing-4
                     text-align: center
                 p
                     text-align: center
+                @include media-breakpoint-down(desktop)
+                    + article
+                        margin-top: $spacing-5
         &.block-page-association,
         &.block-page-challenges
             article
                 .media
                     img
                         object-fit: contain
-                        padding: $spacing0
+                        padding: $spacing-2
         &.block-page-challenges
             article
                 .media
@@ -200,28 +198,28 @@
 
     &-summary
         margin-bottom: 0
-        padding-bottom: $spacing2
+        padding-bottom: $spacing-4
         margin-top: 0
-        padding-top: $spacing2
+        padding-top: $spacing-4
         &--with-author
             @include media-breakpoint-up(desktop)
                 .lead
                     padding-left: offset(4)
                 .author
-                    @include container-margin-left
+                    margin-left: grid-external-space()
                     margin-top: 0
                     top: 0
                     left: 0
                     height: 100%
                     position: absolute
-                    width: col-outside-container(4)
+                    width: columns(4)
         .author
-            margin-top: $spacing1
+            margin-top: $spacing-3
             display: flex
             picture
                 display: none
                 // width: calc(#{col(1)} + #{$grid-gutter})
-                // margin-right: $spacing1
+                // margin-right: $spacing-3
             p[itemprop="name"]
                 @include small
                 font-weight: bold
@@ -231,7 +229,7 @@
 
 .block-chapter--no_background + .block-posts
     background: $color-background-alt
-    padding-top: $spacing3
-    padding-bottom: $spacing3
+    padding-top: $spacing-5
+    padding-bottom: $spacing-5
     margin-top: 0
 
