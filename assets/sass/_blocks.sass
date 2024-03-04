@@ -178,6 +178,8 @@
                 @include media-breakpoint-down(desktop)
                     + article
                         margin-top: $spacing-5
+                    .media
+                        width: columns(6)
         &.block-page-association,
         &.block-page-challenges
             article
@@ -203,6 +205,8 @@
         padding-top: $spacing-4
         &--with-author
             @include media-breakpoint-up(desktop)
+                .container
+                    position: relative
                 .lead
                     padding-left: offset(4)
                 .author
@@ -214,8 +218,9 @@
                     position: absolute
                     width: columns(4)
         .author
-            margin-top: $spacing-3
             display: flex
+            @include media-breakpoint-down(desktop)
+                margin-top: $spacing-3
             picture
                 display: none
                 // width: calc(#{col(1)} + #{$grid-gutter})
