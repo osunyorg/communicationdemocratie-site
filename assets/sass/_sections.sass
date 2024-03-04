@@ -102,20 +102,19 @@ body.page__home
     .breadcrumb-nav + .document-content
         margin-top: $spacing-5
     &.page-agir-soutenir,
-    &.page-ancestor-agir-soutenir
+    &.page-ancestor-agir-soutenir,
+    &.page-association,
+    &.page-ancestor-association
         @include code-page-color($color-association)
     &.page-challenges,
     &.page-ancestor-challenges
-        @include code-page-color($color-challenges) 
-    &.page-association,
-    &.page-ancestor-association
-        @include code-page-color($color-association) 
+        @include code-page-color($color-challenges)
     &.page-publications,
     &.page-ancestor-publications
         @include code-page-color($color-pleas) 
     &.page-pleas,
     &.page-ancestor-pleas
-        @include code-page-color($color-pleas) 
+        @include code-page-color($color-pleas)
         .hero
             figure
                 img 
@@ -255,6 +254,11 @@ body.page__home
             margin-bottom: 0 !important
         .post-sidebar
             margin-bottom: $spacing-5
+
+.events__page
+    .breadcrumb-container
+        background: $color-pleas
+        margin-bottom: $spacing-5
 
 .persons__section,
 .persons__page,
