@@ -222,23 +222,29 @@ footer#document-footer
             font-size: 44px
             font-weight: normal
             margin-top: $spacing-3
+    + .breadcrumb-container
+        margin-bottom: 0
 
 // Breadcrumb
-.breadcrumb
-    @include container
-    li
-        @include meta
-        align-items: center
-        display: inline-flex
-        &:not(:first-child)
-            padding-left: $spacing-2
-            &::before
-                @include icon-code($breadcrumb-icon)
-                color: $breadcrumb-icon-color
-                font-size: 8px
-                font-weight: normal
-        a
-            @include link
+.breadcrumb-container
+    @include media-breakpoint-up(desktop)
+        padding: 0
+        width: 100%
+    .breadcrumb
+        @include container
+        li
+            @include meta
+            align-items: center
+            display: inline-flex
+            &:not(:first-child)
+                padding-left: $spacing-2
+                &::before
+                    @include icon-code($breadcrumb-icon)
+                    color: $breadcrumb-icon-color
+                    font-size: 8px
+                    font-weight: normal
+            a
+                @include link
 
 // TOC
 nav.toc-pages
