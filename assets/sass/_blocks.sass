@@ -205,17 +205,15 @@
         padding-top: $spacing-4
         &--with-author
             @include media-breakpoint-up(desktop)
+                .block-content
+                    display: flex
+                    gap: var(--grid-gutter)
                 .container
                     position: relative
                 .lead
-                    padding-left: offset(4)
+                    width: columns(8)
+                    order: 2
                 .author
-                    margin-left: grid-external-space()
-                    margin-top: 0
-                    top: 0
-                    left: 0
-                    height: 100%
-                    position: absolute
                     width: columns(4)
         .author
             display: flex
