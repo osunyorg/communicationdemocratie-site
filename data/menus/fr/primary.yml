@@ -29,6 +29,10 @@ items:
     target: "/fr/enjeux/discours-des-ong/"
     kind: page
     children: []
+  - title: Communicants responsables
+    target: "/fr/enjeux/communicants-responsables/"
+    kind: page
+    children: []
 - title: Plaidoyers
   target: "/fr/plaidoyers/"
   kind: page
