@@ -10,10 +10,10 @@ params:
     footer: "/assets/images/logo-footer.svg"
   posts:
     index:
-      show_author: true
-      show_categories: true
       truncate_description: 200
       layout: grid
+      options:
+        hide_author: false
   pages:
     index:
       truncate_description: 250
