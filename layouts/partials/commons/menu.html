@@ -58,10 +58,13 @@
                 ) -}}
         {{- else -}}
           {{- if and (eq $level 2) -}}
-            {{- $page := partial "GetPageByUrl" .target -}}
+            {{ $page := "" }}
+            {{ range (where site.Pages "RelPermalink" "eq" .target) }}
+              {{ $page = . }}
+            {{ end }}
             {{ if $page }}
-              {{- if $page.Params.description }}
-                <p>{{ partial "PrepareHTML" $page.Params.description }}</p>
+              {{- if $page.Params.meta_description }}
+                <p>{{ partial "PrepareHTML" $page.Params.meta_description }}</p>
               {{ end -}}
             {{ end }}
           {{- end -}}
