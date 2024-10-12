@@ -7,5 +7,6 @@ city: "Paris"
 country: "France"
 phone: ""
 url: ""
+contact_details:
 roles: []
 ---
