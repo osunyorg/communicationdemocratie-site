@@ -1,16 +1,15 @@
 {{- $title := or .Params.header_text .Title -}}
 {{- $subtitle := false -}}
-{{ if partial "GetTextFromHTML" .Params.header_text }}
-  {{- $subtitle = .Title -}}
+{{ if .Params.header_text }}
+  {{- $subtitle = printf "<p>%s</p>" .Title -}}
 {{ end }}
-{{ partial "header/hero.html"
-      (dict
-        "title" $title
-        "image" .Params.image
-        "subtitle" $subtitle
-        "breadcrumb" false
-        "context" .
-      )}}
+{{ partial "header/hero.html" (dict
+    "title" $title
+    "image" .Params.image
+    "subtitle" $subtitle
+    "breadcrumb" false
+    "context" .
+)}}
 <div class="container breadcrumb-container">
   {{ partial "header/breadcrumbs.html" . }}
 </div>
