@@ -4,9 +4,9 @@
   <section class="block block-summary {{ if .context.GetTerms "authors" }}block-summary--with-author{{ end }}">
     <div class="container">
       <div class="block-content">
-        <p class="lead">
+        <div class="lead">
           {{ .context.Params.meta_description | default .context.Params.summary | safeHTML }}
-        </p>
+        </div>
         {{ range .context.GetTerms "authors" }}
           {{- $person := site.GetPage (printf "/persons/%s" .Slug) -}}
           {{ with $person }}
