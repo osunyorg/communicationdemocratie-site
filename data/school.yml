@@ -8,5 +8,28 @@ country: "France"
 phone: ""
 url: ""
 contact_details:
+  postal_address:
+    data:
+      address: >-
+        295 rue Saint Jacques
+      address_additional: >-
+        
+      zipcode: >-
+        75005
+      city: >-
+        Paris
+      country: >-
+        name: >-
+          France
+        alpha2: >-
+          FR
+        alpha3: >-
+          FRA
+      country: >-
+        France
+    text: >-
+      295 rue Saint Jacques 75005 Paris FRANCE
+    html: >-
+      <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress"> <span itemprop="streetAddress">295 rue Saint Jacques</span> <span itemprop="postalCode">75005</span> <span itemprop="addressLocality">Paris</span> <span itemprop="addressCountry">FRANCE</span></address>
 roles: []
 ---
