@@ -9,10 +9,13 @@ items:
     target: "/en/actualites/actualites/"
     kind: category
     children: []
+    file: content/en/posts_categories/actualites/_index.html
   - title: Points de vue
     target: "/en/actualites/points-de-vue/"
     kind: category
     children: []
+    file: content/en/posts_categories/points-de-vue/_index.html
+  file: content/en/posts/_index.html
 - title: Association
   target: "/en/association/"
   kind: page
@@ -21,20 +24,26 @@ items:
     target: "/en/association/vision-et-mission/"
     kind: page
     children: []
+    file: content/en/pages/association/vision-et-mission/_index.html
   - title: Founding document
     target: "/en/association/texte-fondateur/"
     kind: page
     children: []
+    file: content/en/pages/association/texte-fondateur/_index.html
   - title: About our own communication activities
     target: "/en/association/notre-demarche-de-communication/"
     kind: page
     children: []
+    file: content/en/pages/association/notre-demarche-de-communication/_index.html
   - title: Governing bodies and functioning of the organization
     target: "/en/association/organes-et-fonctionnement/"
     kind: page
     children: []
+    file: content/en/pages/association/organes-et-fonctionnement/_index.html
   - title: The origins of the organization
     target: "/en/association/a-lorigine-de-lassociation/"
     kind: page
     children: []
+    file: content/en/pages/association/a-lorigine-de-lassociation/_index.html
+  file: content/en/pages/association/_index.html
 
