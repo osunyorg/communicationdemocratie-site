@@ -75,7 +75,7 @@
       {{- end -}}
     </li>
   {{- end -}}
-  {{ if and (eq $kind "primary") (site.Params.menu.i18n.display) }}
-    {{ partial "header/i18n.html" . }}
+  {{ if .i18n }}
+    {{ partial "header/i18n.html" .context }}
   {{ end }}
 </ul>
