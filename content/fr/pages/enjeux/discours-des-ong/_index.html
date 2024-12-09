@@ -10,8 +10,8 @@ lastmod: 2024-09-30T11:06:50+02:00
 meta:
   hugo:
     permalink: "/fr/enjeux/discours-des-ong/"
+    path: "/pages/enjeux/discours-des-ong"
     file: "content/fr/pages/enjeux/discours-des-ong/_index.html"
-    path: "discours-des-ong"
     slug: "discours-des-ong"
   dates:
     created_at: 2022-04-21T12:25:44+02:00
@@ -137,9 +137,10 @@ contents:
       children: 4
     data:
       page:
-        path: "/fr/plaidoyers/"
+        permalink: "/fr/plaidoyers/"
+        path: "/pages/plaidoyers"
         slug: "plaidoyers"
-        file: "pages/plaidoyers/_index.html"
+        file: "content/fr/pages/plaidoyers/_index.html"
       options:
         image: true
         main_summary: false
@@ -147,10 +148,11 @@ contents:
 
       layout: grid
       pages:
-        - path: "/fr/plaidoyers/soutenir-le-developpement-des-associations-de-plaidoyer/"
+        - permalink: "/fr/plaidoyers/soutenir-le-developpement-des-associations-de-plaidoyer/"
+          path: "/pages/plaidoyers/soutenir-le-developpement-des-associations-de-plaidoyer"
           slug: "soutenir-le-developpement-des-associations-de-plaidoyer"
-          file: "pages/plaidoyers/soutenir-le-developpement-des-associations-de-plaidoyer/_index.html"
-          external: false
+          file: "content/fr/pages/plaidoyers/soutenir-le-developpement-des-associations-de-plaidoyer/_index.html"
+
 
 
   - kind: block
@@ -201,7 +203,7 @@ contents:
       children: 3
     data:
       mode: category
-      category: "/enjeux-discours-d-interet-general/"
+      category: "enjeux/discours-d-interet-general"
       layout: list
       options:
         author: true
@@ -213,9 +215,19 @@ contents:
         summary: true
 
       posts:
-        - "2023/2023-12-01-le-devendeur-de-lademe-fait-trembler-notre-modele-consumeriste"
-        - "2023/2023-04-07-experimenter-une-communication-solidaire"
-        - "2022/2022-10-18-rapport-du-giec-dune-publication-sur-les-reseaux-sociaux-a-une-campagne-daffichage"
+        - permalink: "/fr/publications/2023-12-01-le-devendeur-de-lademe-fait-trembler-notre-modele-consumeriste/"
+          path: "/posts/2023/2023-12-01-le-devendeur-de-lademe-fait-trembler-notre-modele-consumeriste"
+          slug: "le-devendeur-de-lademe-fait-trembler-notre-modele-consumeriste"
+          file: "content/fr/posts/2023/2023-12-01-le-devendeur-de-lademe-fait-trembler-notre-modele-consumeriste.html"
+        - permalink: "/fr/publications/2023-04-07-experimenter-une-communication-solidaire/"
+          path: "/posts/2023/2023-04-07-experimenter-une-communication-solidaire"
+          slug: "experimenter-une-communication-solidaire"
+          file: "content/fr/posts/2023/2023-04-07-experimenter-une-communication-solidaire.html"
+        - permalink: "/fr/publications/2022-10-18-rapport-du-giec-dune-publication-sur-les-reseaux-sociaux-a-une-campagne-daffichage/"
+          path: "/posts/2022/2022-10-18-rapport-du-giec-dune-publication-sur-les-reseaux-sociaux-a-une-campagne-daffichage"
+          slug: "rapport-du-giec-dune-publication-sur-les-reseaux-sociaux-a-une-campagne-daffichage"
+          file: "content/fr/posts/2022/2022-10-18-rapport-du-giec-dune-publication-sur-les-reseaux-sociaux-a-une-campagne-daffichage.html"
+
 
 
   - kind: block
