@@ -9,20 +9,24 @@ items:
   target: "/fr/espace-presse/"
   kind: page
   children: []
+  path: "/pages/espace-presse"
   file: content/fr/pages/espace-presse/_index.html
 - title: Plan du site
   target: "/fr/plan-du-site/"
   kind: page
   children: []
+  path: "/pages/plan-du-site"
   file: content/fr/pages/plan-du-site/_index.html
 - title: Mentions légales
   target: "/fr/mentions-legales/"
   kind: page
   children: []
+  path: "/pages/mentions-legales"
   file: content/fr/pages/mentions-legales/_index.html
 - title: Politique de confidentialité
   target: "/fr/politique-de-confidentialite/"
   kind: page
   children: []
+  path: "/pages/politique-de-confidentialite"
   file: content/fr/pages/politique-de-confidentialite/_index.html
 
