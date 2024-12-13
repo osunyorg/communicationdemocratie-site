@@ -8,6 +8,11 @@ params:
     position: content
   logo: 
     footer: "/assets/images/logo-footer.svg"
+  menu:
+    dropdown:
+      level2_summary: true
+      meta_descriptions: true
+      truncate_summary: false
   posts:
     index:
       layout: grid
