@@ -8,7 +8,7 @@
       {{ $term_class := false }}
 
       {{ if .Params.parent }}
-        {{ $term_class = printf "cat-child cat-%s" (replace .Params.parent "/" "") }}
+        {{ $term_class = printf "cat-child cat-%s" (replace .Params.parent "/posts_categories/" "") }}
       {{ else }}
         {{ $term_class = printf "cat-parent cat-%s" (replace .Slug "/" "") }}
       {{ end }}

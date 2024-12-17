@@ -8,6 +8,13 @@ params:
     position: content
   logo: 
     footer: "/assets/images/logo-footer.svg"
+  menu:
+    primary:
+      level_2:
+        summary:
+          active: true
+          source: meta_description
+          truncate: false
   posts:
     index:
       layout: grid

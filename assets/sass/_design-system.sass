@@ -65,19 +65,32 @@ header#document-header
                 //         display: inline-block
                 //         font-size: pxToRem(5)
                 //         margin-left: $spacing-2
-                &.item-page-challenges
-                    @include code-menu-color($color-challenges)
-                &.item-page-pleas
-                    @include code-menu-color($color-pleas)
-                &.item-page-association
-                    @include code-menu-color($color-association)
-                &.item-page-agir-soutenir
+                &:nth-last-child(2)
                     a
                         background-color: $color-association
                         @include media-breakpoint-up(desktop)
                             padding: pxToRem(8) pxToRem(16)
                     @include media-breakpoint-up(desktop)
                         padding-left: $spacing-2
+                @include media-breakpoint-down(desktop)
+                    a
+                        margin-left: var(--grid-gutter-negative)
+                        margin-right: var(--grid-gutter-negative)
+                        padding-left: var(--grid-gutter)
+                        padding-right: var(--grid-gutter)
+                &:nth-last-child(2),
+                &:nth-last-child(3)
+                    border-bottom: 0
+                #dropdown-plaidoyers
+                    @include code-menu-color($color-pleas)
+                #dropdown-enjeux
+                    @include code-menu-color($color-challenges)
+                #dropdown-publications
+                    @include code-menu-color($color-text)
+                    @include media-breakpoint-down(desktop)
+                        border-bottom: 0 !important
+                #dropdown-lassociation
+                    @include code-menu-color($color-association)
 
                 @include media-breakpoint-down(desktop)
                     ul.nav-level-2
@@ -117,21 +130,19 @@ header#document-header
                     @include media-breakpoint-up(desktop)
                         @include h2
                     @include media-breakpoint-down(desktop)
+                        @include signature
                         display: flex
                         justify-content: space-between
+                        text-transform: none
                     &::after
                         @include icon-code("code-arrow-right")
                         display: inline-block
                         font-size: pxToRem(10)
                         margin-left: $spacing-2
                 p
-                    padding-top: $spacing-2
                     @include meta
                     line-height: 1.5
                     display: block
-            @include media-breakpoint-down(desktop)
-                p
-                    display: none
 
 // Footer
 footer#document-footer
