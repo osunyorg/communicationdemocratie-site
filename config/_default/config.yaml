@@ -9,10 +9,12 @@ params:
   logo: 
     footer: "/assets/images/logo-footer.svg"
   menu:
-    dropdown:
-      level2_summary: true
-      meta_descriptions: true
-      truncate_summary: false
+    primary:
+      level_2:
+        summary:
+          active: true
+          source: meta_description
+          truncate: false
   posts:
     index:
       layout: grid
