@@ -4,16 +4,19 @@ items:
 - title: Publications
   target: "/en/actualites/"
   kind: page
+  new_tab: false
   children:
   - title: Actualités
     target: "/en/actualites/actualites/"
     kind: category
+    new_tab: false
     children: []
     path: "/posts_categories/actualites"
     file: content/en/posts_categories/actualites/_index.html
   - title: Points de vue
     target: "/en/actualites/points-de-vue/"
     kind: category
+    new_tab: false
     children: []
     path: "/posts_categories/points-de-vue"
     file: content/en/posts_categories/points-de-vue/_index.html
@@ -22,34 +25,40 @@ items:
 - title: Association
   target: "/en/association/"
   kind: page
+  new_tab: false
   children:
   - title: Vision and mission
     target: "/en/association/vision-et-mission/"
     kind: page
+    new_tab: false
     children: []
     path: "/pages/association/vision-et-mission"
     file: content/en/pages/association/vision-et-mission/_index.html
   - title: Founding document
     target: "/en/association/texte-fondateur/"
     kind: page
+    new_tab: false
     children: []
     path: "/pages/association/texte-fondateur"
     file: content/en/pages/association/texte-fondateur/_index.html
   - title: About our own communication activities
     target: "/en/association/notre-demarche-de-communication/"
     kind: page
+    new_tab: false
     children: []
     path: "/pages/association/notre-demarche-de-communication"
     file: content/en/pages/association/notre-demarche-de-communication/_index.html
   - title: Governing bodies and functioning of the organization
     target: "/en/association/organes-et-fonctionnement/"
     kind: page
+    new_tab: false
     children: []
     path: "/pages/association/organes-et-fonctionnement"
     file: content/en/pages/association/organes-et-fonctionnement/_index.html
   - title: The origins of the organization
     target: "/en/association/a-lorigine-de-lassociation/"
     kind: page
+    new_tab: false
     children: []
     path: "/pages/association/a-lorigine-de-lassociation"
     file: content/en/pages/association/a-lorigine-de-lassociation/_index.html

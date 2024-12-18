@@ -4,46 +4,54 @@ items:
 - title: Enjeux
   target: "/fr/enjeux/"
   kind: page
+  new_tab: false
   children:
   - title: Communication commerciale
     target: "/fr/enjeux/communication-consommation/"
     kind: page
+    new_tab: false
     children: []
     path: "/pages/enjeux/communication-consommation"
     file: content/fr/pages/enjeux/communication-consommation/_index.html
   - title: Communication & RSE
     target: "/fr/enjeux/communication-et-rse/"
     kind: page
+    new_tab: false
     children: []
     path: "/pages/enjeux/communication-et-rse"
     file: content/fr/pages/enjeux/communication-et-rse/_index.html
   - title: Influence politique
     target: "/fr/enjeux/influence-politique/"
     kind: page
+    new_tab: false
     children: []
     path: "/pages/enjeux/influence-politique"
     file: content/fr/pages/enjeux/influence-politique/_index.html
   - title: Médias & Annonceurs
     target: "/fr/enjeux/mediasannonceurs/"
     kind: page
+    new_tab: false
     children: []
     path: "/pages/enjeux/mediasannonceurs"
     file: content/fr/pages/enjeux/mediasannonceurs/_index.html
   - title: Pub & Numérique
     target: "/fr/enjeux/pubnumerique/"
     kind: page
+    new_tab: false
     children: []
     path: "/pages/enjeux/pubnumerique"
     file: content/fr/pages/enjeux/pubnumerique/_index.html
   - title: Communication des ONG
     target: "/fr/enjeux/discours-des-ong/"
     kind: page
+    new_tab: false
     children: []
     path: "/pages/enjeux/discours-des-ong"
     file: content/fr/pages/enjeux/discours-des-ong/_index.html
   - title: Communicants responsables
     target: "/fr/enjeux/communicants-responsables/"
     kind: page
+    new_tab: false
     children: []
     path: "/pages/enjeux/communicants-responsables"
     file: content/fr/pages/enjeux/communicants-responsables/_index.html
@@ -52,40 +60,47 @@ items:
 - title: Plaidoyers
   target: "/fr/plaidoyers/"
   kind: page
+  new_tab: false
   children:
   - title: Lutter contre le greenwashing à l’échelle européenne
     target: "/fr/plaidoyers/lutte-contre-le-greenwashing-au-niveau-europeen/"
     kind: page
+    new_tab: false
     children: []
     path: "/pages/plaidoyers/lutte-contre-le-greenwashing-au-niveau-europeen"
     file: content/fr/pages/plaidoyers/lutte-contre-le-greenwashing-au-niveau-europeen/_index.html
   - title: Pour une loi Evin européenne du climat
     target: "/fr/plaidoyers/campagne-pour-une-loi-evin-du-climat-europeenne/"
     kind: page
+    new_tab: false
     children: []
     path: "/pages/plaidoyers/campagne-pour-une-loi-evin-du-climat-europeenne"
     file: content/fr/pages/plaidoyers/campagne-pour-une-loi-evin-du-climat-europeenne/_index.html
   - title: Lutte européenne contre l'influence pour la malbouffe
     target: "/fr/plaidoyers/lutte-europeenne-contre-l-influence-pour-la-malbouffe/"
     kind: page
+    new_tab: false
     children: []
     path: "/pages/plaidoyers/lutte-europeenne-contre-l-influence-pour-la-malbouffe"
     file: content/fr/pages/plaidoyers/lutte-europeenne-contre-l-influence-pour-la-malbouffe/_index.html
   - title: Pour la transparence du lobbying 360°
     target: "/fr/plaidoyers/pour-une-loi-sapin-iii/"
     kind: page
+    new_tab: false
     children: []
     path: "/pages/plaidoyers/pour-une-loi-sapin-iii"
     file: content/fr/pages/plaidoyers/pour-une-loi-sapin-iii/_index.html
   - title: Pour l'inclusion du plaidoyer dans la notion d'intérêt général
     target: "/fr/plaidoyers/soutenir-le-developpement-des-associations-de-plaidoyer/"
     kind: page
+    new_tab: false
     children: []
     path: "/pages/plaidoyers/soutenir-le-developpement-des-associations-de-plaidoyer"
     file: content/fr/pages/plaidoyers/soutenir-le-developpement-des-associations-de-plaidoyer/_index.html
   - title: 'Tous les plaidoyers                                                                                                     '
     target: "/fr/plaidoyers/"
     kind: page
+    new_tab: false
     children: []
     path: "/pages/plaidoyers"
     file: content/fr/pages/plaidoyers/_index.html
@@ -94,22 +109,26 @@ items:
 - title: Publications
   target: "/fr/publications/"
   kind: page
+  new_tab: false
   children:
   - title: Rapports
     target: "/fr/publications/rapports/"
     kind: page
+    new_tab: false
     children: []
     path: "/pages/publications/rapports"
     file: content/fr/pages/publications/rapports/_index.html
   - title: Actualités
     target: "/fr/publications/actualites/"
     kind: category
+    new_tab: false
     children: []
     path: "/posts_categories/actualites"
     file: content/fr/posts_categories/actualites/_index.html
   - title: Points de vue
     target: "/fr/publications/points-de-vue/"
     kind: category
+    new_tab: false
     children: []
     path: "/posts_categories/points-de-vue"
     file: content/fr/posts_categories/points-de-vue/_index.html
@@ -118,40 +137,47 @@ items:
 - title: L’association
   target: "/fr/l-association/"
   kind: page
+  new_tab: false
   children:
   - title: Vision et mission
     target: "/fr/l-association/vision-et-mission/"
     kind: page
+    new_tab: false
     children: []
     path: "/pages/l-association/vision-et-mission"
     file: content/fr/pages/l-association/vision-et-mission/_index.html
   - title: Organes et fonctionnement
     target: "/fr/l-association/organes-et-fonctionnement/"
     kind: page
+    new_tab: false
     children: []
     path: "/pages/l-association/organes-et-fonctionnement"
     file: content/fr/pages/l-association/organes-et-fonctionnement/_index.html
   - title: Texte fondateur
     target: "/fr/l-association/texte-fondateur/"
     kind: page
+    new_tab: false
     children: []
     path: "/pages/l-association/texte-fondateur"
     file: content/fr/pages/l-association/texte-fondateur/_index.html
   - title: Notre démarche de communication
     target: "/fr/l-association/notre-demarche-de-communication/"
     kind: page
+    new_tab: false
     children: []
     path: "/pages/l-association/notre-demarche-de-communication"
     file: content/fr/pages/l-association/notre-demarche-de-communication/_index.html
   - title: A l'origine de l'association
     target: "/fr/l-association/a-lorigine-de-lassociation/"
     kind: page
+    new_tab: false
     children: []
     path: "/pages/l-association/a-lorigine-de-lassociation"
     file: content/fr/pages/l-association/a-lorigine-de-lassociation/_index.html
   - title: Rapports annuels
     target: "/fr/l-association/rapports-annuels/"
     kind: page
+    new_tab: false
     children: []
     path: "/pages/l-association/rapports-annuels"
     file: content/fr/pages/l-association/rapports-annuels/_index.html
@@ -160,6 +186,7 @@ items:
 - title: Agir et soutenir
   target: "/fr/agir-et-soutenir/"
   kind: page
+  new_tab: false
   children: []
   path: "/pages/agir-et-soutenir"
   file: content/fr/pages/agir-et-soutenir/_index.html
