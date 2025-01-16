@@ -17,11 +17,13 @@
     <div class="footer-site">
       {{ partial "footer/site.html" }}
     </div>
-    <div class="footer-i18n">
-      {{ partial "footer/i18n.html" . }}
-    </div>
+    {{ partial "commons/i18n.html" (dict
+        "context" .
+        "position" "footer"
+      )}}
     <div class="footer-legals">
       {{ partial "footer/legals.html" }}
+      {{ partial "footer/credit.html" }}
     </div>
   </div>
 </div>

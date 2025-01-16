@@ -165,8 +165,6 @@ footer#document-footer
         .nav-level-2
             a, span
                 @include meta
-    .header-i18n
-        display: none
     .footer-site
         @include meta
     .footer-legals
@@ -176,13 +174,15 @@ footer#document-footer
         margin-top: $spacing-4
     .footer-i18n
         margin-top: $spacing-4
-        .container
-            padding: 0
-            display: block
+        display: block
+        margin-right: 0
+        span[role="button"]
+            margin-left: auto
+            padding-left: 0
+            padding-right: 0
             width: fit-content
-            margin-right: 0
-            .dropdown-menu
-                padding: 0
+        .dropdown-menu
+            padding: 0
     .footer-logo
         padding-top: $spacing-5
         display: flex
