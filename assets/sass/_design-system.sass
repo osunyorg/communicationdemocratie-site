@@ -175,14 +175,21 @@ footer#document-footer
         display: block
         margin-top: $spacing-4
     .footer-i18n
+        display: block
+        margin-left: auto
+        margin-right: -($spacing-2)
         margin-top: $spacing-4
-        .container
+        width: min-content
+        span[role="button"]
+            display: inline-block
+            width: 100%
+        .dropdown-menu
             padding: 0
-            display: block
-            width: fit-content
-            margin-right: 0
-            .dropdown-menu
-                padding: 0
+            margin-left: 0
+            left: 0
+            bottom: calc(100% + #{$spacing-2})
+            a
+                justify-content: center
     .footer-logo
         padding-top: $spacing-5
         display: flex
@@ -201,9 +208,6 @@ footer#document-footer
                     display: none
         .footer-logo
             margin-top: $spacing-6
-        .footer-i18n
-            .container
-                margin-left: 0
     @include media-breakpoint-up(desktop)
         nav
             width: columns(6)
