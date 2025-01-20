@@ -5,10 +5,9 @@
       <nav aria-label="{{ i18n "commons.menu.main" }}">
       {{ partial "commons/menu.html"
             (dict
-              "kind"        "primary"
+              "items"        $menu.items
               "level"       1
               "stop"        2
-              "hideDescription" true
             )}}
       </nav>
   {{ end }}
