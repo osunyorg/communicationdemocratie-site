@@ -151,6 +151,8 @@ footer#document-footer
         a
             display: block
         .nav-level-1
+            .primary-i18n
+                display: none
             > li
                 + li 
                     margin-top: 0
@@ -174,22 +176,24 @@ footer#document-footer
     .footer-credit
         display: block
         margin-top: $spacing-4
-    .footer-i18n
-        display: block
-        margin-left: auto
-        margin-right: -($spacing-2)
-        margin-top: $spacing-4
-        width: min-content
-        span[role="button"]
-            display: inline-block
-            width: 100%
-        .dropdown-menu
-            padding: 0
-            margin-left: 0
-            left: 0
-            bottom: calc(100% + #{$spacing-2})
-            a
-                justify-content: center
+        text-align: center
+    @include media-breakpoint-up(desktop)
+        .footer-i18n
+            display: block
+            margin-left: auto
+            margin-right: -($spacing-2)
+            margin-top: $spacing-4
+            width: min-content
+            span[role="button"]
+                display: inline-block
+                width: 100%
+            .dropdown-menu
+                padding: 0
+                margin-left: 0
+                left: 0
+                bottom: calc(100% + #{$spacing-2})
+                a
+                    justify-content: center
     .footer-logo
         padding-top: $spacing-5
         display: flex
