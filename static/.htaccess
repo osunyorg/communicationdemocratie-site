@@ -26,5 +26,5 @@
   RewriteCond %{HTTP_HOST} ^communication-democratie\.org [NC]
   RewriteRule ^(.*)$ http://www.communication-democratie.org/$1 [L,R=301]
 
-  ErrorDocument 404 error.html
+  ErrorDocument 404 /error.html
 </IfModule>
