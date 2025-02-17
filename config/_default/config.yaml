@@ -3,9 +3,13 @@ _merge: deep
 enableRobotsTXT: true
 removePathAccents: true
 params:
-  plausible: communication-democratie.org
-  summary:
-    position: content
+  breadcrumb:
+    position: after-hero
+  debug:
+    productionUrl: "https://www.communication-democratie.org"
+  home:
+    head:
+      title: site
   logo: 
     footer: "/assets/images/logo-footer.svg"
   menu:
@@ -15,17 +19,14 @@ params:
           active: true
           source: meta_description
           truncate: false
+  pages:
+    index:
+      truncate_description: 250
+  plausible: communication-democratie.org
   posts:
     index:
       layout: grid
       options:
         authors: true
-  pages:
-    index:
-      truncate_description: 250
-  breadcrumb:
-    position: after-hero
-  debug:
-    productionUrl: "https://www.communication-democratie.org"
-
-
+  summary:
+    position: content
