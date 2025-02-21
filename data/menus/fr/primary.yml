@@ -146,7 +146,7 @@ items:
     children: []
     path: "/pages/l-association/vision-et-mission"
     file: content/fr/pages/l-association/vision-et-mission/_index.html
-  - title: Organes et fonctionnement
+  - title: Fonctionnement et ressources
     target: "/fr/l-association/organes-et-fonctionnement/"
     kind: page
     new_tab: false
