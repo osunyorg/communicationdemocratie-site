@@ -23,6 +23,8 @@ params:
     index:
       truncate_description: 250
   plausible: communication-democratie.org
+  share_links:
+    enabled: false
   posts:
     index:
       layout: grid
