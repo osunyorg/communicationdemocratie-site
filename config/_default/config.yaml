@@ -1,7 +1,5 @@
 theme: osuny
 _merge: deep
-enableRobotsTXT: true
-removePathAccents: true
 params:
   breadcrumb:
     position: after-hero
@@ -22,13 +20,18 @@ params:
   pages:
     index:
       truncate_description: 250
+  persons:
+    index:
+      layout: list
+    single:
+      backlinks: true
   plausible: communication-democratie.org
-  share_links:
-    enabled: false
   posts:
     index:
       layout: grid
       options:
         authors: true
+  share_links:
+    enabled: false
   summary:
     position: content
