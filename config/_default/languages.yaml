@@ -15,9 +15,9 @@ fr:
     pages_categories: /:slug/
     posts: /publications/:year-:month-:day-:slug/
     posts_categories: /publications/:slug/
-    persons: /equipe/:slug/
-    persons_categories: /equipe/categories/:slug/
-    authors: /equipe/:slug/publications/
+    persons: /personnes/:slug/
+    persons_categories: /personnes/categories/:slug/
+    authors: /personnes/:slug/publications/
   taxonomies:
     administrator: administrators
     author: authors
