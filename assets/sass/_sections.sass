@@ -39,6 +39,9 @@ body.page__home
                         color: black
                         &::after
                             color: $color-viewpoint
+.posts__section
+    .lead
+        margin-top: $spacing-3
 
 .posts_categories__term
     .lead
@@ -165,6 +168,18 @@ body.page__home
         a
             text-decoration: none
             color: $color-text-alt
+        .ancestor-challenges
+            a
+                &::before
+                    background-color: $color-challenges
+        .ancestor-viewpoint
+            a
+                &::before
+                    background-color: $color-viewpoint
+        .ancestor-news
+            a
+                &::before
+                    background-color: $color-publications
         .cat
             &-parent
                 display: none
@@ -219,9 +234,13 @@ body.page__home
         @include media-breakpoint-down(desktop)
             background: $color-publications
             padding-bottom: $spacing-2 !important
+            .post-infos
+                margin-top: 0
+                padding-top: $spacing-2
         .toc-container
             padding-top: $spacing-5 !important
     .post-infos
+        --color-text-alt: var(--color-text)
         span, a
             color: black
         .post-categories
