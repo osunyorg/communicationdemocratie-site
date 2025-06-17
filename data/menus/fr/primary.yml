@@ -77,12 +77,12 @@ items:
     path: "/pages/plaidoyers/campagne-pour-une-loi-evin-du-climat-europeenne"
     file: content/fr/pages/plaidoyers/campagne-pour-une-loi-evin-du-climat-europeenne/_index.html
   - title: Lutte européenne contre l'influence pour la malbouffe
-    target: "/fr/plaidoyers/lutte-europeenne-contre-l-influence-pour-la-malbouffe/"
+    target: "/fr/plaidoyers/communication-commerciale-et-malbouffe/"
     kind: page
     new_tab: false
     children: []
-    path: "/pages/plaidoyers/lutte-europeenne-contre-l-influence-pour-la-malbouffe"
-    file: content/fr/pages/plaidoyers/lutte-europeenne-contre-l-influence-pour-la-malbouffe/_index.html
+    path: "/pages/plaidoyers/communication-commerciale-et-malbouffe"
+    file: content/fr/pages/plaidoyers/communication-commerciale-et-malbouffe/_index.html
   - title: Pour la transparence du lobbying 360°
     target: "/fr/plaidoyers/pour-une-loi-sapin-iii/"
     kind: page
