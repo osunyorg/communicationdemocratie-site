@@ -9,3 +9,4 @@ jsconfig.json
 hugo_stats.json
 yarn-error.log
 /static/pagefind
+backstop_data
