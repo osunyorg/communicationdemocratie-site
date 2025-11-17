@@ -139,9 +139,9 @@
                             order: 2
                         p[itemprop="articleBody"]
                             order: 3
-                .media
-                    img 
-                        aspect-ratio: 2
+                    .media
+                        img 
+                            aspect-ratio: 2
     
     // pages
     &-pages
@@ -149,7 +149,6 @@
             article
                 .page-title
                     a
-                        @include link(white)
                         color: $color-text
                         text-decoration: none
                         &::after
@@ -157,6 +156,8 @@
                             color: white
                             display: inline-block
                             margin-left: $spacing-1
+                &:hover .page-title a
+                    color: white
         .page
             .page-title a::after
                 content: none !important
