@@ -2,8 +2,10 @@
 title: Legal
 items:
 - title: contact@communication-democratie.org
+  slug: contact-communication-democratie-org
   target: ''
   kind: blank
   new_tab: false
   children: []
+  descendants_targets: []
 

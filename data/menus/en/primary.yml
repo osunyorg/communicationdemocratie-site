@@ -2,66 +2,91 @@
 title: Menu principal
 items:
 - title: Publications
+  slug: publications
   target: "/en/actualites/"
   kind: page
   new_tab: false
   children:
   - title: Actualités
+    slug: actualites
     target: "/en/actualites/actualites/"
     kind: category
     new_tab: false
     children: []
+    descendants_targets: []
     path: "/posts_categories/actualites"
     file: content/en/posts_categories/actualites/_index.html
   - title: Points de vue
+    slug: points-de-vue
     target: "/en/actualites/points-de-vue/"
     kind: category
     new_tab: false
     children: []
+    descendants_targets: []
     path: "/posts_categories/points-de-vue"
     file: content/en/posts_categories/points-de-vue/_index.html
+  descendants_targets:
+  - "/en/actualites/actualites/"
+  - "/en/actualites/points-de-vue/"
   path: "/posts"
   file: content/en/posts/_index.html
 - title: Association
+  slug: association
   target: "/en/association/"
   kind: page
   new_tab: false
   children:
   - title: Vision and mission
+    slug: vision-and-mission
     target: "/en/association/vision-et-mission/"
     kind: page
     new_tab: false
     children: []
+    descendants_targets: []
     path: "/pages/association/vision-et-mission"
     file: content/en/pages/association/vision-et-mission/_index.html
   - title: Founding document
+    slug: founding-document
     target: "/en/association/texte-fondateur/"
     kind: page
     new_tab: false
     children: []
+    descendants_targets: []
     path: "/pages/association/texte-fondateur"
     file: content/en/pages/association/texte-fondateur/_index.html
   - title: About our own communication activities
+    slug: about-our-own-communication-activities
     target: "/en/association/notre-demarche-de-communication/"
     kind: page
     new_tab: false
     children: []
+    descendants_targets: []
     path: "/pages/association/notre-demarche-de-communication"
     file: content/en/pages/association/notre-demarche-de-communication/_index.html
   - title: Governing bodies and functioning of the organization
+    slug: governing-bodies-and-functioning-of-the-organization
     target: "/en/association/organes-et-fonctionnement/"
     kind: page
     new_tab: false
     children: []
+    descendants_targets: []
     path: "/pages/association/organes-et-fonctionnement"
     file: content/en/pages/association/organes-et-fonctionnement/_index.html
   - title: The origins of the organization
+    slug: the-origins-of-the-organization
     target: "/en/association/a-lorigine-de-lassociation/"
     kind: page
     new_tab: false
     children: []
+    descendants_targets: []
     path: "/pages/association/a-lorigine-de-lassociation"
     file: content/en/pages/association/a-lorigine-de-lassociation/_index.html
+  descendants_targets:
+  - "/en/association/a-lorigine-de-lassociation/"
+  - "/en/association/notre-demarche-de-communication/"
+  - "/en/association/organes-et-fonctionnement/"
+  - "/en/association/texte-fondateur/"
+  - "/en/association/vision-et-mission/"
   path: "/pages/association"
   file: content/en/pages/association/_index.html
 
