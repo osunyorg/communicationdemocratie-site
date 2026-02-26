@@ -7,6 +7,11 @@ osuny:
   website:
     id: 2c9c1ff8-23a1-456e-9870-16ce3d9fd940
 
+## PARAMS
+params:
+  _merge: deep
+  plausible: "communication-democratie.org"
+
 ## LANGUAGE
 defaultContentLanguage: fr
 defaultContentLanguageInSubdir: true
