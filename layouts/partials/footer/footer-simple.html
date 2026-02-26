@@ -3,12 +3,15 @@
   {{ $menu := partial "GetMenu" "primary" }}
   {{ if $menu }}
       <nav aria-label="{{ i18n "commons.menu.main" }}">
-      {{ partial "commons/menu.html"
-            (dict
-              "items"        $menu.items
-              "level"       1
-              "stop"        2
-            )}}
+        {{ partial "commons/menu.html" (dict
+          "kind" "primary"
+          "options" (dict
+            "level_1" (dict
+              "dropdown" false
+            )
+          )
+          "context" .
+        )}}
       </nav>
   {{ end }}
 
