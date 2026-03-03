@@ -22,7 +22,7 @@
                       )}}
               {{ end }}
               <div>
-                <p itemprop="name"><a href="{{ .Permalink }}" itemprop="url">{{ partial "PrepareHTML" .Title }}</a></p>
+                <p itemprop="name"><a href="{{ .Permalink }}" itemprop="url">{{ safeHTML .Title }}</a></p>
                 {{ if .Params.summary }}
                   <p itemprop="description">{{ .Params.summary | safeHTML }}</p>
                 {{ end }}
