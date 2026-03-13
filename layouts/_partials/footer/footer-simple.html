@@ -3,7 +3,7 @@
   {{ $menu := partial "GetMenu" "primary" }}
   {{ if $menu }}
       <nav aria-label="{{ i18n "commons.menu.main" }}">
-        {{ partial "commons/menu.html" (dict
+        {{ partial "footer/menu.html" (dict
           "kind" "primary"
           "options" (dict
             "level_1" (dict
