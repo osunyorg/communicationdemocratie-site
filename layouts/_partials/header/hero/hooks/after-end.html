@@ -1,0 +1,6 @@
+{{ if ne .context.Type "posts" }}
+  {{- partial "commons/summary/container.html" (dict
+    "context" .context
+    "block_wrapped" true
+    ) -}}
+{{ end }}
