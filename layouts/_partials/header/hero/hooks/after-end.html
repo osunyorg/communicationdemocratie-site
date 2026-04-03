@@ -1,17 +1,11 @@
 {{ if not (and (eq .context.Type "posts") (eq .context.Kind "page")) }}
-  {{- partial "commons/summary/container.html" (dict
-    "context" .context
-    "block_wrapped" true
-  ) -}}
-{{ end }}
-{{ $summary := .context.Params.summary | safeHTML }}
-
-{{- if $summary -}}
-  <div class="block block-summary">
-    <div class="container">
-      <div class="block-content">
-        <div class="lead" role="heading" aria-level="2">{{ $summary }}</div>
+  {{- with .context.Params.summary -}}
+    <div class="block block-summary">
+      <div class="container">
+        <div class="block-content">
+          <div class="lead" role="heading" aria-level="2">{{ . | safeHTML }}</div>
+        </div>
       </div>
     </div>
-  </div>
-{{- end -}}
+  {{- end -}}
+{{ end }}
