@@ -1,0 +1,11 @@
+{{ if not (and (eq .context.Type "posts") (eq .context.Kind "page")) }}
+  {{- with .context.Params.summary -}}
+    <div class="block block-summary">
+      <div class="container">
+        <div class="block-content">
+          <div class="lead" role="heading" aria-level="2">{{ . | safeHTML }}</div>
+        </div>
+      </div>
+    </div>
+  {{- end -}}
+{{ end }}
