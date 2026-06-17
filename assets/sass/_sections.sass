@@ -233,7 +233,7 @@ body.page__home
     .block-summary
         background: $color-publications
         margin-bottom: $spacing-5
-    .post-sidebar
+    .section-sidebar.section-post
         z-index: 4
         @include media-breakpoint-down(desktop)
             background: $color-publications
@@ -247,14 +247,6 @@ body.page__home
         --color-text-alt: var(--color-text)
         span, a
             color: black
-        .post-categories
-            li
-                font-size: inherit
-                font-weight: normal
-                text-transform: none
-            a
-                &::before
-                    display: none
     &.term-points-de-vue
         @include code-page-color($color-viewpoint)
         @include media-breakpoint-down(desktop)
