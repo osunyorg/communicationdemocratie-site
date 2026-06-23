@@ -233,7 +233,7 @@ body.page__home
     .block-summary
         background: $color-publications
         margin-bottom: $spacing-5
-    .section-sidebar.section-post
+    .section-sidebar
         z-index: 4
         @include media-breakpoint-down(desktop)
             background: $color-publications
@@ -241,8 +241,6 @@ body.page__home
             .post-infos
                 margin-top: 0
                 padding-top: $spacing-2
-        .toc-container
-            padding-top: $spacing-5 !important
     .post-infos
         --color-text-alt: var(--color-text)
         span, a
@@ -267,8 +265,7 @@ body.page__home
     @include media-breakpoint-down(desktop)
         .block-summary
             margin-bottom: 0 !important
-        .post-sidebar
-            margin-bottom: $spacing-5
+
 
 .events__page
     .breadcrumb-container
