@@ -27,13 +27,13 @@ items:
     file: content/fr/pages/enjeux/communication-et-rse/_index.html
   - title: Influence politique
     slug: influence-politique
-    target: "/fr/enjeux/influence-politique/"
+    target: "/fr/enjeux/influence/"
     kind: page
     new_tab: false
     children: []
     descendants_targets: []
-    path: "/pages/enjeux/influence-politique"
-    file: content/fr/pages/enjeux/influence-politique/_index.html
+    path: "/pages/enjeux/influence"
+    file: content/fr/pages/enjeux/influence/_index.html
   - title: Médias & Annonceurs
     slug: medias-annonceurs
     target: "/fr/enjeux/mediasannonceurs/"
@@ -75,7 +75,7 @@ items:
   - "/fr/enjeux/communication-consommation/"
   - "/fr/enjeux/communication-et-rse/"
   - "/fr/enjeux/discours-des-ong/"
-  - "/fr/enjeux/influence-politique/"
+  - "/fr/enjeux/influence/"
   - "/fr/enjeux/mediasannonceurs/"
   - "/fr/enjeux/pubnumerique/"
   path: "/pages/enjeux"

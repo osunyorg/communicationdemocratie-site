@@ -151,6 +151,7 @@ RedirectMatch permanent "^/publications/enjeux/discours\-des\-ong(/?)$" "/fr/pub
 RedirectMatch permanent "^/fr/equipe/benedicte\-lesage(/?)$" "/fr/personnes/benedicte-lesage/"
 RedirectMatch permanent "^/fr/equipe/emeline\-keundjian(/?)$" "/fr/personnes/emeline-keundjian/"
 RedirectMatch permanent "^/fr/equipe/felicien\-creuchet(/?)$" "/fr/personnes/felicien-creuchet/"
+RedirectMatch permanent "^/fr/enjeux/influence\-politique(/?)$" "/fr/enjeux/influence/"
 RedirectMatch permanent "^/fr/publications/2021/12/16/le\-ministere\-de\-lecologie\-devoile\-le\-calendrier\-des\-decrets\-dapplication\-de\-la\-loi\-climat\-sur\-la\-regulation\-de\-la\-publicite(/?)$" "/fr/publications/2021-12-16-le-ministere-de-lecologie-devoile-le-calendrier-des-decrets-dapplication-de-la-loi-climat-sur-la-reg/"
 RedirectMatch permanent "^/fr/publications/2025\-01\-24\-le\-rapport\-heilbrunn\-sur\-la\-consommation\-durable\-reprend\-plusieurs\-de\-nos\-recommandations(/?)$" "/fr/publications/2024-09-10-le-rapport-heilbrunn-sur-la-consommation-durable-reprend-plusieurs-de-nos-recommandations/"
 RedirectMatch permanent "^/fr/publications/2022\-04\-11\-contre\-le\-greenwashing\-la\-commission\-europeenne\-propose\-detendre\-les\-cas\-de\-pratiques\-commerciales\-trompeuse(/?)$" "/fr/publications/2022-04-11-contre-le-greenwashing-la-commission-europeenne-propose-detendre-les-cas-de-pratiques-commerciales-t/"
