@@ -8,10 +8,10 @@ items:
   new_tab: true
   children: []
   descendants_targets: []
-- title: contact@communication-democratie.org
-  slug: contact-communication-democratie-org
-  target: ''
-  kind: blank
+- title: Nous contacter
+  slug: nous-contacter
+  target: mailto:contact@communication-democratie.org
+  kind: url
   new_tab: false
   children: []
   descendants_targets: []
@@ -30,15 +30,6 @@ items:
   kind: page
   new_tab: false
   children:
-  - title: Plan du site
-    slug: plan-du-site
-    target: "/fr/plan-du-site/"
-    kind: page
-    new_tab: false
-    children: []
-    descendants_targets: []
-    path: "/pages/plan-du-site"
-    file: content/fr/pages/plan-du-site/_index.html
   - title: Politique de confidentialité
     slug: politique-de-confidentialite
     target: "/fr/politique-de-confidentialite/"
@@ -48,6 +39,15 @@ items:
     descendants_targets: []
     path: "/pages/politique-de-confidentialite"
     file: content/fr/pages/politique-de-confidentialite/_index.html
+  - title: Plan du site
+    slug: plan-du-site
+    target: "/fr/plan-du-site/"
+    kind: page
+    new_tab: false
+    children: []
+    descendants_targets: []
+    path: "/pages/plan-du-site"
+    file: content/fr/pages/plan-du-site/_index.html
   descendants_targets:
   - "/fr/plan-du-site/"
   - "/fr/politique-de-confidentialite/"
