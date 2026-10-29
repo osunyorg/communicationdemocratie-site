@@ -1,6 +1,13 @@
 ---
 title: Legal
 items:
+- title: S'inscrire à la lettre d'information
+  slug: s-inscrire-a-la-lettre-d-information
+  target: https://1ed788d2.sibforms.com/serve/MUIFANbMYUeqf9rOfLL-zvkseF9nGMMTdV8ECW1wmfH8geb7xODsZqC1Jw-6ONEhq-xFk9fQS-LCAUnl65qvq5-BmNVLQHlcj0s09SvW526t_XBljbcP7Q1XQ3MX6Hu-uqe18O0fJpcvGGQwJ97hA1Zq7VWqkp7UmW5TVCz7Inr_1Gb6ZBesiobFYWKugoJFSFP_5LVqLBmmro5OVQ==
+  kind: url
+  new_tab: false
+  children: []
+  descendants_targets: []
 - title: contact@communication-democratie.org
   slug: contact-communication-democratie-org
   target: ''
@@ -31,17 +38,18 @@ items:
   target: "/fr/mentions-legales/"
   kind: page
   new_tab: false
-  children: []
-  descendants_targets: []
+  children:
+  - title: Politique de confidentialité
+    slug: politique-de-confidentialite
+    target: "/fr/politique-de-confidentialite/"
+    kind: page
+    new_tab: false
+    children: []
+    descendants_targets: []
+    path: "/pages/politique-de-confidentialite"
+    file: content/fr/pages/politique-de-confidentialite/_index.html
+  descendants_targets:
+  - "/fr/politique-de-confidentialite/"
   path: "/pages/mentions-legales"
   file: content/fr/pages/mentions-legales/_index.html
-- title: Politique de confidentialité
-  slug: politique-de-confidentialite
-  target: "/fr/politique-de-confidentialite/"
-  kind: page
-  new_tab: false
-  children: []
-  descendants_targets: []
-  path: "/pages/politique-de-confidentialite"
-  file: content/fr/pages/politique-de-confidentialite/_index.html
 

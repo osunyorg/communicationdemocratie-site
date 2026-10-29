@@ -34,6 +34,12 @@ fr:
   buildFuture: true
   params:
     contact_details:
+      social_networks:
+        linkedin:
+          label: >-
+            communication-et-democratie
+          value: >-
+            https://www.linkedin.com/company/communication-et-democratie/
 
   taxonomies:
     administrator: administrators
