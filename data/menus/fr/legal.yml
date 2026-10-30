@@ -35,19 +35,20 @@ items:
     target: "/fr/politique-de-confidentialite/"
     kind: page
     new_tab: false
-    children: []
-    descendants_targets: []
+    children:
+    - title: Plan du site
+      slug: plan-du-site
+      target: "/fr/plan-du-site/"
+      kind: page
+      new_tab: false
+      children: []
+      descendants_targets: []
+      path: "/pages/plan-du-site"
+      file: content/fr/pages/plan-du-site/_index.html
+    descendants_targets:
+    - "/fr/plan-du-site/"
     path: "/pages/politique-de-confidentialite"
     file: content/fr/pages/politique-de-confidentialite/_index.html
-  - title: Plan du site
-    slug: plan-du-site
-    target: "/fr/plan-du-site/"
-    kind: page
-    new_tab: false
-    children: []
-    descendants_targets: []
-    path: "/pages/plan-du-site"
-    file: content/fr/pages/plan-du-site/_index.html
   descendants_targets:
   - "/fr/plan-du-site/"
   - "/fr/politique-de-confidentialite/"
