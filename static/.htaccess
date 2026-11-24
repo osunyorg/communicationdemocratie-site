@@ -89,6 +89,7 @@ RedirectMatch permanent "^/fr/equipe/yves\-marry(/?)$" "/fr/personnes/yves-marry
 RedirectMatch permanent "^/publications/actualites/communique\-de\-presse(/?)$" "/fr/publications/actualites/communique-de-presse/"
 RedirectMatch permanent "^/fr/equipe/renaud\-fossard(/?)$" "/fr/personnes/renaud-fossard/"
 RedirectMatch permanent "^/fr/publications/2025\-04\-05\-decryptage\-par\-la\-societe\-civile\-de\-la\-version\-actuelle\-de\-la\-strategie\-alimentation\-nutrition\-clima(/?)$" "/fr/publications/2025-04-05-decryptage-de-la-derniere-version-de-la-strategie-alimentation-nutrition-climat/"
+RedirectMatch permanent "^/fr/publications/2026\-11\-24\-derriere\-la\-vitrine\-publicitaire(/?)$" "/fr/publications/2026-11-24-publication-notre-enquete-sur-les-produits-nefastes-du-marche-publicitaire/"
 RedirectMatch permanent "^/fr/equipe/marie\-helene\-meyling(/?)$" "/fr/personnes/marie-helene-meyling/"
 RedirectMatch permanent "^/equipe/vincent\-david(/?)$" "/fr/personnes/vincent-david/"
 RedirectMatch permanent "^/publications/enjeux/influence\-politique(/?)$" "/fr/publications/enjeux/influence-politique/"
