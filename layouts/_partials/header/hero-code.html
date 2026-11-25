@@ -2,7 +2,12 @@
 {{- $subtitle := false -}}
 {{ if .Params.header_text }}
   {{- $subtitle = printf "<p>%s</p>" .Title -}}
+{{ else }}
+  {{ with .Params.subtitle }}
+    {{ $title = printf "%s <span>%s</span>" $title . }}
+  {{ end }}
 {{ end }}
+
 {{ partial "header/hero.html" (dict
     "title" $title
     "image" .Params.image
