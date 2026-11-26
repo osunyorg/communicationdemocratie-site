@@ -35,3 +35,9 @@ params:
     enabled: false
   summary:
     position: none
+  image_sizes:
+    sections:
+      posts:
+        layouts:
+          grid:
+            desktop:  864
