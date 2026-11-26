@@ -72,6 +72,7 @@ RedirectMatch permanent "^/fr/vision\-et\-mission(/?)$" "/fr/l-association/visio
 RedirectMatch permanent "^/fr/publications/2023\-10\-29\-pourquoi\-il\-faut\-mettre\-fin\-au\-matraquage\-publicitaire\-des\-industriels\-de\-la\-malbouffe\-sur\-nos\-enfants(/?)$" "/fr/publications/2023-10-29-pourquoi-il-faut-mettre-fin-au-matraquage-publicitaire-des-industriels-de-la-malbouffe-sur-nos-enfan/"
 RedirectMatch permanent "^/en/2026/texte\-fondateur\-de\-communicaton\-et\-democratie\-adopte\-le\-9\-mai\-2022pdf(/?)$" "/en/files/2026/texte-fondateur-de-communicaton-et-democratie-adopte-le-9-mai-2022pdf/"
 RedirectMatch permanent "^/fr/publications/2022/05/16/la\-commission\-europeenne\-propose\-detendre\-les\-pratiques\-commerciales\-trompeuses(/?)$" "/fr/publications/2022-05-16-la-commission-europeenne-propose-detendre-les-pratiques-commerciales-trompeuses/"
+RedirectMatch permanent "^/fr/l\-association/organes\-et\-fonctionnement(/?)$" "/fr/l-association/gouvernance-et-ressources/"
 RedirectMatch permanent "^/fr/publications/2023\-03\-13\-notre\-plaidoyer\-pour\-la\-regulation\-de\-la\-publicite\-automobile\-devant\-le\-congres\-de\-la\-federation\-du\-velo(/?)$" "/fr/publications/2023-03-13-notre-plaidoyer-pour-la-regulation-de-la-publicite-automobile-devant-le-congres-de-la-federation-du/"
 RedirectMatch permanent "^/equipe/alan\-ouakrat(/?)$" "/fr/personnes/alan-ouakrat/"
 RedirectMatch permanent "^/fr/publications/enjeux/discours\-des\-ong(/?)$" "/fr/publications/enjeux/discours-d-interet-general/"

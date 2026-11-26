@@ -205,13 +205,13 @@ items:
     file: content/fr/pages/l-association/vision-et-mission/_index.html
   - title: Fonctionnement et ressources
     slug: fonctionnement-et-ressources
-    target: "/fr/l-association/organes-et-fonctionnement/"
+    target: "/fr/l-association/gouvernance-et-ressources/"
     kind: page
     new_tab: false
     children: []
     descendants_targets: []
-    path: "/pages/l-association/organes-et-fonctionnement"
-    file: content/fr/pages/l-association/organes-et-fonctionnement/_index.html
+    path: "/pages/l-association/gouvernance-et-ressources"
+    file: content/fr/pages/l-association/gouvernance-et-ressources/_index.html
   - title: Texte fondateur
     slug: texte-fondateur
     target: "/fr/l-association/texte-fondateur/"
@@ -250,8 +250,8 @@ items:
     file: content/fr/pages/l-association/rapports-annuels/_index.html
   descendants_targets:
   - "/fr/l-association/a-lorigine-de-lassociation/"
+  - "/fr/l-association/gouvernance-et-ressources/"
   - "/fr/l-association/notre-demarche-de-communication/"
-  - "/fr/l-association/organes-et-fonctionnement/"
   - "/fr/l-association/rapports-annuels/"
   - "/fr/l-association/texte-fondateur/"
   - "/fr/l-association/vision-et-mission/"
